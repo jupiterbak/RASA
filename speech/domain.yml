@@ -209,7 +209,7 @@ actions:
   - utter_also_explain_nlu
   - utter_also_explain_core
   #  - utter_direct_install
-  - utter_built_bot_before
+  # - utter_built_bot_before
   #  - utter_ask_which_tool
   - utter_suggestion
   #  - utter_ask_python_installed

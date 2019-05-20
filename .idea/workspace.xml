@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a49de8-60bc-4e63-bfdb-1edddab6a538" name="Default Changelist" comment="" />
+    <list default="true" id="48a49de8-60bc-4e63-bfdb-1edddab6a538" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech/data/core/chitchat.md" beforeDir="false" afterPath="$PROJECT_DIR$/speech/data/core/chitchat.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/speech/domain.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/speech/domain.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="321">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="22" />
+              <caret line="452" column="25" selection-start-line="452" selection-start-column="2" selection-end-line="452" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -32,8 +37,8 @@
         <entry file="file://$PROJECT_DIR$/speech/data/core/chitchat.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="666">
-                <caret line="92" column="6" lean-forward="true" selection-start-line="92" selection-start-column="6" selection-end-line="92" selection-end-column="6" />
+              <first_editor relative-caret-position="221">
+                <caret line="242" column="29" selection-start-line="242" selection-start-column="6" selection-end-line="242" selection-end-column="29" />
               </first_editor>
               <second_editor />
             </state>
@@ -51,14 +56,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>utter_explain_use_case</find>
-      <find>utter_explain_budget</find>
       <find>utter_explain_person_name</find>
       <find>utter_explain_company</find>
       <find>utter_explain_business_email</find>
       <find>utter_get_started_step4</find>
       <find>Rasa</find>
-      <find>utter_explain_nlucore</find>
       <find>rasa</find>
       <find>bye</find>
       <find>utter_goodbye</find>
@@ -74,17 +76,23 @@
       <find>ask_whatspossible</find>
       <find>utter_getstarted</find>
       <find>step</find>
-      <find>utter_first_bot_with_rasa</find>
-      <find>utter_explain_demonstratorcore</find>
       <find>utter_explain_stack</find>
       <find>utter_explain_core</find>
-      <find>utter_explain_nlu</find>
       <find>utter_direct_to_step2</find>
       <find>how_to_get_started</find>
+      <find>utter_built_bot_before</find>
+      <find>utter_explain_demonstratorcore</find>
+      <find>utter_explain_nlu</find>
+      <find>utter_explain_nlucore</find>
+      <find>utter_first_bot_with_rasa</find>
+      <find>utter_also_explain_core</find>
     </findStrings>
     <replaceStrings>
       <replace>the demonstrator</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -140,6 +148,7 @@
     <option name="width" value="1920" />
     <option name="height" value="519" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -281,7 +290,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
@@ -718,15 +726,15 @@
     <entry file="file://$PROJECT_DIR$/speech/domain.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="22" />
+          <caret line="452" column="25" selection-start-line="452" selection-start-column="2" selection-end-line="452" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/speech/data/core/chitchat.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="666">
-            <caret line="92" column="6" lean-forward="true" selection-start-line="92" selection-start-column="6" selection-end-line="92" selection-end-column="6" />
+          <first_editor relative-caret-position="221">
+            <caret line="242" column="29" selection-start-line="242" selection-start-column="6" selection-end-line="242" selection-end-column="29" />
           </first_editor>
           <second_editor />
         </state>
