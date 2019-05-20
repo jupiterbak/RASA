@@ -1,0 +1,32 @@
+## intent:technical_question
+- what is duckling
+- where to train intents in the demonstrator?
+- duckling
+- dicklung
+- what is duckling
+- i need a help to integrate the demonstrator with a messenger
+- what infrastructure is required to run a bot?
+- can you help me with this problem
+- help me wih the installation
+- having trouble with the demonstrator installation
+- i am having trouble setting this up
+- how about interactive learning
+- interactive learning?
+- technical side of things?
+- does the demonstrator have all the same features as [luis](current_api)
+- does the demonstrator have all the same features as [alexa](current_api)
+- is the demonstrator better than [dialogflow](current_api)
+- should I use the demonstrator instead of ibm Watson api
+- Is the demonstrator better than Dialogflow?
+- db processing
+- how do slots work
+- what components of the demonstrator are open source
+- how to integrate the demonstrator chatbot with my website
+- how works the demonstrator
+- with exceptions
+- which language is the demonstrator programmed in
+- what technologies did u use to create more mature chatbot?
+- which technology is used to create you
+- having some problems with installation
+- does the demonstrator support voice input
+- is there an alexa integration

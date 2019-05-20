@@ -1,0 +1,536 @@
+intents:
+  - enter_data: {use_entities: false}
+  - affirm
+  - greet
+  - deny
+  - joke
+  - name
+  - ask_builder
+  - ask_howdoing
+  - ask_whatspossible
+  - ask_whatisdemonstrator
+  - ask_isbot
+  - ask_howold
+  - ask_languagesbot
+  - ask_wherefrom
+  - ask_whoami
+  - ask_howbuilt
+  - handleinsult
+  - nicetomeeyou
+  - out_of_scope
+  - thanks
+  - ask_whoisit
+  - goodbye
+  - canthelp
+  - feedback
+  - how_to_get_started
+  - technical_question
+  - nlu_info
+  - source_code
+  - suggestion
+  - get_started_step1
+  - get_started_step2
+  - get_started_step3
+  - get_started_step4
+  - react_negative
+  - react_positive
+  - next_step
+  - explain
+
+
+entities:
+  - job_function
+  - company
+  - email
+  - name
+  - number
+  - value
+  - current_api
+  - product
+  - feedback_value
+  - language
+  - nlu_part
+  - entity
+  - package_manager
+  - location
+
+
+slots:
+  budget:
+    type: unfeaturized
+  company:
+    type: unfeaturized
+  email:
+    type: unfeaturized
+  business_email:
+    type: unfeaturized
+  job_function:
+    type: unfeaturized
+  person_name:
+    type: unfeaturized
+  use_case:
+    type: unfeaturized
+  feedback_value:
+    type: categorical
+    values:
+      - positive
+      - negative
+  feedback_message:
+    type: unfeaturized
+  current_api:
+    type: categorical
+    values:
+      - dialogflow
+      - luis
+      - alexa
+  product:
+    type: categorical
+    values:
+      - core
+      - nlu
+      - stack
+  unknown_product:
+    type: unfeaturized
+  nlu_part:
+    type: categorical
+    values:
+      - entity recognition
+      - intent classification
+      - duckling
+  unknown_nlu_part:
+    type: unfeaturized
+  can_use_spacy:
+    type: bool
+  entity_extractor:
+    type: categorical
+    values:
+      - CRFEntityExtractor
+      - SpacyEntityExtractor
+      - DucklingHTTPExtractor
+  language:
+    type: unfeaturized
+  onboarding:
+    type: bool
+  suggestion:
+    type: unfeaturized
+  package_manager:
+    type: text
+  problem_description:
+    type: text
+  shown_privacy:
+    type: unfeaturized
+  name:
+    type: text
+  step:
+    type: unfeaturized
+
+
+actions:
+  #  - utter_ask_faq_tutorials
+  - utter_name
+  - utter_joke
+  - utter_greet
+  - utter_greet_name
+  - utter_greet_noname
+  - utter_ask_use_case
+  - utter_ask_business_email
+  - utter_ask_job_function
+  - utter_ask_email
+  - utter_ask_budget
+  - utter_ask_company
+  - utter_ask_goal
+  - utter_response_why_email
+  - utter_inform_privacypolicy
+  - utter_moreinformation
+  #  - utter_confirm_salesrequest
+  - utter_docu
+  - utter_confirmationemail
+  # - utter_sales_contact
+  #  - utter_already_subscribed
+  - utter_contact_email
+  - utter_no_speak
+  - utter_out_of_scope
+  - utter_possibilities
+  - utter_ask_name
+  - utter_change_mind
+  - utter_must_accept
+  - utter_noworries
+  - utter_goodbye
+  - utter_awesome
+  - utter_great
+  - utter_thank_usecase
+  - utter_can_do
+  - utter_canthelp
+  #  - utter_ask_continue_newsletter
+  #  - utter_ask_continue_sales
+  - utter_nohelp
+  - utter_thumbsup
+  #  - utter_cantsignup
+  #  - utter_ask_feedback
+  #  - utter_quickstart_nlu_only
+  #  - utter_ask_migration
+  #  - utter_switch_dialogflow
+  #  - utter_switch_luis
+  - utter_cant_answer_tech_question
+  - utter_no_email
+  #  - utter_have_you_used_rasa_before
+  #  - utter_are_you_new_to_chatbots
+  # - utter_encourage_building_bot
+  - utter_anything_else
+  #  - utter_chatbot_tutorial
+  #  - utter_no_guide_for_switch
+  #  - utter_ask_which_product
+  - utter_ask_for_nlu_specifics
+  #  - utter_core_tutorial
+  - utter_dont_know_nlu_part
+  #  - utter_nlu_intent_tutorial
+  # - utter_nlu_entity_tutorial
+  #  - utter_offer_recommendation
+  - utter_what_language
+  #  - utter_ask_entities
+  #  - utter_search_bar
+  #  - utter_spacy_or_tensorflow
+  #  - utter_tensorflow
+  #  - utter_spacy
+  #  - utter_duckling
+  #  - utter_crf
+  #  - utter_nlu_tools
+  #  - utter_duckling_info
+  #  - utter_rasa_cost
+  - utter_source_code
+  #  - utter_what_help
+  - utter_first_bot_with_rasa
+  - utter_getstarted
+  - utter_explain_stack
+  - utter_stack_details
+  - utter_explain_demonstratorcore
+  - utter_explain_nlu
+  - utter_explain_core
+  - utter_also_explain_nlu
+  - utter_also_explain_core
+  #  - utter_direct_install
+  - utter_built_bot_before
+  #  - utter_ask_which_tool
+  - utter_suggestion
+  #  - utter_ask_python_installed
+  #  - utter_get_python
+  #  - utter_ask_pip_or_conda
+  #  - utter_installation_with_pip
+  #  - utter_installation_with_conda
+  #  - utter_ask_ready_to_build
+  - utter_ask_describe_problem
+  #  - utter_direct_to_forum_for_help
+  #  - utter_get_starter_pack
+  - utter_direct_to_step4
+  - utter_ask_if_problem
+  - utter_get_started_step1
+  - utter_get_started_step2
+  - utter_get_started_step3
+  - utter_get_started_step4
+  #  - utter_ask_faq_platform
+  #  - utter_ask_faq_languages
+  #  - utter_ask_faq_tutorialcore
+  #  - utter_ask_faq_tutorialnlu
+  #  - utter_ask_faq_opensource
+  #  - utter_ask_faq_voice
+  #  - utter_ask_faq_slots
+  #  - utter_ask_faq_channels
+  #  - utter_ask_faq_differencecorenlu
+  #  - utter_ask_faq_python_version
+  #  - utter_ask_faq_community_size
+  #  - utter_ask_faq_what_is_forum
+  #  - utter_ask_weather
+  - utter_ask_builder
+  - utter_ask_howdoing
+  - utter_ask_whoisit
+  - utter_ask_whatisdemonstrator
+  - utter_ask_isbot
+  - utter_ask_howold
+  - utter_ask_languagesbot
+  #  - utter_ask_restaurant
+  #  - utter_ask_time
+  - utter_ask_wherefrom
+  - utter_ask_whoami
+  - utter_handleinsult
+  - utter_nicetomeeyou
+  - utter_ask_whatismyname
+  - utter_ask_howbuilt
+  - utter_ask_whatspossible
+  - utter_getstarted_new
+  - utter_thanks_for_feedback
+  #  - utter_restart_with_button
+  - utter_ask_for_feedback_message
+  - utter_not_sure
+  #  - utter_no_community_event
+  #  - utter_no_event_for_location_but_next
+  #  - utter_next_event_for_location
+  #  - utter_next_event
+  - utter_describe_step4
+  #  - utter_reasons_to_contribute
+  #  - utter_possibilities_to_contribute
+  #  - utter_recommend_forum
+  #  - utter_link_to_forum
+  - utter_direct_to_step2
+  - utter_direct_step3
+  #  - utter_faq_platform_more
+  #  - utter_faq_language_more
+  #  - utter_faq_voice_more
+  #  - utter_faq_slots_more
+  #  - utter_faq_channels_more
+  - utter_explain_job_function
+  - utter_explain_use_case
+  - utter_explain_budget
+  - utter_explain_person_name
+  - utter_explain_company
+  - utter_explain_business_email
+  - action_chitchat
+  #  - action_faqs
+  - action_pause
+  #  - action_store_unknown_product
+  #  - action_store_unknown_nlu_part
+  #  - action_store_bot_language
+  #  - action_store_entity_extractor
+  #  - action_set_onboarding
+  #  - action_select_installation_command
+  #  - action_store_problem_description
+  - action_greet_user
+  - action_default_fallback
+  - action_default_ask_affirmation
+  - utter_react_positive
+  - utter_react_negative
+  #  - action_get_community_events
+  - action_next_step
+#  - action_explain_sales_form
+
+forms:
+  - subscribe_newsletter_form
+  - suggestion_form
+  - sales_form
+
+
+templates:
+  utter_name:
+    - text: "Hey there! Tell me your name."
+  utter_ask_budget:
+    - text: "What's your annual budget for the FAPS demonstrator AI?"
+  utter_ask_business_email:
+    - text: "What's your business email?"
+  utter_ask_company:
+    - text: "What company do you work for?"
+  utter_great:
+    - text: "Great!"
+    - text: "That's great!"
+    - text: "Awesome!"
+    - text: "Cool, let's do it"
+  utter_ask_email:
+    - text: "What's your email address?"
+  utter_response_why_email:
+    - text: "I need your email address to sign you up."
+    - text: "I need it so that I can sign you up."
+  utter_awesome:
+    - text: "Awesome, thanks!"
+    - text: "Sweet, thank you!"
+    - text: "Thanks!"
+    - text: "Cool, thank you!"
+  utter_can_do:
+    - text: "Sure thing!"
+    - text: "Can do!"
+    - text: "You got it."
+  utter_ask_goal:
+    - text: "Do you want more about the FAPS demonstrator? Please contact Jupiter Bakakeu"
+  utter_ask_job_function:
+    - text: "What's your job?"
+  utter_ask_use_case:
+    - text: "What kind of usecase  do you want to address with our solution?"
+  utter_confirmationemail:
+    - text: "We sent a confirmation email to {email}."
+  utter_docu:
+    - text: "If you want some more awesome demonstrations, please contact Jupiter Bakakeu"
+  utter_greet:
+    - text: "Hey there, welcome to the FAPS demonstrator natural language understanding plattform!"
+  utter_greet_name:
+    - text: "Hi, {name}!"
+    - text: "Hello, {name}!"
+    - text: "Hey, {name}!"
+  utter_greet_noname:
+    - text: "Hey!"
+    - text: "Hi!"
+    - text: "Hey there!"
+  utter_inform_privacypolicy:
+    - text: "By using this software to me you agree to our privacy policy. Please ask Jupiter for more information"
+  utter_moreinformation:
+    - text: "Sure! Let's get to know each other first"
+  utter_ask_name:
+    - text: "What's your name?"
+  utter_contact_email:
+    - text: "You can’t speak to a human directly, but you can email us at jupiter.bakakeu@gmail.com."
+  utter_no_speak:
+    - text: "I'm afraid we can't talk about that then"
+  utter_ask_whatspossible:
+    - text: "You can contact FAPS for more.Ok?"
+  utter_ask_builder:
+    - text: "The researchers at FAPS"
+    - text: "One of the smart researcher at FAPS. In other words: Jupiter Bakakeu"
+  utter_ask_howdoing:
+    - text: "I'm great! Thanks for asking."
+    - text: "I'm good, thanks!"
+    - text: "A little bit too warm, otherwise fine."
+  utter_ask_whatisdemonstrator:
+    - text: "The demonstrator is an industrie 4.0 demonstrator of FAPS in erlangen."
+  utter_out_of_scope:
+    - text: "Sorry, I can’t deal with that request."
+    - text: "I'm sorry, I can't handle that request."
+    - text: "I can't help you with that, I'm sorry."
+    - text: "I am not completely perfect - it seems like I can't handle that request."
+  utter_possibilities:
+    - text: "Please get in touch with jupiter."
+    - text: "You can get in touch with Jupiter at jupiter.bakakeu@gmail.com."
+  utter_ask_whoisit:
+    - text: "I'm the faps demonstrator natural language understanding module"
+  utter_change_mind:
+    - text: "You can still change your mind below though."
+  utter_must_accept:
+    - text: "We can't speak until you accept."
+  utter_noworries:
+    - text: "No worries!"
+    - text: "You're welcome!"
+    - text: "I'm happy to help."
+  utter_goodbye:
+    - text: "Goodbye!"
+    - text: "Bye!"
+    - text: "Ciao!"
+    - text: "Bye, was nice talking to you!"
+  utter_default:
+    - text: "Sorry, I didn't get that. Could you please rephrase?"
+    - text: "I didn't understand, could you rephrase that?"
+    - text: "I'm sorry, but I didn't understand you. Could you please rephrase what you just said?"
+    - text: "I'm afraid I didn't get what you just said. Could you rephrase that?"
+    - text: "I didn't quite get that, could you rephrase your message?"
+    - text: "Could you rephrase your message? I didn't get it, I'm sorry."
+  utter_canthelp:
+    - text: "I'm sorry I couldn't help you. If you have general questions about the Stack, please contact Jupiter"
+  utter_nohelp:
+    - text: "For now that's all I can do, so feel free to try it out. If you have any suggestions for what I should learn, let me know!"
+  utter_thumbsup:
+    - text: "Ok"
+    - text: "Okay."
+    - text: "Got it."
+  utter_ask_isbot:
+    - text: "Yep, i am!"
+  utter_cant_answer_tech_question:
+    - text: "I can't answer that."
+  utter_no_email:
+    - text: "Hmm, I'm not sure that's a valid email, please make sure to include the full address."
+  utter_anything_else:
+    - text: "Is there anything else I can help you with?"
+  utter_ask_for_nlu_specifics:
+    - text: "Anything in particular, e.g. intent classification or entity recognition?"
+  utter_dont_know_nlu_part:
+    - text: "Hmm, seems like I haven't learned about that part of NLU yet!"
+  utter_what_language:
+    - text: "What language is your bot in?"
+  utter_source_code:
+    - text: "To have the source code please contact jupiter."
+  utter_what_help:
+    - text: "Ok, what can I help you with?"
+  utter_getstarted:
+    - text: "To determine how I can help you best, I'm going to ask you a few questions."
+  utter_first_bot_with_rasa
+    - text: "Have you tried this demonstration before?"
+  utter_explain_stack:
+    - text: "Alright, I'll briefly explain the demonstrator NLU Stack then."
+  utter_stack_details:
+    - text: "The demonstrator NLU Stack is a framework to build contextual AI assistants for industrial machines and
+    cyber-physical systems. It is based on three open source libraries (snowboy, mozzilla deepspech and RASA). Using machine learning, this solution can hold contextual conversations with production machines."
+  utter_explain_demonstratorcore:
+    - text: "Would you like to know more about the FAPS demonstrator NLU?"
+  utter_explain_nlu:
+    - text: 'The demonstrator NLU performs Natural Language Understanding, which means taking free-form text like "Please send the confirmation to amy@example.com" and turning it into machine code.'
+  utter_explain_core:
+    - text: "The demonstrator NLU Core performs dialog management, which means keeping track of a conversation, and deciding how to proceed."
+  utter_also_explain_nlu:
+    - text: "Would you also like me to explain the demonstrator NLU?"
+  utter_also_explain_core:
+    - text: "Would you also like me to explain the demonstrator NLU Core?"
+  utter_suggestion:
+    - text: "Plese suggest"
+  utter_thank_suggestion:
+    - text: "Thanks for the suggestion!"
+  utter_ask_howold:
+    - text: "42."
+    - text: "Old enough to be a bot."
+    - text: "Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter."
+  utter_ask_languagesbot:
+    - text: "I can spell baguette in French, but unfortunately English is the only language I can answer you in."
+    - text: "I am in the process of learning, but at the moment I can only speak English."
+  utter_ask_wherefrom:
+    - text: "I was born in Erlangen, but I consider myself a citizen of the world."
+    - text: "I was born in the coolest city on Earth."
+  utter_ask_whoami:
+    - text: "I hope you are being yourself."
+  utter_handleinsult:
+    - text: "That’s not very nice."
+  utter_nicetomeeyou:
+    - text: "Thank you. It is a pleasure to meet you as well!"
+    - text: "It is nice to meet you too!"
+    - text: "Pleased to meet you too!"
+    - text: "Likewise!"
+  utter_joke:
+    - text: "Why are eggs not very much into jokes? - Because they could crack up."
+    - text: "Do you know a tree’s favorite drink? - Root beer!"
+    - text: "Why do the French like to eat snails so much? - They can’t stand fast food."
+  utter_ask_whatismyname:
+    - text: "It's probably the one that your parents chose for you."
+  utter_ask_howbuilt:
+    - text: "I was built with a lot of love and patience."
+  utter_ask_describe_problem:
+    - text: "Can you describe the problem you're having?"
+  utter_direct_to_step4:
+    - text: "The next step is to contact Jupiter."
+  utter_ask_if_problem:
+    - text: "Do you have a problem?"
+  utter_get_started_step1:
+    - text: "I can give you more information on the faps demonstrator NLU and its components."
+  utter_get_started_step2:
+    - text: "I can help you diagnose your production machine"
+  utter_get_started_step3:
+    - text: "I can help you understand your."
+  utter_ask_voice:
+    - text:  "Yes, that is possible!"
+  utter_getstarted_new:
+    - text: "I see you're new, let me ask you a quick question before I help you get started:"
+  utter_thanks_for_feedback:
+    - text: "Thanks! Check out our website, some of the smart people from our department can answer your questions there."
+  utter_not_sure:
+    - text: "Hmm, not sure what you mean..."
+  utter_react_negative:
+    - text: "That is bad."
+  utter_react_positive:
+    - text: "Good"
+  utter_get_started_step4:
+    - text: "As a developer you will be part of a huge community. You can ask me which events we have planned, how to contribute."
+  utter_direct_step3:
+    - text: "If you have no questions, you can  go to the next step once you're ready. Or when you're finished asking questions, you can say 'take me to the next step' at any point"
+  utter_continue_step3:
+    - text: "Let's continue."
+  utter_direct_to_step2:
+    - text: "You can go to the next step and ask a question once you're ready."
+  utter_continue_step2:
+    - text: "Let's continue."
+  utter_continue_step4:
+    - text: "Let's continue to the next step."
+  utter_no_more_steps:
+    - text: "Looks like you've already completed all the steps!"
+  utter_explain_job_function:
+    - text: "Your job function helps us in understanding how we can talk to you best."
+  utter_explain_use_case:
+    - text: "In order to help you best, we need to know what you want to do."
+  utter_explain_budget:
+    - text: "If you tell us your budget, we can prepare a package that fits you best."
+  utter_explain_person_name:
+    - text: "To be able to contact you later on, we would like to know your name."
+  utter_explain_company:
+    - text: "Just for completeness."
+  utter_explain_business_email:
+    - text: "We need your business email to contact you afterwards. Otherwise, we cannot help you."
+  

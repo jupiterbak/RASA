@@ -1,0 +1,508 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [],
+    "common_examples": [
+      {
+        "text": "have to go gtg",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "thank you bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye Tobi",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "going out bye for now",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye robot",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye thanks",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye for now",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "leaving gtg",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "leaving Goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "chau Tobi",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "ttyl Tobi",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "thank you ttyl",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "im leaving now ttyl",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye for now thank you",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "got to go adios",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "farewell",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "gotta go chao",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "heading out bye for now",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "thank you have a nice day",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Goodbye Mister",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "chau thanks",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "going out have a nice day",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "gotta go goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye for now robot",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "chau you",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "talk to you later Goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "gtg you",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye folks",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "talk to you soon adios",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "gotta go gtg",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye thanks",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Goodbye thank you",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "heading out gtg",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "we'll speak soon Goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "adios demonstrator",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "gotta go Goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye demonstrator",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "See you adios",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "im leaving now chao",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "chau demonstrator",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "thank you goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "ttyl friend",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "adios Mister",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye you",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye robot",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "talk to you soon adieu",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "chao folks",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "adieu demonstrator",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "adieu",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "talk to you later chao",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "thanks gtg",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "leaving bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "See you later gtg",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "got to go ttyl",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "talk to you soon Goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "thank you adios",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye for now folks",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "ttyl you",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "adios everybody",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Goodbye you",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "have a nice day folks",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "going out farewell",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "farewell thank you",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye for now Mister",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "got to go goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "talk to you later chau",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "i'm off ttyl",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "adieu Mister",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "talk to you later ttyl",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "See you gtg",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "thanks adios",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "we'll speak soon adios",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "leaving adios",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "talk to you later bye for now",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "thanks chao",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "i'm off adieu",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "ttyl bro",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "going out ttyl",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "See you later bye for now",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "we'll speak soon bye for now",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Goodbye demonstrator",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "chao demonstrator",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "adieu Tobi",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye Mister",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye for now pal",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "have a nice day you",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "thanks ttyl",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Goodbye bro",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Goodbye everybody",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "ttyl",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "heading out bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "going out",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "chao Mister",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "ttyl robot",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "we'll speak soon chau",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "farewell Mister",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye for now everybody",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "i'm off adios",
+        "intent": "goodbye",
+        "entities": []
+      }
+    ]
+  }
+}

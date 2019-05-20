@@ -1,0 +1,679 @@
+## intent:enter_data
+- 100k
+- 100k
+- 240k/year
+- 150,000 USD
+- 150,000$/ year
+- around $500,000 per year
+- we plan with 250.000 euro for one year
+- bout 4,000,000 INR
+- 50,000,000 INR
+- 60 million INR
+- we think 4 million INR/ year
+- between 100 to 200.000
+- 50,000 dollar
+- not sure yet, we plan with 50 thousand euro at the moment
+- 75000-150000 euro
+- our estimation is 10k
+- I work for [Bayer](company)
+- I work for [FAPS](company)
+- I work for [faps](company)
+- The name of the company is [Daimler](company)
+- company: [uber](company)
+- it's a small company from the US, the name is [Microsoft](company)
+- it's a tech company, [apple](company)
+- [microsoft](company)
+- [clue](company)
+- [SAP](company)
+- [IBM](company)
+- [t-mobile US](company)
+- [vodafone](company)
+- [accenture](company)
+- [McKinsey Germany](company)
+- [BCG brazil](company)
+- [BCG digital ventures](company)
+- I work for [Stanford University](company)
+- I work for the [AI research group of the turing centre of the UBC, Vancouver, Canada](company)
+- maxmeier@firma.de
+- bot-fan@bots.com
+- maxmeier@firma.de
+- bot-fan@bots.com
+- my email is email@rasa.com
+- my email is markjobs@ibm.com
+- my email is khardik.kmosu@bol.net.in
+- my business mail is mikemiller@sales.apple.com
+- email = stephanywhite@microsoft.com
+- mail: julianfrank@hotmail.com
+- santaklaus@googlemail.com
+- saswatkarhar@rediffmail.com
+- nerd@stanford.edu
+- alexander.denker@tu-berlin.de
+- sislawawa@india.com
+- chengming@aliyun.com
+- solomq122@qq.mail.com
+- [Product Manager](job_function)
+- I'm a [product manager](job_function)
+- I work as a [project manager](job_function)
+- I'm the [developer](job_function)
+- [data analyst](job_function)
+- [data scientist](job_function)
+- [dev](job_function)
+- [engineer](job_function)
+- [brand manager](job_function)
+- [marketing](job_function)
+- [sales manager](job_function)
+- [growth manager](job_function)
+- [CTO](job_function)
+- [CEO](job_function)
+- [COO](job_function)
+- [assistant to the CEO](job_function)
+- I'm the [lead engineer](job_function)
+- I'm a [python developer](job_function)
+- I'm an [AI researcher](job_function)
+- [Max Meier](name)
+- My name is [Max Meier](name)
+- [Ralph White](name)
+- I'm [Tom Miller](name)
+- [Ann Snyder](name)
+- [Victoria McMillan](name)
+- [Denise Perry](name)
+- [Bob Geldorf](name)
+- [Susan Catterfeld](name)
+- [Taylor Shwed](name)
+- [Meredith Grey](name)
+- [Alex Karev](name)
+- we're building a conversational assistant for our production machines.
+- I work in [project management](job_function)
+- i'm a developer
+- my name is [linda](name)
+- I work in [innvoation](job_function)
+- my job function is [developer](job_function)
+- I am responsible for our [innovation department](job_function)
+- I work as a [frontend dev](job_function)
+- [project manager](job_function)
+- I'm a [project manager](job_function)
+- I'm [project manager](job_function)
+- it's foo@bar.com
+- 10000000
+- [ACME Mops](company)
+- mrmop@mops.app
+- 5 bucks
+- I'm a [janitor](job_function)
+- My email is linda@linda.linda
+- I wanna build a bot that sends the people cute animal pictures based on their favorite color
+- I'm a [developer](job_function)
+- I want to build a cool bot
+- my emayl is yolo at yolo.de
+- [manager](job_function)
+- adele@gmx.com
+- my name is [marc](name)
+- one trillion dollar
+- I'm a [full stack developer](job_function:full stack developer)
+- moabit@yoga.com
+- it's the [moabit yoga studio](company)
+- my name is [oli miller](name)
+- 100000k
+- I'm in [project mgmt](job_function)
+- 10000 dollars
+- 400 trilion
+- philipp@superphilipp.philipp
+- I'm in [business](job_function)
+- 5 mln
+- [Alex](name:alex)
+- my name is [loretta meier](name)
+- I wanna build a super bot to send me cute animal pictures
+- 10000k
+- [Developer](job_function:developer)
+- I want to build a sales bot
+- 50k
+- I want to build a bot
+- a chatbot for mops - mopbot
+- [Mr. Mop](name)
+- loretta@strawberry-ice.come because I work in the department for strawberry ice
+- the ice cream factory is the company
+- not sure yet
+- 2 euro
+- [Philip](name)
+- [Bosch](company)
+- [Siemens](company)
+- [FAPS](company)
+- I want to build a bot for my machine
+- I'm a [python developer](job_function)
+- [Jim](name)
+- hello@hello.com
+- I want to build a lot of different bots
+- I'm a [machine learning engineer](job_function)
+- we don't have one
+- hi@rasa.com
+- [Helvetia](company)
+- [Jim Halpert](name)
+- I want to build a health insurance bot
+- I'm a [software engineer](job_function)
+- [John Smith](name)
+- [Jenny](name)
+- [douglas](company)
+- [klaus klausson](name)
+- 5 euros
+- i'd like to build a transformer
+- i'm a [race car driver](job_function)
+- klausimausi@apple.com
+- ifuckrobots666@apple.com
+- my name is [saswat](name)
+- i am [self emplayed](job_function)
+- a sentient robot
+- [rasa](company)
+- i have none
+- one bot
+- akela@philipp.com
+- i want to build a bot
+- oov
+- My budget is oov
+- My email is oov
+- oov per year
+- the name of the company is oov
+- I work for oov
+- [Akela](name)
+- a health bot
+- help@help.com
+- i'm a [developer](job_function)
+- i want to build a intelligent bot
+- 200k
+- My name is [Alex](name)
+- [Rasa](company)
+- test@test.com
+- 2000k
+- I'm [Akela](name)
+- i want to build all the bots
+- 20k
+- i want to build bots
+- [developer](job_function)
+- a cool bot
+- [Developer Advocate](job_function)
+- [reddit](company)
+- a bot
+- philipp@thephilippcompany.com
+- [philipp company](company)
+- [philipp](name)
+- i want to built a philipp bot
+- joey@koolmanconsulting.com
+- one which asks me loads about myself
+- chief nerd at rasa technologies
+- [Elise](name)
+- myemail@gmail.com
+- 123@skdv.fvsdj
+- i don't have one
+- have no idea
+- I do not know yet
+- ulrikovitcheisenkleber@eisenkleberlimitedcokg.com
+- eisenkleber limited co kg
+- ulrikovitch eisenkleber
+- don't have one
+- [designer](job_function)
+- a pizza bot
+- operations
+- none i will build it from scraps
+- no idea
+- [Vladimir](name)
+- around 200k
+- i want to build a bot about me
+- i'm a [dev](job_function)
+- i don't have it
+- i want to build an insurance bot
+- [product manager](job_function)
+- help@rasa.com email
+- [BBC](name)
+- i wanna build all the bots
+- i'm a [product manager](job_function)
+- [Freya](name)
+- 300k number
+- i work in [biz dev](job_function)
+- my email is kevin@yoloooz.de
+- [ceo](job_function)
+- a sales bot
+- 200000000
+- [linda](name)
+- linda@mail.com
+- none
+- i don't know
+- [Zendesk](company)
+- [Jacqueline](name)
+- 123@gmail.com
+- udo@udo.ai
+- hey@kldpeffesfoken.oinwf
+- Evaluate Rasa :-)
+- The master of desaster
+- [head of biz deve](job_function)
+- [Udo](name)
+- [Udo.AI](company)
+- maybe then instead alex+rasarasa@rasa.com
+- can you try alex+123@rasa.com instead?
+- linda@yoloyolo.de
+- [Linda](name)
+- problem solving
+- a chocolate bot
+- a good one?
+- elise
+- elise@gmail.com
+- a customer service support system
+- one that flatters me every morning
+- I'm the boss
+- 90k
+- Rasa bot
+- i'm [donezo](name)
+- my function is [to serve butter](job_function)
+- [wurst co kg](company)
+- [No company](company)!!
+- [I am a freelancer](company)
+- [Foudner](job_function)
+- linda@linda.com
+- i'm in [customer success](job_function)
+- i'm [head of sales](job_function)
+- [linda's company](company)
+- a akela bot
+- i'm in [sales](job_function)
+- I work for the [New York Times](company)
+- the [New York Times](company)
+- [Ali Park](name)
+- 1 million
+- I'm an [engineer](job_function)
+- it's [Ali Park](name)
+- 2 million
+- ali@nytimes.com
+- I work for the [new york times](company)
+- I work at the [NYT](company)
+- there is no budget
+- i'm a [develope](job_function)
+- lead generation
+- 100000
+- im in [marketing](job_function)
+- linda@rasa.ai
+- yesplease@yes.com
+- SCALABLE MINDS (company)
+- My name is [Tom](name)
+- 500k
+- I would like to build an ice cube dispenser bot
+- I'm a [business woman](job_function)
+- 0
+- im a [developer](job_function)
+- a great one
+- one that will get me promoted
+- conversational
+-  propella@daskapital.de
+- [Bolschewistische Kurkapelle Schwarz-Rot](company)
+- [akela propella](name)
+- schlabberjimmy@glibberglitter.edu
+- i'm a glibber and glitter salesman
+- schnuffelknuddelbaerchen33@rasa.de
+- i have about 200 bucks in my savings account
+- None
+- 200 bucks
+- i'd like to build sentient glibber or glitter
+- bigassnerd@rasa.com
+- [sam](name)
+- like 60 quid
+- nothing
+- tamedmouse@micerevolution.fr
+- volodimir@rasa.com
+- [volodimir voldemarich](name)
+- idk
+- the bot that helps you choose insurance for the car ;)
+- [ml researcher](job_function)
+- junk@junk.com
+- j@p.com
+- i don't think either of those
+- ok I'm actually an [engineer](job_function)
+- al@acme.org
+- [ACME brands](company)
+- [Al Capone](name)
+- £50k
+- the bot should help with HR stuff
+- I'm a bot [developer](job_function)
+- none@none.co.uk
+- [Juste P](name)
+- 50
+- I am a [Data Scientist](job_function)
+- I am a [head of business intelligence](job_function)
+- my own
+- $1
+- juste@juste.com
+- [Juste](name)
+- 1 euro
+- a bot which sends cute shiba pictures
+- [developer advocate](job_function)
+- shiba@shiba.com
+- tylerthemateman@clubmate.com
+- [Tyler](company)
+- I'm a [construction worker](job_function)
+- I want to build a kick ass bot
+- 1 million big ones
+- [Club Mate](company)
+- me@me.com
+- herbert@gmail.com
+- Herbert
+- 10 m
+- chief lemonade officer
+- a cool boy
+- an ice cream bot
+- 500 million
+- my name is [jimmy](name)
+- half a million
+- it's [akela](name)
+- [AI researcher](job_function)
+- a big ol transformer
+- big old bot
+- hi@elise.de
+- ulle@gmx.de
+- [CSI](company)
+- 5 quid
+- me@you.de
+- i am a [projject manager](job_function)
+- 120000
+- akela@akela.com
+- akela's company
+- [akela](name)
+- one billion
+- an akela bot that I can talk to akela all the time
+- i'm in [marketing](job_function)
+- ACME bank (company)
+- [Alan](name)
+- about 10 k
+- i want a great bot to impress my boss
+- one like this
+- badass bot tester
+- a bot to get a promotion
+- im a [dev](job_function)
+- 10
+- I'm a real good [engineer](job_function)
+- [James](name)
+- ames@rasa.com
+- valid_email@one.de
+- valid@one.email
+- unemployed
+- on that will get me promoted
+- I spend money
+- it's 500000000
+- A wolf bot
+- [akilla](name)
+- a turtle
+- i sell turtles
+- 123@akela.com
+- An ice cube bot
+- jimmy neutron industries
+- ok its email@email.com
+- Im a [full stack developer](job_function)
+- akelaistcool@schwabenländle.de
+- spam bot
+- the bot like you
+- picking my nose
+- im a [freelancer](job_function)
+- health care
+- something to talk to my friends while I'm busy working
+- my bot is in [english](language)
+- the language is [english](language)
+- it’s in [english](language)
+- [english](language)
+- [english](language) is the language of my bot
+- it speaks [english](language)
+- I wrote it in [english](language)
+- it’s an [english](language) bot
+- it is in [english](language)
+- user can talk to my bot in [english](language)
+- the people speak [english](language)
+- user can communicate with the bot in [english](language)
+- the assistant is in [english](language)
+- the language of the ai assistant is [english](language)
+- the bot speaks [english](language)
+- the assistant speaks [english](language)
+- it’s available in [english](language)
+- until now it’s only in [english](language)
+- so far it only speaks [english](language)
+- [english](language) is the only language but I want to add more
+- it’s only in [english](language) but I plan to train it in other languages
+- language: [english](language)
+- language = [english](language)
+- its an [english](language) bot
+- I’ve trained it in [english](language)
+- all the training data was in [english](language)
+- it’s trained in [english](language)
+- it’s trained only in [english](language)
+- my bot is in [german](language)
+- the language is [german](language)
+- it’s in [german](language)
+- [german](language)
+- [german](language) is the language of my bot
+- it speaks [german](language)
+- I wrote it in [german](language)
+- it’s an [german](language) bot
+- it is in [german](language)
+- user can talk to my bot in [german](language)
+- the people speak [german](language)
+- user can communicate with the bot in [german](language)
+- the assistant is in [german](language)
+- the language of the ai assistant is [german](language)
+- the bot speaks [german](language)
+- the assistant speaks [german](language)
+- it’s available in [german](language)
+- until now it’s only in [german](language)
+- so far it only speaks [german](language)
+- [german](language) is the only language but I want to add more
+- it’s only in [german](language) but I plan to train it in other languages
+- language: [german](language)
+- language = [german](language)
+- its an [german](language) bot
+- I’ve trained it in [german](language)
+- all the training data was in [german](language)
+- it’s trained in [german](language)
+- it’s trained only in [german](language)
+- my bot is in [spanish](language)
+- the language is [spanish](language)
+- it’s in [spanish](language)
+- [spanish](language)
+- [spanish](language) is the language of my bot
+- it speaks [spanish](language)
+- I wrote it in [spanish](language)
+- it’s an [spanish](language) bot
+- it is in [spanish](language)
+- user can talk to my bot in [spanish](language)
+- the people speak [spanish](language)
+- user can communicate with the bot in [spanish](language)
+- the assistant is in [spanish](language)
+- the language of the ai assistant is [spanish](language)
+- the bot speaks [spanish](language)
+- the assistant speaks [spanish](language)
+- it’s available in [spanish](language)
+- until now it’s only in [spanish](language)
+- so far it only speaks [spanish](language)
+- [spanish](language) is the only language but I want to add more
+- it’s only in [spanish](language) but I plan to train it in other languages
+- language: [spanish](language)
+- language = [spanish](language)
+- its an [spanish](language) bot
+- I’ve trained it in [spanish](language)
+- all the training data was in [spanish](language)
+- it’s trained in [spanish](language)
+- it’s trained only in [spanish](language)
+- my bot is in [portuguese](language)
+- the language is [portuguese](language)
+- it’s in [portuguese](language)
+- [portuguese](language)
+- [portuguese](language) is the language of my bot
+- it speaks [portuguese](language)
+- I wrote it in [portuguese](language)
+- it’s an [portuguese](language) bot
+- it is in [portuguese](language)
+- user can talk to my bot in [portuguese](language)
+- the people speak [portuguese](language)
+- user can communicate with the bot in [portuguese](language)
+- the assistant is in [portuguese](language)
+- the language of the ai assistant is [portuguese](language)
+- the bot speaks [portuguese](language)
+- the assistant speaks [portuguese](language)
+- it’s available in [portuguese](language)
+- until now it’s only in [portuguese](language)
+- so far it only speaks [portuguese](language)
+- [portuguese](language) is the only language but I want to add more
+- it’s only in [portuguese](language) but I plan to train it in other languages
+- language: [portuguese](language)
+- language = [portuguese](language)
+- its an [portuguese](language) bot
+- I’ve trained it in [portuguese](language)
+- all the training data was in [portuguese](language)
+- it’s trained in [portuguese](language)
+- it’s trained only in [portuguese](language)
+- my bot is in [french](language)
+- the language is [french](language)
+- it’s in [french](language)
+- [french](language)
+- [french](language) is the language of my bot
+- it speaks [french](language)
+- I wrote it in [french](language)
+- it’s an [french](language) bot
+- it is in [french](language)
+- user can talk to my bot in [french](language)
+- the people speak [french](language)
+- user can communicate with the bot in [french](language)
+- the assistant is in [french](language)
+- the language of the ai assistant is [french](language)
+- the bot speaks [french](language)
+- the assistant speaks [french](language)
+- it’s available in [french](language)
+- until now it’s only in [french](language)
+- so far it only speaks [french](language)
+- [french](language) is the only language but I want to add more
+- it’s only in [french](language) but I plan to train it in other languages
+- language: [french](language)
+- language = [french](language)
+- its an [french](language) bot
+- I’ve trained it in [french](language)
+- all the training data was in [french](language)
+- it’s trained in [french](language)
+- it’s trained only in [french](language)
+- my bot is in [dutch](language)
+- the language is [dutch](language)
+- it’s in [dutch](language)
+- [dutch](language)
+- [dutch](language) is the language of my bot
+- it speaks [dutch](language)
+- I wrote it in [dutch](language)
+- it’s an [dutch](language) bot
+- it is in [dutch](language)
+- user can talk to my bot in [dutch](language)
+- the people speak [dutch](language)
+- user can communicate with the bot in [dutch](language)
+- the assistant is in [dutch](language)
+- the language of the ai assistant is [dutch](language)
+- the bot speaks [dutch](language)
+- the assistant speaks [dutch](language)
+- it’s available in [dutch](language)
+- until now it’s only in [dutch](language)
+- so far it only speaks [dutch](language)
+- [dutch](language) is the only language but I want to add more
+- it’s only in [dutch](language) but I plan to train it in other languages
+- language: [dutch](language)
+- language = [dutch](language)
+- its an [dutch](language) bot
+- I’ve trained it in [dutch](language)
+- all the training data was in [dutch](language)
+- it’s trained in [dutch](language)
+- it’s trained only in [dutch](language)
+- my bot is in [italian](language)
+- the language is [italian](language)
+- it’s in [italian](language)
+- [italian](language)
+- [italian](language) is the language of my bot
+- it speaks [italian](language)
+- I wrote it in [italian](language)
+- it’s an [italian](language) bot
+- it is in [italian](language)
+- user can talk to my bot in [italian](language)
+- the people speak [italian](language)
+- user can communicate with the bot in [italian](language)
+- the assistant is in [italian](language)
+- the language of the ai assistant is [italian](language)
+- the bot speaks [italian](language)
+- the assistant speaks [italian](language)
+- it’s available in [italian](language)
+- until now it’s only in [italian](language)
+- so far it only speaks [italian](language)
+- [italian](language) is the only language but I want to add more
+- it’s only in [italian](language) but I plan to train it in other languages
+- language: [italian](language)
+- language = [italian](language)
+- its an [italian](language) bot
+- I’ve trained it in [italian](language)
+- all the training data was in [italian](language)
+- it’s trained in [italian](language)
+- it’s trained only in [italian](language)
+- my bot is in [mandarin](language)
+- the language is [mandarin](language)
+- it’s in [mandarin](language)
+- [mandarin](language)
+- [mandarin](language) is the language of my bot
+- it speaks [mandarin](language)
+- I wrote it in [mandarin](language)
+- it’s an [mandarin](language) bot
+- it is in [mandarin](language)
+- user can talk to my bot in [mandarin](language)
+- the people speak [mandarin](language)
+- user can communicate with the bot in [mandarin](language)
+- the assistant is in [mandarin](language)
+- the language of the ai assistant is [mandarin](language)
+- the bot speaks [mandarin](language)
+- the assistant speaks [mandarin](language)
+- it’s available in [mandarin](language)
+- until now it’s only in [mandarin](language)
+- so far it only speaks [mandarin](language)
+- [mandarin](language) is the only language but I want to add more
+- it’s only in [mandarin](language) but I plan to train it in other languages
+- language: [mandarin](language)
+- language = [mandarin](language)
+- its an [mandarin](language) bot
+- I’ve trained it in [mandarin](language)
+- all the training data was in [mandarin](language)
+- it’s trained in [mandarin](language)
+- it’s trained only in [mandarin](language)
+- my bot is in [chinese](language)
+- the language is [chinese](language)
+- it’s in [chinese](language)
+- [chinese](language)
+- [chinese](language) is the language of my bot
+- it speaks [chinese](language)
+- I wrote it in [chinese](language)
+- it’s an [chinese](language) bot
+- it is in [chinese](language)
+- user can talk to my bot in [chinese](language)
+- the people speak [chinese](language)
+- user can communicate with the bot in [chinese](language)
+- the assistant is in [chinese](language)
+- the language of the ai assistant is [chinese](language)
+- the bot speaks [chinese](language)
+- the assistant speaks [chinese](language)
+- it’s available in [chinese](language)
+- until now it’s only in [chinese](language)
+- so far it only speaks [chinese](language)
+- [chinese](language) is the only language but I want to add more
+- it’s only in [chinese](language) but I plan to train it in other languages
+- language: [chinese](language)
+- language = [chinese](language)
+- its an [chinese](language) bot
+- I’ve trained it in [chinese](language)
+- all the training data was in [chinese](language)
+- it’s trained in [chinese](language)
+- it’s trained only in [chinese](language)
+- i want to extract [names](entity:name)
+- [places](entity:place)
+- [companies](entity:organisation)
+- get [dates](entity:date) from messages
+- a [place](entity)
+- [places](entity:place) and [names](entity:name)
+- [amounts](entity:money)
+- [how long](entity:duration)
+- extracting [durations](entity:duration)
+- [distances](entity:distance)
+- I want to use [pip](package_manager)
+- [pip](package_manager)
+- [conda](package_manager)
+- i use [anaconda](package_manager)
+- please give me instructions for [pip](package_manager)
+- please [conda](package_manager)
+- [pip](package_manager) please

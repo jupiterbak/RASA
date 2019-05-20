@@ -1,0 +1,258 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [],
+    "common_examples": [
+      {
+        "text": "hello! greetings how are you doing",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello! greetings how are things going",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hallo greetings how are you",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey good afternoon whats up",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello good afternoon are you around",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello morning are you around",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "greetings how are things going",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello! good afternoon how are you",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hallo good day are you around?",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi good day whats up",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello good night whatsup",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey how are things going",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey good day whats up",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hallo good night are you around",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hallo good morning sup",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello! good afternoon whats up",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hallo whatsup",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey greetings are you around?",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello good night how is it going",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey good day how are you",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello! greetings na?",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello how is it going",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello! good day how is it going",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hallo morning sup",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello! good night are you around?",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good morning are you around?",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi good afternoon",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello! good night",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello! morning whatsup",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hallo good night whats up",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello! how are you",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello greetings whatsup",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "greetings how are you",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hallo good night na?",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good night how are things going",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey good morning are you around?",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good afternoon sup",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello good afternoon how are you",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello good afternoon na?",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good night are you there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello! good night sup",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello good afternoon whats up",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi good day sup",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey good night na?",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hallo greetings are you there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi greetings whats up",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good night are you around",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello! greetings are you there",
+        "intent": "greet",
+        "entities": []
+      }
+    ]
+  }
+}
