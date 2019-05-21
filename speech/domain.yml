@@ -177,6 +177,7 @@ actions:
   - utter_explain_person_name
   - utter_explain_company
   - utter_explain_business_email
+  - utter_what_help
   - action_chitchat
   - action_pause
   - action_greet_user
