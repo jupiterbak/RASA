@@ -1,0 +1,20 @@
+## intent:ask_privacy_policy
+- What is the privacy policy?
+- Resume the policy, please
+- What about privacy?
+- show me the policies?
+- policies?
+- policy
+- privacy policy
+- tell me about the privacy policy
+- I want to learn about privacy policy
+- what is privacy policy
+- I checked the documentation on the privacy policy but I still don’t understand it
+- an explanation of how on the privacy policy
+- resume the privacy policy
+- explain me the privacy policy
+- What is special about the privacy policy
+- privacy policy?
+- What is the privacy policy?
+- show me the policy
+- Tell me more about the policy

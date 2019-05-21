@@ -31,3 +31,5 @@
 - how about the demonstrator
 - tell me about the demonstrator please
 - what is this faps demonstrator thing?
+- how can i start
+- how to

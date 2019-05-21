@@ -1,0 +1,39 @@
+## intent:ask_whatismyname
+- what is my name?
+- May i know my name?
+- What is my name?
+- What do I call myself?
+- Tell me my name.
+- Explain my name to me.
+- What could be my name?
+- What name do I go by?
+- What name should I recognize for myself?
+- what's my name?
+- can you tell me my name?
+- What is my name?
+- Do I have a name?
+- Do I have a name? What is it?
+- What was I named?
+- Say my name.
+- Do you know my name?
+- What do people call me?
+- Can you tell me my name?
+- What else do people call me?
+- I have a name, what is it?
+- Tell me my name
+- I'd like to know my name
+- Inform me what my name is
+- Please let me know what my name is
+- Can you tell me what I am called?
+- I'd like to know what my name is
+- What is the name I was given?
+- What does everyone call me?
+- What am I called?
+- What did my parents name me?
+- What do my colleagues call me?
+- What would be the name on my tombstone?
+- Do you know what my name is?
+- What is my first name?
+- What is my full name?
+- What do people call me?
+- What exactly is my name?

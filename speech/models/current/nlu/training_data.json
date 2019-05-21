@@ -1186,6 +1186,82 @@
         "text": "what foreign languages are you fluent in?"
       },
       {
+        "intent": "ask_privacy_policy",
+        "text": "What is the privacy policy?"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "Resume the policy, please"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "What about privacy?"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "show me the policies?"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "policies?"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "policy"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "privacy policy"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "tell me about the privacy policy"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "I want to learn about privacy policy"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "what is privacy policy"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "I checked the documentation on the privacy policy but I still don’t understand it"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "an explanation of how on the privacy policy"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "resume the privacy policy"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "explain me the privacy policy"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "What is special about the privacy policy"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "privacy policy?"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "What is the privacy policy?"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "show me the policy"
+      },
+      {
+        "intent": "ask_privacy_policy",
+        "text": "Tell me more about the policy"
+      },
+      {
         "intent": "ask_whatisdemonstrator",
         "text": "How does the demonstrator work?"
       },
@@ -1316,6 +1392,158 @@
       {
         "intent": "ask_whatisdemonstrator",
         "text": "What do you do as a company"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "what is my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "May i know my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What is my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What do I call myself?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Tell me my name."
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Explain my name to me."
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What could be my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What name do I go by?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What name should I recognize for myself?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "what's my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "can you tell me my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What is my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Do I have a name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Do I have a name? What is it?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What was I named?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Say my name."
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Do you know my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What do people call me?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Can you tell me my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What else do people call me?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "I have a name, what is it?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Tell me my name"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "I'd like to know my name"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Inform me what my name is"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Please let me know what my name is"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Can you tell me what I am called?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "I'd like to know what my name is"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What is the name I was given?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What does everyone call me?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What am I called?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What did my parents name me?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What do my colleagues call me?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What would be the name on my tombstone?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Do you know what my name is?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What is my first name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What is my full name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What do people call me?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What exactly is my name?"
       },
       {
         "intent": "ask_whatspossible",
@@ -9364,6 +9592,14 @@
         "text": "what is this faps demonstrator thing?"
       },
       {
+        "intent": "how_to_get_started",
+        "text": "how can i start"
+      },
+      {
+        "intent": "how_to_get_started",
+        "text": "how to"
+      },
+      {
         "intent": "joke",
         "text": "Can you tell me a joke?"
       },
@@ -9992,408 +10228,408 @@
         "entities": [
           {
             "start": 26,
-            "end": 44,
-            "value": "entity recognition",
-            "entity": "nlu_part"
+            "end": 46,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "can you explain to me how entity recognition works?"
+        "text": "can you explain to me how the demonstrator NLU works?"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 9,
-            "end": 27,
-            "value": "entity recognition",
-            "entity": "nlu_part"
+            "end": 29,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "how does entity recognition work?"
+        "text": "how does the demonstrator NLU work?"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 22,
-            "end": 40,
-            "value": "entity recognition",
-            "entity": "nlu_part"
+            "end": 42,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "an explanation of how entity recognition work would help"
+        "text": "an explanation of how the demonstrator NLU work would help"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 22,
-            "end": 40,
-            "value": "entity recognition",
-            "entity": "nlu_part"
+            "end": 42,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "I still don’t get how entity recognition works"
+        "text": "I still don’t get how the demonstrator NLU works"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 40,
-            "end": 58,
-            "value": "entity recognition",
-            "entity": "nlu_part"
+            "end": 60,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "it would be helpful to learn more about entity recognition"
+        "text": "it would be helpful to learn more about the demonstrator NLU"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 14,
-            "end": 32,
-            "value": "entity recognition",
-            "entity": "nlu_part"
+            "end": 34,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "tell me about entity recognition"
+        "text": "tell me about the demonstrator NLU"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 22,
-            "end": 40,
-            "value": "entity recognition",
-            "entity": "nlu_part"
+            "end": 42,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "I want to learn about entity recognition"
+        "text": "I want to learn about the demonstrator NLU"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 0,
-            "end": 18,
-            "value": "entity recognition",
-            "entity": "nlu_part"
+            "end": 20,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "entity recognition"
+        "text": "the demonstrator NLU"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 8,
-            "end": 26,
-            "value": "entity recognition",
-            "entity": "nlu_part"
+            "end": 28,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "what is entity recognition?"
+        "text": "what is the demonstrator NLU?"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 19,
-            "end": 37,
-            "value": "entity recognition",
-            "entity": "nlu_part"
+            "end": 39,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "I don’t understand entity recognition"
+        "text": "I don’t understand the demonstrator NLU"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 0,
-            "end": 18,
-            "value": "entity recognition",
-            "entity": "nlu_part"
+            "end": 20,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "entity recognition - what is that?"
+        "text": "the demonstrator NLU - what is that?"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 34,
-            "end": 52,
-            "value": "entity recognition",
-            "entity": "nlu_part"
+            "end": 54,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "I don’t understand how you handle entity recognition at Rasa"
+        "text": "I don’t understand how you handle the demonstrator NLU at Rasa"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 7,
-            "end": 25,
-            "value": "entity recognition",
-            "entity": "nlu_part"
+            "end": 27,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "how is entity recognition managed in rasa?"
+        "text": "how is the demonstrator NLU managed in rasa?"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 31,
-            "end": 49,
-            "value": "entity recognition",
-            "entity": "nlu_part"
+            "end": 51,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "I checked the documentation on entity recognition but I still don’t understand it"
+        "text": "I checked the documentation on the demonstrator NLU but I still don’t understand it"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 26,
-            "end": 47,
-            "value": "intent classification",
-            "entity": "nlu_part"
+            "end": 46,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "can you explain to me how intent classification works?"
+        "text": "can you explain to me how the demonstrator NLU works?"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 9,
-            "end": 30,
-            "value": "intent classification",
-            "entity": "nlu_part"
+            "end": 29,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "how does intent classification work?"
+        "text": "how does the demonstrator NLU work?"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 22,
-            "end": 43,
-            "value": "intent classification",
-            "entity": "nlu_part"
+            "end": 42,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "an explanation of how intent classification work would help"
+        "text": "an explanation of how the demonstrator NLU work would help"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 22,
-            "end": 43,
-            "value": "intent classification",
-            "entity": "nlu_part"
+            "end": 42,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "I still don’t get how intent classification works"
+        "text": "I still don’t get how the demonstrator NLU works"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 40,
-            "end": 61,
-            "value": "intent classification",
-            "entity": "nlu_part"
+            "end": 60,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "it would be helpful to learn more about intent classification"
+        "text": "it would be helpful to learn more about the demonstrator NLU"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 14,
-            "end": 35,
-            "value": "intent classification",
-            "entity": "nlu_part"
+            "end": 34,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "tell me about intent classification"
+        "text": "tell me about the demonstrator NLU"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 22,
-            "end": 43,
-            "value": "intent classification",
-            "entity": "nlu_part"
+            "end": 42,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "I want to learn about intent classification"
+        "text": "I want to learn about the demonstrator NLU"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 0,
-            "end": 21,
-            "value": "intent classification",
-            "entity": "nlu_part"
+            "end": 20,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "intent classification"
+        "text": "the demonstrator NLU"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 8,
-            "end": 29,
-            "value": "intent classification",
-            "entity": "nlu_part"
+            "end": 28,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "what is intent classification?"
+        "text": "what is the demonstrator NLU?"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 19,
-            "end": 40,
-            "value": "intent classification",
-            "entity": "nlu_part"
+            "end": 39,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "I don’t understand intent classification"
+        "text": "I don’t understand the demonstrator NLU"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 0,
-            "end": 21,
-            "value": "intent classification",
-            "entity": "nlu_part"
+            "end": 20,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "intent classification - what is that?"
+        "text": "the demonstrator NLU - what is that?"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 34,
-            "end": 55,
-            "value": "intent classification",
-            "entity": "nlu_part"
+            "end": 54,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "I don’t understand how you handle intent classification at Rasa"
+        "text": "I don’t understand how you handle the demonstrator NLU at Rasa"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 7,
-            "end": 28,
-            "value": "intent classification",
-            "entity": "nlu_part"
+            "end": 27,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "how is intent classification managed in rasa?"
+        "text": "how is the demonstrator NLU managed in rasa?"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 31,
-            "end": 52,
-            "value": "intent classification",
-            "entity": "nlu_part"
+            "end": 51,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "I checked the documentation on intent classification but I still don’t understand it"
+        "text": "I checked the documentation on the demonstrator NLU but I still don’t understand it"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 11,
-            "end": 19,
-            "value": "duckling",
-            "entity": "nlu_part"
+            "end": 31,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "do you use duckling"
+        "text": "do you use the demonstrator NLU"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 34,
-            "end": 42,
-            "value": "duckling",
-            "entity": "nlu_part"
+            "end": 54,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "I want to know if rasa works with duckling"
+        "text": "I want to know if rasa works with the demonstrator NLU"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 0,
-            "end": 8,
-            "value": "duckling",
-            "entity": "nlu_part"
+            "end": 20,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "duckling"
+        "text": "the demonstrator NLU"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 21,
-            "end": 29,
-            "value": "duckling",
-            "entity": "nlu_part"
+            "end": 41,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "how do you integrate duckling"
+        "text": "how do you integrate the demonstrator NLU"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 20,
-            "end": 28,
-            "value": "duckling",
-            "entity": "nlu_part"
+            "end": 40,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "does rasa work with duckling?"
+        "text": "does rasa work with the demonstrator NLU?"
       },
       {
         "intent": "nlu_info",
         "entities": [
           {
             "start": 3,
-            "end": 11,
-            "value": "duckling",
-            "entity": "nlu_part"
+            "end": 23,
+            "value": "the demonstrator NLU",
+            "entity": "module"
           }
         ],
-        "text": "is duckling part of rasa?"
+        "text": "is the demonstrator NLU part of rasa?"
       },
       {
         "intent": "nlu_info",
@@ -10402,7 +10638,7 @@
             "start": 0,
             "end": 7,
             "value": "intents",
-            "entity": "nlu_part"
+            "entity": "module"
           }
         ],
         "text": "intents"
@@ -10641,7 +10877,7 @@
       },
       {
         "intent": "out_of_scope",
-        "text": "are you using Rasa Core and NLU ?"
+        "text": "are you using the demonstrator Core and NLU ?"
       },
       {
         "intent": "out_of_scope",
@@ -10661,7 +10897,7 @@
       },
       {
         "intent": "out_of_scope",
-        "text": "who are the engineers at rasa?"
+        "text": "who are the engineers at FAPS?"
       },
       {
         "intent": "out_of_scope",
@@ -10781,7 +11017,7 @@
       },
       {
         "intent": "out_of_scope",
-        "text": "Is Rasa really smart?"
+        "text": "Is demonstrator NLU really smart?"
       },
       {
         "intent": "out_of_scope",
@@ -11258,6 +11494,14 @@
         "synonyms": [
           "UK",
           "U.K."
+        ]
+      },
+      {
+        "value": "policy",
+        "synonyms": [
+          "Policy",
+          "Policies",
+          "policies"
         ]
       }
     ]

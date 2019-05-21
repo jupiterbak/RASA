@@ -57,12 +57,12 @@
 - how are the kids
 - you're rather dull
 - personal or work?
-- are you using Rasa Core and NLU ?
+- are you using the demonstrator Core and NLU ?
 - tell me a joke
 - what else?
 - I already told you! I'm a shitmuncher
 - I'm a shitmuncher
-- who are the engineers at rasa?
+- who are the engineers at FAPS?
 - who are they?
 - can we keep chatting?
 - talk to me
@@ -92,7 +92,7 @@
 - please hurry, i have deadline in two weeks to deliver the bot it is for very big company
 - you are annoying
 - Do I have to accept?
-- Is Rasa really smart?
+- Is demonstrator NLU really smart?
 - kannst du auch deutsch?
 - are the newsletter worth the subscription?
 - it's a pity

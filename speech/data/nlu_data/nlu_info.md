@@ -1,36 +1,36 @@
 ## intent:nlu_info
-- can you explain to me how [entity recognition](nlu_part) works?
-- how does [entity recognition](nlu_part) work?
-- an explanation of how [entity recognition](nlu_part) work would help
-- I still don’t get how [entity recognition](nlu_part) works
-- it would be helpful to learn more about [entity recognition](nlu_part)
-- tell me about [entity recognition](nlu_part)
-- I want to learn about [entity recognition](nlu_part)
-- [entity recognition](nlu_part)
-- what is [entity recognition](nlu_part)?
-- I don’t understand [entity recognition](nlu_part)
-- [entity recognition](nlu_part) - what is that?
-- I don’t understand how you handle [entity recognition](nlu_part) at Rasa
-- how is [entity recognition](nlu_part) managed in rasa?
-- I checked the documentation on [entity recognition](nlu_part) but I still don’t understand it
-- can you explain to me how [intent classification](nlu_part) works?
-- how does [intent classification](nlu_part) work?
-- an explanation of how [intent classification](nlu_part) work would help
-- I still don’t get how [intent classification](nlu_part) works
-- it would be helpful to learn more about [intent classification](nlu_part)
-- tell me about [intent classification](nlu_part)
-- I want to learn about [intent classification](nlu_part)
-- [intent classification](nlu_part)
-- what is [intent classification](nlu_part)?
-- I don’t understand [intent classification](nlu_part)
-- [intent classification](nlu_part) - what is that?
-- I don’t understand how you handle [intent classification](nlu_part) at Rasa
-- how is [intent classification](nlu_part) managed in rasa?
-- I checked the documentation on [intent classification](nlu_part) but I still don’t understand it
-- do you use [duckling](nlu_part)
-- I want to know if rasa works with [duckling](nlu_part)
-- [duckling](nlu_part)
-- how do you integrate [duckling](nlu_part)
-- does rasa work with [duckling](nlu_part)?
-- is [duckling](nlu_part) part of rasa?
-- [intents](nlu_part)
+- can you explain to me how [the demonstrator NLU](module) works?
+- how does [the demonstrator NLU](module) work?
+- an explanation of how [the demonstrator NLU](module) work would help
+- I still don’t get how [the demonstrator NLU](module) works
+- it would be helpful to learn more about [the demonstrator NLU](module)
+- tell me about [the demonstrator NLU](module)
+- I want to learn about [the demonstrator NLU](module)
+- [the demonstrator NLU](module)
+- what is [the demonstrator NLU](module)?
+- I don’t understand [the demonstrator NLU](module)
+- [the demonstrator NLU](module) - what is that?
+- I don’t understand how you handle [the demonstrator NLU](module) at Rasa
+- how is [the demonstrator NLU](module) managed in rasa?
+- I checked the documentation on [the demonstrator NLU](module) but I still don’t understand it
+- can you explain to me how [the demonstrator NLU](module) works?
+- how does [the demonstrator NLU](module) work?
+- an explanation of how [the demonstrator NLU](module) work would help
+- I still don’t get how [the demonstrator NLU](module) works
+- it would be helpful to learn more about [the demonstrator NLU](module)
+- tell me about [the demonstrator NLU](module)
+- I want to learn about [the demonstrator NLU](module)
+- [the demonstrator NLU](module)
+- what is [the demonstrator NLU](module)?
+- I don’t understand [the demonstrator NLU](module)
+- [the demonstrator NLU](module) - what is that?
+- I don’t understand how you handle [the demonstrator NLU](module) at Rasa
+- how is [the demonstrator NLU](module) managed in rasa?
+- I checked the documentation on [the demonstrator NLU](module) but I still don’t understand it
+- do you use [the demonstrator NLU](module)
+- I want to know if rasa works with [the demonstrator NLU](module)
+- [the demonstrator NLU](module)
+- how do you integrate [the demonstrator NLU](module)
+- does rasa work with [the demonstrator NLU](module)?
+- is [the demonstrator NLU](module) part of rasa?
+- [intents](module)

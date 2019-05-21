@@ -28,3 +28,8 @@
 ## synonym:United Kingdom
 - UK
 - U.K.
+
+## synonym:policy
+- Policy
+- Policies
+- policies

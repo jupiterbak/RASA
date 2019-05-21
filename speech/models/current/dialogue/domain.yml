@@ -10,7 +10,6 @@ actions:
 - utter_ask_business_email
 - utter_ask_job_function
 - utter_ask_email
-- utter_ask_budget
 - utter_ask_company
 - utter_ask_goal
 - utter_response_why_email
@@ -41,6 +40,7 @@ actions:
 - utter_dont_know_nlu_part
 - utter_what_language
 - utter_source_code
+- utter_first_bot_with_rasa
 - utter_getstarted
 - utter_explain_stack
 - utter_stack_details
@@ -49,7 +49,6 @@ actions:
 - utter_explain_core
 - utter_also_explain_nlu
 - utter_also_explain_core
-- utter_built_bot_before
 - utter_suggestion
 - utter_ask_describe_problem
 - utter_direct_to_step4
@@ -79,7 +78,6 @@ actions:
 - utter_describe_step4
 - utter_direct_to_step2
 - utter_direct_step3
-- utter_explain_job_function
 - utter_explain_use_case
 - utter_explain_budget
 - utter_explain_person_name
@@ -92,24 +90,22 @@ actions:
 - action_default_ask_affirmation
 - utter_react_positive
 - utter_react_negative
+- utter_resume_privacy_policy
+- utter_ask_privacy_policy
+- utter_accept_privacy_policy
 - action_next_step
+- action_accept_privacy_policy
 config:
   store_entities_as_slots: true
 entities:
-- job_function
 - company
-- email
 - name
 - number
 - value
-- current_api
-- product
-- feedback_value
 - language
-- nlu_part
-- entity
-- package_manager
 - location
+- product
+- module
 forms:
 - subscribe_newsletter_form
 - suggestion_form
@@ -135,6 +131,8 @@ intents:
     use_entities: true
 - ask_whatisdemonstrator:
     use_entities: true
+- ask_whatismyname:
+    use_entities: true
 - ask_isbot:
     use_entities: true
 - ask_howold:
@@ -146,6 +144,8 @@ intents:
 - ask_whoami:
     use_entities: true
 - ask_howbuilt:
+    use_entities: true
+- ask_privacy_policy:
     use_entities: true
 - handleinsult:
     use_entities: true
@@ -190,42 +190,18 @@ intents:
 - explain:
     use_entities: true
 slots:
-  budget:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.UnfeaturizedSlot
   business_email:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
-  can_use_spacy:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.BooleanSlot
   company:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
-  current_api:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.CategoricalSlot
-    values:
-    - dialogflow
-    - luis
-    - alexa
   email:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
-  entity_extractor:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.CategoricalSlot
-    values:
-    - crfentityextractor
-    - spacyentityextractor
-    - ducklinghttpextractor
   feedback_message:
     auto_fill: true
     initial_value: null
@@ -237,34 +213,22 @@ slots:
     values:
     - positive
     - negative
-  job_function:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.UnfeaturizedSlot
   language:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
+  module:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   name:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
-  nlu_part:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.CategoricalSlot
-    values:
-    - entity recognition
-    - intent classification
-    - duckling
   onboarding:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.BooleanSlot
-  package_manager:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.TextSlot
   person_name:
     auto_fill: true
     initial_value: null
@@ -278,9 +242,8 @@ slots:
     initial_value: null
     type: rasa_core.slots.CategoricalSlot
     values:
-    - core
-    - nlu
-    - stack
+    - bottles
+    - motors
   requested_slot:
     auto_fill: true
     initial_value: null
@@ -294,10 +257,6 @@ slots:
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   suggestion:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.UnfeaturizedSlot
-  unknown_nlu_part:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
@@ -316,8 +275,6 @@ templates:
   - text: Would you also like me to explain the demonstrator NLU?
   utter_anything_else:
   - text: Is there anything else I can help you with?
-  utter_ask_budget:
-  - text: What's your annual budget for the FAPS demonstrator AI?
   utter_ask_builder:
   - text: The researchers at FAPS
   - text: 'One of the smart researcher at FAPS. In other words: Jupiter Bakakeu'
@@ -332,7 +289,8 @@ templates:
   utter_ask_for_nlu_specifics:
   - text: Anything in particular, e.g. intent classification or entity recognition?
   utter_ask_goal:
-  - text: Do you want more about the FAPS demonstrator? Please contact Jupiter Bakakeu
+  - text: Do you want to know more about the FAPS demonstrator? Please contact Matthias
+      Brossog.
   utter_ask_howbuilt:
   - text: I was built with a lot of love and patience.
   utter_ask_howdoing:
@@ -348,14 +306,15 @@ templates:
   - text: Do you have a problem?
   utter_ask_isbot:
   - text: Yep, i am!
-  utter_ask_job_function:
-  - text: What's your job?
   utter_ask_languagesbot:
   - text: I can spell baguette in French, but unfortunately English is the only language
       I can answer you in.
   - text: I am in the process of learning, but at the moment I can only speak English.
   utter_ask_name:
   - text: What's your name?
+  utter_ask_privacy_policy:
+  - text: Are you ok with the policy?
+  - text: I hope the policy suits you?
   utter_ask_use_case:
   - text: What kind of usecase  do you want to address with our solution?
   utter_ask_voice:
@@ -365,7 +324,8 @@ templates:
   utter_ask_whatismyname:
   - text: It's probably the one that your parents chose for you.
   utter_ask_whatspossible:
-  - text: You can contact FAPS for more.
+  - text: You can start a demonstration by asking me a question. Please be aware of
+      our privacy policy.
   utter_ask_wherefrom:
   - text: I was born in Erlangen, but I consider myself a citizen of the world.
   - text: I was born in the coolest city on Earth.
@@ -412,7 +372,7 @@ templates:
       Or when you're finished asking questions, you can say 'take me to the next step'
       at any point
   utter_direct_to_step2:
-  - text: You can go to the next step and try out again once you're ready.
+  - text: You can go to the next step and ask a question once you're ready.
   utter_direct_to_step4:
   - text: The next step is to contact Jupiter.
   utter_docu:
@@ -431,18 +391,18 @@ templates:
       track of a conversation, and deciding how to proceed.
   utter_explain_demonstratorcore:
   - text: Would you like to know more about the FAPS demonstrator NLU?
-  utter_explain_job_function:
-  - text: Your job function helps us in understanding how we can talk to you best.
   utter_explain_nlu:
   - text: The demonstrator NLU performs Natural Language Understanding, which means
       taking free-form text like "Please send the confirmation to amy@example.com"
-      and turning it into machine code.
+      and turning it into machine executable code.
   utter_explain_person_name:
   - text: To be able to contact you later on, we would like to know your name.
   utter_explain_stack:
   - text: Alright, I'll briefly explain the demonstrator NLU Stack then.
   utter_explain_use_case:
   - text: In order to help you best, we need to know what you want to do.
+  utter_first_bot_with_rasa:
+  - text: Have you tried this demonstration before?
   utter_get_started_step1:
   - text: I can give you more information on the faps demonstrator NLU and its components.
   utter_get_started_step2:
@@ -481,8 +441,8 @@ templates:
   utter_handleinsult:
   - text: That’s not very nice.
   utter_inform_privacypolicy:
-  - text: By using this software to me you agree to our privacy policy. Please ask
-      Jupiter for more information
+  - text: By using this software to me you agree to our privacy policy. A detailed
+      description of the policy can be downloaded from our homepage.
   utter_joke:
   - text: Why are eggs not very much into jokes? - Because they could crack up.
   - text: Do you know a tree’s favorite drink? - Root beer!
@@ -529,6 +489,13 @@ templates:
   utter_response_why_email:
   - text: I need your email address to sign you up.
   - text: I need it so that I can sign you up.
+  utter_resume_privacy_policy:
+  - text: The privacy policy states that all the data generated by this demonstration
+      will be used to improve my performance.
+  - text: In our policy all the data generated by this demonstration will be used
+      to improve my performance.
+  - text: 'In short term: I will use all the data generated by this demonstration
+      to improve my performance.'
   utter_source_code:
   - text: To have the source code please contact jupiter.
   utter_stack_details:
@@ -550,4 +517,4 @@ templates:
   utter_what_help:
   - text: Ok, what can I help you with?
   utter_what_language:
-  - text: What language is your bot in?
+  - text: What language are you speaking?

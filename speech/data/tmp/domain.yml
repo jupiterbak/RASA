@@ -16,7 +16,6 @@ intents:
   - ask_wherefrom
   - ask_whoami
   - ask_howbuilt
-  - ask_privacy_policy
   - handleinsult
   - nicetomeeyou
   - out_of_scope
@@ -41,22 +40,32 @@ intents:
 
 
 entities:
+  - job_function
   - company
+  - email
   - name
   - number
   - value
-  - language
-  - location
+  - current_api
   - product
-  - module
+  - feedback_value
+  - language
+  - nlu_part
+  - entity
+  - package_manager
+  - location
 
 
 slots:
+  budget:
+    type: unfeaturized
   company:
     type: unfeaturized
   email:
     type: unfeaturized
   business_email:
+    type: unfeaturized
+  job_function:
     type: unfeaturized
   person_name:
     type: unfeaturized
@@ -69,19 +78,44 @@ slots:
       - negative
   feedback_message:
     type: unfeaturized
+  current_api:
+    type: categorical
+    values:
+      - dialogflow
+      - luis
+      - alexa
   product:
     type: categorical
     values:
-      - bottles
-      - motors
+      - core
+      - nlu
+      - stack
   unknown_product:
     type: unfeaturized
+  nlu_part:
+    type: categorical
+    values:
+      - entity recognition
+      - intent classification
+      - duckling
+  unknown_nlu_part:
+    type: unfeaturized
+  can_use_spacy:
+    type: bool
+  entity_extractor:
+    type: categorical
+    values:
+      - CRFEntityExtractor
+      - SpacyEntityExtractor
+      - DucklingHTTPExtractor
   language:
     type: unfeaturized
   onboarding:
     type: bool
   suggestion:
     type: unfeaturized
+  package_manager:
+    type: text
   problem_description:
     type: text
   shown_privacy:
@@ -90,11 +124,10 @@ slots:
     type: text
   step:
     type: unfeaturized
-  module:
-    type: text
 
 
 actions:
+  #  - utter_ask_faq_tutorials
   - utter_name
   - utter_joke
   - utter_greet
@@ -104,13 +137,17 @@ actions:
   - utter_ask_business_email
   - utter_ask_job_function
   - utter_ask_email
+  - utter_ask_budget
   - utter_ask_company
   - utter_ask_goal
   - utter_response_why_email
   - utter_inform_privacypolicy
   - utter_moreinformation
+  #  - utter_confirm_salesrequest
   - utter_docu
   - utter_confirmationemail
+  # - utter_sales_contact
+  #  - utter_already_subscribed
   - utter_contact_email
   - utter_no_speak
   - utter_out_of_scope
@@ -125,15 +162,44 @@ actions:
   - utter_thank_usecase
   - utter_can_do
   - utter_canthelp
+  #  - utter_ask_continue_newsletter
+  #  - utter_ask_continue_sales
   - utter_nohelp
   - utter_thumbsup
+  #  - utter_cantsignup
+  #  - utter_ask_feedback
+  #  - utter_quickstart_nlu_only
+  #  - utter_ask_migration
+  #  - utter_switch_dialogflow
+  #  - utter_switch_luis
   - utter_cant_answer_tech_question
   - utter_no_email
+  #  - utter_have_you_used_rasa_before
+  #  - utter_are_you_new_to_chatbots
+  # - utter_encourage_building_bot
   - utter_anything_else
+  #  - utter_chatbot_tutorial
+  #  - utter_no_guide_for_switch
+  #  - utter_ask_which_product
   - utter_ask_for_nlu_specifics
+  #  - utter_core_tutorial
   - utter_dont_know_nlu_part
+  #  - utter_nlu_intent_tutorial
+  # - utter_nlu_entity_tutorial
+  #  - utter_offer_recommendation
   - utter_what_language
+  #  - utter_ask_entities
+  #  - utter_search_bar
+  #  - utter_spacy_or_tensorflow
+  #  - utter_tensorflow
+  #  - utter_spacy
+  #  - utter_duckling
+  #  - utter_crf
+  #  - utter_nlu_tools
+  #  - utter_duckling_info
+  #  - utter_rasa_cost
   - utter_source_code
+  #  - utter_what_help
   - utter_first_bot_with_rasa
   - utter_getstarted
   - utter_explain_stack
@@ -143,14 +209,38 @@ actions:
   - utter_explain_core
   - utter_also_explain_nlu
   - utter_also_explain_core
+  #  - utter_direct_install
+  # - utter_built_bot_before
+  #  - utter_ask_which_tool
   - utter_suggestion
+  #  - utter_ask_python_installed
+  #  - utter_get_python
+  #  - utter_ask_pip_or_conda
+  #  - utter_installation_with_pip
+  #  - utter_installation_with_conda
+  #  - utter_ask_ready_to_build
   - utter_ask_describe_problem
+  #  - utter_direct_to_forum_for_help
+  #  - utter_get_starter_pack
   - utter_direct_to_step4
   - utter_ask_if_problem
   - utter_get_started_step1
   - utter_get_started_step2
   - utter_get_started_step3
   - utter_get_started_step4
+  #  - utter_ask_faq_platform
+  #  - utter_ask_faq_languages
+  #  - utter_ask_faq_tutorialcore
+  #  - utter_ask_faq_tutorialnlu
+  #  - utter_ask_faq_opensource
+  #  - utter_ask_faq_voice
+  #  - utter_ask_faq_slots
+  #  - utter_ask_faq_channels
+  #  - utter_ask_faq_differencecorenlu
+  #  - utter_ask_faq_python_version
+  #  - utter_ask_faq_community_size
+  #  - utter_ask_faq_what_is_forum
+  #  - utter_ask_weather
   - utter_ask_builder
   - utter_ask_howdoing
   - utter_ask_whoisit
@@ -158,6 +248,8 @@ actions:
   - utter_ask_isbot
   - utter_ask_howold
   - utter_ask_languagesbot
+  #  - utter_ask_restaurant
+  #  - utter_ask_time
   - utter_ask_wherefrom
   - utter_ask_whoami
   - utter_handleinsult
@@ -167,28 +259,49 @@ actions:
   - utter_ask_whatspossible
   - utter_getstarted_new
   - utter_thanks_for_feedback
+  #  - utter_restart_with_button
   - utter_ask_for_feedback_message
   - utter_not_sure
+  #  - utter_no_community_event
+  #  - utter_no_event_for_location_but_next
+  #  - utter_next_event_for_location
+  #  - utter_next_event
   - utter_describe_step4
+  #  - utter_reasons_to_contribute
+  #  - utter_possibilities_to_contribute
+  #  - utter_recommend_forum
+  #  - utter_link_to_forum
   - utter_direct_to_step2
   - utter_direct_step3
+  #  - utter_faq_platform_more
+  #  - utter_faq_language_more
+  #  - utter_faq_voice_more
+  #  - utter_faq_slots_more
+  #  - utter_faq_channels_more
+  - utter_explain_job_function
   - utter_explain_use_case
   - utter_explain_budget
   - utter_explain_person_name
   - utter_explain_company
   - utter_explain_business_email
   - action_chitchat
+  #  - action_faqs
   - action_pause
+  #  - action_store_unknown_product
+  #  - action_store_unknown_nlu_part
+  #  - action_store_bot_language
+  #  - action_store_entity_extractor
+  #  - action_set_onboarding
+  #  - action_select_installation_command
+  #  - action_store_problem_description
   - action_greet_user
   - action_default_fallback
   - action_default_ask_affirmation
   - utter_react_positive
   - utter_react_negative
-  - utter_resume_privacy_policy
-  - utter_ask_privacy_policy
-  - utter_accept_privacy_policy
+  #  - action_get_community_events
   - action_next_step
-  - action_accept_privacy_policy
+#  - action_explain_sales_form
 
 forms:
   - subscribe_newsletter_form
@@ -199,6 +312,8 @@ forms:
 templates:
   utter_name:
     - text: "Hey there! Tell me your name."
+  utter_ask_budget:
+    - text: "What's your annual budget for the FAPS demonstrator AI?"
   utter_ask_business_email:
     - text: "What's your business email?"
   utter_ask_company:
@@ -224,6 +339,8 @@ templates:
     - text: "You got it."
   utter_ask_goal:
     - text: "Do you want to know more about the FAPS demonstrator? Please contact Matthias Brossog."
+  utter_ask_job_function:
+    - text: "What's your job?"
   utter_ask_use_case:
     - text: "What kind of usecase  do you want to address with our solution?"
   utter_confirmationemail:
@@ -340,13 +457,6 @@ templates:
     - text: "Plese suggest"
   utter_thank_suggestion:
     - text: "Thanks for the suggestion!"
-  utter_ask_privacy_policy:
-    - text: "Are you ok with the policy?"
-    - text: "I hope the policy suits you?"
-  utter_resume_privacy_policy:
-    - text: "The privacy policy states that all the data generated by this demonstration will be used to improve my performance."
-    - text: "In our policy all the data generated by this demonstration will be used to improve my performance."
-    - text: "In short term: I will use all the data generated by this demonstration to improve my performance."
   utter_ask_howold:
     - text: "42."
     - text: "Old enough to be a bot."
@@ -412,6 +522,8 @@ templates:
     - text: "Let's continue to the next step."
   utter_no_more_steps:
     - text: "Looks like you've already completed all the steps!"
+  utter_explain_job_function:
+    - text: "Your job function helps us in understanding how we can talk to you best."
   utter_explain_use_case:
     - text: "In order to help you best, we need to know what you want to do."
   utter_explain_budget:

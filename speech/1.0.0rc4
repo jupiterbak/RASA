@@ -1,0 +1,22 @@
+Collecting rasa-sdk
+  Using cached https://files.pythonhosted.org/packages/a7/cf/7749e03eb8dd82d8f0e54f1efa768b9c44a08004d2d8be9e6ee4cf57ee83/rasa_sdk-1.0.0rc4-py2.py3-none-any.whl
+Requirement already satisfied: coloredlogs~=10.0 in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from rasa-sdk) (10.0)
+Requirement already satisfied: six>=1.10 in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from rasa-sdk) (1.12.0)
+Requirement already satisfied: flask-cors~=3.0 in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from rasa-sdk) (3.0.7)
+Requirement already satisfied: future~=0.17 in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from rasa-sdk) (0.17.1)
+Requirement already satisfied: ConfigArgParse~=0.14 in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from rasa-sdk) (0.14.0)
+Requirement already satisfied: gevent>=1.4 in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from rasa-sdk) (1.4.0)
+Requirement already satisfied: flask~=1.0 in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from rasa-sdk) (1.0.3)
+Requirement already satisfied: colorama; sys_platform == "win32" in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from coloredlogs~=10.0->rasa-sdk) (0.4.1)
+Requirement already satisfied: humanfriendly>=4.7 in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from coloredlogs~=10.0->rasa-sdk) (4.18)
+Requirement already satisfied: cffi>=1.11.5; sys_platform == "win32" and platform_python_implementation == "CPython" in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from gevent>=1.4->rasa-sdk) (1.12.3)
+Requirement already satisfied: greenlet>=0.4.14; platform_python_implementation == "CPython" in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from gevent>=1.4->rasa-sdk) (0.4.15)
+Requirement already satisfied: Jinja2>=2.10 in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from flask~=1.0->rasa-sdk) (2.10.1)
+Requirement already satisfied: click>=5.1 in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from flask~=1.0->rasa-sdk) (7.0)
+Requirement already satisfied: itsdangerous>=0.24 in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from flask~=1.0->rasa-sdk) (1.1.0)
+Requirement already satisfied: Werkzeug>=0.14 in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from flask~=1.0->rasa-sdk) (0.15.4)
+Requirement already satisfied: pyreadline; sys_platform == "win32" in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from humanfriendly>=4.7->coloredlogs~=10.0->rasa-sdk) (2.1)
+Requirement already satisfied: pycparser in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from cffi>=1.11.5; sys_platform == "win32" and platform_python_implementation == "CPython"->gevent>=1.4->rasa-sdk) (2.19)
+Requirement already satisfied: MarkupSafe>=0.23 in c:\programdata\anaconda3\envs\rasa\lib\site-packages (from Jinja2>=2.10->flask~=1.0->rasa-sdk) (1.1.1)
+Installing collected packages: rasa-sdk
+Successfully installed rasa-sdk-1.0.0rc4

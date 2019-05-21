@@ -5,13 +5,28 @@
         "name"
       ]
     },
+    "action_chitchat": {
+      "slots": []
+    },
+    "utter_stack_details": {
+      "slots": []
+    },
+    "utter_awesome": {
+      "slots": []
+    },
+    "utter_canthelp": {
+      "slots": []
+    },
     "utter_greet": {
       "slots": []
     },
     "utter_goodbye": {
       "slots": []
     },
-    "utter_name": {
+    "utter_resume_privacy_policy": {
+      "slots": []
+    },
+    "utter_nohelp": {
       "slots": []
     }
   },
@@ -31,7 +46,7 @@
     "rasa_core.policies.form_policy.FormPolicy",
     "rasa_core.policies.mapping_policy.MappingPolicy"
   ],
-  "trained_at": "20190520-154052",
+  "trained_at": "20190521-163918",
   "rasa_core": "0.14.4",
   "tensorflow": "1.13.1",
   "sklearn": "0.20.3"
