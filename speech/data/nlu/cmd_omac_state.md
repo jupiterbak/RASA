@@ -1,0 +1,118 @@
+## intent:omac_cmd_state
+- [stop](state_cmd)
+- please [stop](state_cmd)
+- command [stop](state_cmd)
+- can you [stop](state_cmd)
+- can you [stop](state_cmd) please
+- [stop](state_cmd) please
+- go to [stop](state_cmd) state
+- [stop](state_cmd) the machine
+- [stop](state_cmd) everything
+- omac state [stop](state_cmd)
+- [stop](state_cmd) the robot
+- [stop](state_cmd) thanks
+- [stop](state_cmd) the state machine
+- [suspend](state_cmd)
+- please [suspend](state_cmd)
+- command [suspend](state_cmd)
+- can you [suspend](state_cmd)
+- can you [suspend](state_cmd) please
+- [suspend](state_cmd) please
+- go to [suspend](state_cmd) state
+- [suspend](state_cmd) the machine
+- [suspend](state_cmd) everything
+- omac state [suspend](state_cmd)
+- [suspend](state_cmd) the robot
+- [suspend](state_cmd) thanks
+- [suspend](state_cmd) the state machine
+- [abort](state_cmd)
+- please [abort](state_cmd)
+- command [abort](state_cmd)
+- can you [abort](state_cmd)
+- can you [abort](state_cmd) please
+- [abort](state_cmd) please
+- go to [abort](state_cmd) state
+- [abort](state_cmd) the machine
+- [abort](state_cmd) everything
+- omac state [abort](state_cmd)
+- [abort](state_cmd) the robot
+- [abort](state_cmd) thanks
+- [abort](state_cmd) the state machine
+- [hold](state_cmd)
+- please [hold](state_cmd)
+- command [hold](state_cmd)
+- can you [hold](state_cmd)
+- can you [hold](state_cmd) please
+- [hold](state_cmd) please
+- go to [hold](state_cmd) state
+- [hold](state_cmd) the machine
+- [hold](state_cmd) everything
+- omac state [hold](state_cmd)
+- [hold](state_cmd) the robot
+- [hold](state_cmd) thanks
+- [hold](state_cmd) the state machine
+- [start](state_cmd)
+- please [start](state_cmd)
+- command [start](state_cmd)
+- can you [start](state_cmd)
+- can you [start](state_cmd) please
+- [start](state_cmd) please
+- go to [start](state_cmd) state
+- [start](state_cmd) the machine
+- [start](state_cmd) everything
+- omac state [start](state_cmd)
+- [start](state_cmd) the robot
+- [start](state_cmd) thanks
+- [start](state_cmd) the state machine
+- [clear](state_cmd)
+- please [clear](state_cmd)
+- command [clear](state_cmd)
+- can you [clear](state_cmd)
+- can you [clear](state_cmd) please
+- [clear](state_cmd) please
+- go to [clear](state_cmd) state
+- [clear](state_cmd) the machine
+- [clear](state_cmd) everything
+- omac state [clear](state_cmd)
+- [clear](state_cmd) the robot
+- [clear](state_cmd) thanks
+- [clear](state_cmd) the state machine
+- [reset](state_cmd)
+- please [reset](state_cmd)
+- command [reset](state_cmd)
+- can you [reset](state_cmd)
+- can you [reset](state_cmd) please
+- [reset](state_cmd) please
+- go to [reset](state_cmd) state
+- [reset](state_cmd) the machine
+- [reset](state_cmd) everything
+- omac state [reset](state_cmd)
+- [reset](state_cmd) the robot
+- [reset](state_cmd) thanks
+- [reset](state_cmd) the state machine
+- [unhold](state_cmd)
+- please [unhold](state_cmd)
+- command [unhold](state_cmd)
+- can you [unhold](state_cmd)
+- can you [unhold](state_cmd) please
+- [unhold](state_cmd) please
+- go to [unhold](state_cmd) state
+- [unhold](state_cmd) the machine
+- [unhold](state_cmd) everything
+- omac state [unhold](state_cmd)
+- [unhold](state_cmd) the robot
+- [unhold](state_cmd) thanks
+- [unhold](state_cmd) the state machine
+- [unsuspend](state_cmd)
+- please [unsuspend](state_cmd)
+- command [unsuspend](state_cmd)
+- can you [unsuspend](state_cmd)
+- can you [unsuspend](state_cmd) please
+- [unsuspend](state_cmd) please
+- go to [unsuspend](state_cmd) state
+- [unsuspend](state_cmd) the machine
+- [unsuspend](state_cmd) everything
+- omac state [unsuspend](state_cmd)
+- [unsuspend](state_cmd) the robot
+- [unsuspend](state_cmd) thanks
+- [unsuspend](state_cmd) the state machine

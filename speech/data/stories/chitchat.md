@@ -48,16 +48,35 @@
 ## chitchat
 * ask_builder OR ask_howdoing OR ask_whoisit OR ask_whatisdemonstrator OR ask_isbot OR ask_howold OR ask_languagesbot OR ask_wherefrom OR ask_whoami OR handleinsult OR nicetomeeyou OR joke OR ask_whatismyname OR ask_howbuilt OR ask_whatspossible
     - action_chitchat
+     
+## chitchat + introduction
+* ask_builder OR ask_howdoing OR ask_whoisit OR ask_whatisdemonstrator OR ask_isbot OR ask_howold OR ask_languagesbot OR ask_wherefrom OR ask_whoami OR handleinsult OR nicetomeeyou OR joke OR ask_whatismyname OR ask_howbuilt OR ask_whatspossible
+    - action_chitchat   
+    - utter_explain_demonstratorcore
+* affirm
+    - utter_explain_stack
+    - utter_explain_nlu
+    - utter_explain_core
+* deny
+    - utter_thumbsup
+    - utter_anything_else
 
-## deny ask_whatspossible
+## only ask_whatspossible
 * ask_whatspossible
     - action_chitchat
-* deny
-    - utter_nohelp
-
-## only chitchat
-* ask_builder OR ask_howdoing OR ask_whoisit OR ask_whatisdemonstrator OR ask_isbot OR ask_howold OR ask_languagesbot OR ask_wherefrom OR ask_whoami OR handleinsult OR nicetomeeyou OR joke OR ask_whatismyname OR ask_howbuilt
+    
+## ask_whatspossible
+* ask_whatspossible
     - action_chitchat
+    - utter_explain_demonstratorcore
+* affirm
+    - utter_explain_stack
+    - utter_explain_nlu
+    - utter_explain_core
+* deny
+    - utter_thumbsup
+    - utter_anything_else
+
 
 ## only chitchat more
 * ask_builder OR ask_howdoing OR ask_whoisit OR ask_whatisdemonstrator OR ask_isbot OR ask_howold OR ask_languagesbot OR ask_wherefrom OR ask_whoami OR handleinsult OR nicetomeeyou OR joke OR ask_whatismyname OR ask_howbuilt
@@ -79,6 +98,19 @@
 * ask_whatspossible
     - action_chitchat
 
+## greet + ask_whatspossible + help
+* greet
+    - action_greet_user
+* ask_whatspossible    
+    - utter_explain_demonstratorcore
+* affirm
+    - utter_explain_stack
+    - utter_explain_nlu
+    - utter_explain_core
+* deny
+    - utter_thumbsup
+    - utter_anything_else
+
 ## ask_whatspossible more
 * greet
     - action_greet_user
@@ -87,17 +119,110 @@
 * ask_whatspossible
     - action_chitchat
 
-## ask_whatspossible more demo
+## ask_whatspossible more demo + affirm
 * greet
     - action_greet_user
 * ask_whatspossible
     - action_chitchat
+* affirm
+    - utter_explain_nlu
+    - utter_explain_core
+    
+## ask_whatspossible more demo + deny
+* greet
+    - action_greet_user
+* ask_whatspossible
+    - action_chitchat
+* deny
+    - utter_thumbsup
+    - utter_anything_else
+    
+## explain more demo + affirm
+* greet
+    - action_greet_user
+* explain
+    - utter_whoiam
+    - utter_explain_demonstratorcore
+* affirm
+    - utter_explain_nlu
+    - utter_explain_core
+    
+## explain more demo + deny
+* greet
+    - action_greet_user
+* explain
+    - utter_whoiam
+    - utter_explain_demonstratorcore
+* deny
+    - utter_thumbsup
+    - utter_anything_else
+
+    
+## ask_whatspossible more demo + affirm
+* greet
+    - action_greet_user
 * ask_whatspossible
     - utter_getstarted
     - utter_explain_demonstratorcore
 * affirm
     - utter_explain_nlu
     - utter_explain_core
+    
+## ask_whatspossible more demo + deny
+* greet
+    - action_greet_user
+* ask_whatspossible
+    - utter_getstarted
+    - utter_explain_demonstratorcore
 * deny
+    - utter_thumbsup
+    - utter_anything_else
+    
+## source code
+* source_code
+    - utter_source_code
+    - utter_anything_else
+    
+## is it open sourced    
+* ask_if_opensource
+    - utter_source_code
+    - utter_anything_else
+    
+## who is it + explain  + affirm  
+* ask_whoisit OR ask_howbuilt OR ask_whatspossible
+    - action_chitchat
+* explain
+    - utter_whoiam
+    - utter_explain_demonstratorcore
+* affirm
     - utter_explain_stack
-    - utter_stack_details
+    - utter_explain_nlu
+    - utter_explain_core
+    
+## who is it + explain + deny   
+* ask_whoisit OR ask_howbuilt OR ask_whatspossible
+    - action_chitchat
+* explain
+    - utter_whoiam
+    - utter_explain_demonstratorcore
+* deny
+    - utter_thumbsup
+    - utter_anything_else
+    
+## who is it + explain    
+* ask_whoisit
+    - utter_whoiam
+    - utter_explain_demonstratorcore
+* affirm
+    - utter_explain_stack
+    - utter_explain_nlu
+    - utter_explain_core
+* deny
+    - utter_thumbsup
+    - utter_anything_else
+    
+## deny ask_whatspossible
+* ask_whatspossible
+    - action_chitchat
+* deny
+    - utter_nohelp

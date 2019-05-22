@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 import logging
+import time
+
 import requests
 from datetime import datetime
 from typing import Text, Dict, Any, List
@@ -67,6 +69,24 @@ class ActionJoke(Action):
         dispatcher.utter_message(joke)  # send the message back to the user
         return []
 
+class ActionExecuteOMACStateCmd(Action):
+    def name(self):
+        # define the name of the action which can then be included in training stories
+        return "action_cmd_omac_state"
+
+    def run(self, dispatcher, tracker, domain):
+        # Parse the command
+        state_entity = next(tracker.get_latest_entity_values("state_cmd"), None)
+        # execute OMAC actio
+        # TODO: Implemets using the Demonstrator API
+        dispatcher.utter_template("utter_cmd_omac_state_executing", tracker, state_cmd=state_entity)
+
+        # Start the execution
+        time.sleep(2)
+
+        # Set the response depending on the results
+        dispatcher.utter_template("utter_cmd_omac_state_executed_success", tracker)
+        return [SlotSet("current_omac_state", "execute")]
 
 class ActionChitchat(Action):
     """Returns the chitchat utterance dependent on the intent"""
@@ -85,6 +105,7 @@ class ActionChitchat(Action):
             "ask_whatisdemonstrator",
             "ask_isbot",
             "ask_howold",
+            "ask_whoisit"
             "ask_languagesbot",
             "ask_wherefrom",
             "ask_whoami",

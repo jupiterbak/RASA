@@ -13,6 +13,12 @@
     - action_greet_user
 * ask_privacy_policy
     - utter_resume_privacy_policy
+    
+## ask_privacy_policy more other
+* ask_privacy_policy
+    - utter_resume_privacy_policy
+* ask_privacy_policy
+    - utter_resume_privacy_policy
 
 ## ask_privacy_policy more
 * greet
