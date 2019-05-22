@@ -5,10 +5,10 @@ from datetime import datetime
 from typing import Text, Dict, Any, List
 import json
 
-from rasa_core_sdk import Action, Tracker, ActionExecutionRejection
-from rasa_core_sdk.executor import CollectingDispatcher
-from rasa_core_sdk.forms import FormAction, REQUESTED_SLOT
-from rasa_core_sdk.events import (
+from rasa_sdk import Action, Tracker, ActionExecutionRejection
+from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.forms import FormAction, REQUESTED_SLOT
+from rasa_sdk.events import (
     SlotSet,
     UserUtteranceReverted,
     ConversationPaused,
@@ -193,4 +193,3 @@ class ActionNextStep(Action):
             dispatcher.utter_template("utter_no_more_steps", tracker)
 
         return []
-

@@ -87,7 +87,7 @@ slots:
   product:
     type: categorical
     values:
-      - core
+      - stories
       - nlu
       - stack
   unknown_product:

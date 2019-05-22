@@ -1,0 +1,529 @@
+%YAML 1.1
+---
+actions:
+- action_chitchat
+- action_default_ask_affirmation
+- action_default_fallback
+- action_greet_user
+- action_next_step
+- action_pause
+- utter_accept_privacy_policy
+- utter_also_explain_core
+- utter_also_explain_nlu
+- utter_anything_else
+- utter_ask_builder
+- utter_ask_business_email
+- utter_ask_company
+- utter_ask_describe_problem
+- utter_ask_email
+- utter_ask_for_nlu_specifics
+- utter_ask_goal
+- utter_ask_howbuilt
+- utter_ask_howdoing
+- utter_ask_howold
+- utter_ask_if_problem
+- utter_ask_isbot
+- utter_ask_job_function
+- utter_ask_languagesbot
+- utter_ask_name
+- utter_ask_privacy_policy
+- utter_ask_use_case
+- utter_ask_whatisdemonstrator
+- utter_ask_whatismyname
+- utter_ask_whatspossible
+- utter_ask_wherefrom
+- utter_ask_whoami
+- utter_ask_whoisit
+- utter_awesome
+- utter_can_do
+- utter_cant_answer_tech_question
+- utter_canthelp
+- utter_change_mind
+- utter_confirmationemail
+- utter_contact_email
+- utter_describe_step4
+- utter_direct_step3
+- utter_direct_to_step2
+- utter_direct_to_step4
+- utter_docu
+- utter_dont_know_nlu_part
+- utter_explain_budget
+- utter_explain_business_email
+- utter_explain_company
+- utter_explain_core
+- utter_explain_demonstratorcore
+- utter_explain_nlu
+- utter_explain_person_name
+- utter_explain_stack
+- utter_explain_use_case
+- utter_first_bot_with_rasa
+- utter_get_started_step1
+- utter_get_started_step2
+- utter_get_started_step3
+- utter_get_started_step4
+- utter_getstarted
+- utter_getstarted_new
+- utter_goodbye
+- utter_great
+- utter_greet
+- utter_greet_name
+- utter_greet_noname
+- utter_handleinsult
+- utter_inform_privacypolicy
+- utter_joke
+- utter_moreinformation
+- utter_must_accept
+- utter_name
+- utter_nicetomeeyou
+- utter_no_email
+- utter_no_speak
+- utter_nohelp
+- utter_not_sure
+- utter_noworries
+- utter_out_of_scope
+- utter_possibilities
+- utter_react_negative
+- utter_react_positive
+- utter_response_why_email
+- utter_resume_privacy_policy
+- utter_source_code
+- utter_stack_details
+- utter_suggestion
+- utter_thanks_for_feedback
+- utter_thumbsup
+- utter_what_help
+- utter_what_language
+config:
+  store_entities_as_slots: true
+entities:
+- company
+- language
+- location
+- module
+- name
+- number
+- product
+- value
+forms:
+- sales_form
+- subscribe_newsletter_form
+- suggestion_form
+intents:
+- enter_data:
+    use_entities: false
+- affirm:
+    use_entities: true
+- greet:
+    use_entities: true
+- deny:
+    use_entities: true
+- joke:
+    use_entities: true
+- name:
+    use_entities: true
+- ask_builder:
+    use_entities: true
+- ask_howdoing:
+    use_entities: true
+- ask_whatspossible:
+    use_entities: true
+- ask_whatisdemonstrator:
+    use_entities: true
+- ask_whatismyname:
+    use_entities: true
+- ask_isbot:
+    use_entities: true
+- ask_howold:
+    use_entities: true
+- ask_languagesbot:
+    use_entities: true
+- ask_wherefrom:
+    use_entities: true
+- ask_whoami:
+    use_entities: true
+- ask_howbuilt:
+    use_entities: true
+- ask_privacy_policy:
+    use_entities: true
+- handleinsult:
+    use_entities: true
+- nicetomeeyou:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+- thanks:
+    use_entities: true
+- ask_whoisit:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- canthelp:
+    use_entities: true
+- feedback:
+    use_entities: true
+- how_to_get_started:
+    use_entities: true
+- technical_question:
+    use_entities: true
+- nlu_info:
+    use_entities: true
+- source_code:
+    use_entities: true
+- suggestion:
+    use_entities: true
+- get_started_step1:
+    use_entities: true
+- get_started_step2:
+    use_entities: true
+- get_started_step3:
+    use_entities: true
+- get_started_step4:
+    use_entities: true
+- react_negative:
+    use_entities: true
+- react_positive:
+    use_entities: true
+- next_step:
+    use_entities: true
+- explain:
+    use_entities: true
+slots:
+  business_email:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  company:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  email:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  feedback_message:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  feedback_value:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.CategoricalSlot
+    values:
+    - positive
+    - negative
+  language:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  module:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.TextSlot
+  name:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.TextSlot
+  onboarding:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.BooleanSlot
+  person_name:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  privacy_policy_accepted:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.BooleanSlot
+  problem_description:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.TextSlot
+  product:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.CategoricalSlot
+    values:
+    - bottles
+    - motors
+    - core
+  requested_slot:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  shown_privacy:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  step:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  suggestion:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  unknown_product:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  use_case:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+templates:
+  utter_accept_privacy_policy:
+  - text: Hereby you accept our privacy policy.
+  utter_also_explain_core:
+  - text: Would you also like me to explain the demonstrator NLU Core?
+  utter_also_explain_nlu:
+  - text: Would you also like me to explain the demonstrator NLU?
+  utter_anything_else:
+  - text: Is there anything else I can help you with?
+  utter_ask_builder:
+  - text: The researchers at FAPS
+  - text: 'One of the smart researcher at FAPS. In other words: Jupiter Bakakeu'
+  utter_ask_business_email:
+  - text: What's your business email?
+  utter_ask_company:
+  - text: What company do you work for?
+  utter_ask_describe_problem:
+  - text: Can you describe the problem you're having?
+  utter_ask_email:
+  - text: What's your email address?
+  utter_ask_for_nlu_specifics:
+  - text: Anything in particular, e.g. intent classification or entity recognition?
+  utter_ask_goal:
+  - text: Do you want to know more about the FAPS demonstrator? Please contact Matthias
+      Brossog.
+  utter_ask_howbuilt:
+  - text: I was built with a lot of love and patience.
+  utter_ask_howdoing:
+  - text: I'm great! Thanks for asking.
+  - text: I'm good, thanks!
+  - text: A little bit too warm, otherwise fine.
+  utter_ask_howold:
+  - text: '42.'
+  - text: Old enough to be a bot.
+  - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t
+      matter.
+  utter_ask_if_problem:
+  - text: Do you have a problem?
+  utter_ask_isbot:
+  - text: Yep, i am!
+  utter_ask_job_function:
+  - text: What's your job?
+  utter_ask_languagesbot:
+  - text: I can spell baguette in French, but unfortunately English is the only language
+      I can answer you in.
+  - text: I am in the process of learning, but at the moment I can only speak English.
+  utter_ask_name:
+  - text: What's your name?
+  utter_ask_privacy_policy:
+  - text: Are you ok with the policy?
+  - text: I hope the policy suits you?
+  utter_ask_use_case:
+  - text: What kind of usecase  do you want to address with our solution?
+  utter_ask_voice:
+  - text: Yes, that is possible!
+  utter_ask_whatisdemonstrator:
+  - text: The demonstrator is an industrie 4.0 demonstrator of FAPS in erlangen.
+  utter_ask_whatismyname:
+  - text: It's probably the one that your parents chose for you.
+  utter_ask_whatspossible:
+  - text: You can start a demonstration by asking me a question. Please be aware of
+      our privacy policy.
+  utter_ask_wherefrom:
+  - text: I was born in Erlangen, but I consider myself a citizen of the world.
+  - text: I was born in the coolest city on Earth.
+  utter_ask_whoami:
+  - text: I hope you are being yourself.
+  utter_ask_whoisit:
+  - text: I'm the faps demonstrator natural language understanding module
+  utter_awesome:
+  - text: Awesome, thanks!
+  - text: Sweet, thank you!
+  - text: Thanks!
+  - text: Cool, thank you!
+  utter_can_do:
+  - text: Sure thing!
+  - text: Can do!
+  - text: You got it.
+  utter_cant_answer_tech_question:
+  - text: I can't answer that.
+  utter_canthelp:
+  - text: I'm sorry I couldn't help you. If you have general questions about the Stack,
+      please contact Jupiter
+  utter_change_mind:
+  - text: You can still change your mind below though.
+  utter_confirmationemail:
+  - text: We sent a confirmation email to {email}.
+  utter_contact_email:
+  - text: You can’t speak to a human directly, but you can email us at jupiter.bakakeu@gmail.com.
+  utter_continue_step2:
+  - text: Let's continue.
+  utter_continue_step3:
+  - text: Let's continue.
+  utter_continue_step4:
+  - text: Let's continue to the next step.
+  utter_default:
+  - text: Sorry, I didn't get that. Could you please rephrase?
+  - text: I didn't understand, could you rephrase that?
+  - text: I'm sorry, but I didn't understand you. Could you please rephrase what you
+      just said?
+  - text: I'm afraid I didn't get what you just said. Could you rephrase that?
+  - text: I didn't quite get that, could you rephrase your message?
+  - text: Could you rephrase your message? I didn't get it, I'm sorry.
+  utter_describe_step4:
+  - text: Test 4.
+  utter_direct_step3:
+  - text: If you have no questions, you can  go to the next step once you're ready.
+      Or when you're finished asking questions, you can say 'take me to the next step'
+      at any point
+  utter_direct_to_step2:
+  - text: You can go to the next step and ask a question once you're ready.
+  utter_direct_to_step4:
+  - text: The next step is to contact Jupiter.
+  utter_docu:
+  - text: If you want some more awesome demonstrations, please contact Jupiter Bakakeu
+  utter_dont_know_nlu_part:
+  - text: Hmm, seems like I haven't learned about that part of NLU yet!
+  utter_explain_budget:
+  - text: If you tell us your budget, we can prepare a package that fits you best.
+  utter_explain_business_email:
+  - text: We need your business email to contact you afterwards. Otherwise, we cannot
+      help you.
+  utter_explain_company:
+  - text: Just for completeness.
+  utter_explain_core:
+  - text: The demonstrator NLU Core performs dialog management, which means keeping
+      track of a conversation, and deciding how to proceed.
+  utter_explain_demonstratorcore:
+  - text: Would you like to know more about the FAPS demonstrator NLU?
+  utter_explain_nlu:
+  - text: The demonstrator NLU performs Natural Language Understanding, which means
+      taking free-form text like "Please send the confirmation to amy@example.com"
+      and turning it into machine executable code.
+  utter_explain_person_name:
+  - text: To be able to contact you later on, we would like to know your name.
+  utter_explain_stack:
+  - text: Alright, I'll briefly explain the demonstrator NLU Stack then.
+  utter_explain_use_case:
+  - text: In order to help you best, we need to know what you want to do.
+  utter_first_bot_with_rasa:
+  - text: Have you tried this demonstration before?
+  utter_get_started_step1:
+  - text: I can give you more information on the faps demonstrator NLU and its components.
+  utter_get_started_step2:
+  - text: I can help you diagnose your production machine
+  utter_get_started_step3:
+  - text: I can help you understand your.
+  utter_get_started_step4:
+  - text: As a developer you will be part of a huge community. You can ask me which
+      events we have planned, how to contribute.
+  utter_getstarted:
+  - text: To determine how I can help you best, I'm going to ask you a few questions.
+  utter_getstarted_new:
+  - text: "I see you're new, let me ask you a quick question before I help you get\
+      \ started:"
+  utter_goodbye:
+  - text: Goodbye!
+  - text: Bye!
+  - text: Ciao!
+  - text: Bye, was nice talking to you!
+  utter_great:
+  - text: Great!
+  - text: That's great!
+  - text: Awesome!
+  - text: Cool, let's do it
+  utter_greet:
+  - text: Hey there, welcome to the FAPS demonstrator natural language understanding
+      plattform!
+  utter_greet_name:
+  - text: Hi, {name}!
+  - text: Hello, {name}!
+  - text: Hey, {name}!
+  utter_greet_noname:
+  - text: Hey!
+  - text: Hi!
+  - text: Hey there!
+  utter_handleinsult:
+  - text: That’s not very nice.
+  utter_inform_privacypolicy:
+  - text: By using this software to me you agree to our privacy policy. A detailed
+      description of the policy can be downloaded from our homepage.
+  utter_joke:
+  - text: Why are eggs not very much into jokes? - Because they could crack up.
+  - text: Do you know a tree’s favorite drink? - Root beer!
+  - text: Why do the French like to eat snails so much? - They can’t stand fast food.
+  utter_moreinformation:
+  - text: Sure! Let's get to know each other first
+  utter_must_accept:
+  - text: We can't speak until you accept.
+  utter_name:
+  - text: Hey there! Tell me your name.
+  utter_nicetomeeyou:
+  - text: Thank you. It is a pleasure to meet you as well!
+  - text: It is nice to meet you too!
+  - text: Pleased to meet you too!
+  - text: Likewise!
+  utter_no_email:
+  - text: Hmm, I'm not sure that's a valid email, please make sure to include the
+      full address.
+  utter_no_more_steps:
+  - text: Looks like you've already completed all the steps!
+  utter_no_speak:
+  - text: I'm afraid we can't talk about that then
+  utter_nohelp:
+  - text: For now that's all I can do, so feel free to try it out. If you have any
+      suggestions for what I should learn, let me know!
+  utter_not_sure:
+  - text: Hmm, not sure what you mean...
+  utter_noworries:
+  - text: No worries!
+  - text: You're welcome!
+  - text: I'm happy to help.
+  utter_out_of_scope:
+  - text: Sorry, I can’t deal with that request.
+  - text: I'm sorry, I can't handle that request.
+  - text: I can't help you with that, I'm sorry.
+  - text: I am not completely perfect - it seems like I can't handle that request.
+  utter_possibilities:
+  - text: Please get in touch with jupiter.
+  - text: You can get in touch with Jupiter at jupiter.bakakeu@gmail.com.
+  utter_react_negative:
+  - text: That is bad.
+  utter_react_positive:
+  - text: Good
+  utter_response_why_email:
+  - text: I need your email address to sign you up.
+  - text: I need it so that I can sign you up.
+  utter_resume_privacy_policy:
+  - text: The privacy policy states that all the data generated by this demonstration
+      will be used to improve my performance.
+  - text: In our policy all the data generated by this demonstration will be used
+      to improve my performance.
+  - text: 'In short term: I will use all the data generated by this demonstration
+      to improve my performance.'
+  utter_source_code:
+  - text: To have the source code please contact jupiter.
+  utter_stack_details:
+  - text: The demonstrator NLU Stack is a framework to build contextual AI assistants
+      for industrial machines and cyber-physical systems. It is based on three open
+      source libraries (snowboy, mozzilla deepspech and RASA). Using machine learning,
+      this solution can hold contextual conversations with production machines.
+  utter_suggestion:
+  - text: Plese suggest
+  utter_thank_suggestion:
+  - text: Thanks for the suggestion!
+  utter_thanks_for_feedback:
+  - text: Thanks! Check out our website, some of the smart people from our department
+      can answer your questions there.
+  utter_thumbsup:
+  - text: Ok
+  - text: Okay.
+  - text: Got it.
+  utter_what_help:
+  - text: Ok, what can I help you with?
+  utter_what_language:
+  - text: What language are you speaking?

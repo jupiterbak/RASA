@@ -1,14 +1,20 @@
-from rasa_nlu.training_data import load_data
-from rasa_nlu.model import Trainer
-from rasa_nlu import config
+from rasa.nlu.training_data import load_data
+from rasa.nlu.model import Trainer
+from rasa.nlu import config
 
 
 def main():
-    training_data = load_data("data/nlu_data/")
-    trainer = Trainer(config.load("nlu_config.yml"))
-    interpreter = trainer.train(training_data)
-    test_interpreter_dir = trainer.persist("./tests/models")
-    parsing = interpreter.parse("hello")
+    # loading the nlu training samples
+    training_data = load_data("data/nlu/")
+
+    # trainer to educate our pipeline
+    trainer = Trainer(config.load("config.yml"))
+
+    # train the model!
+    interpreter = trainer.train(training_data, verbose=True)
+
+    # store it for future use
+    model_directory = trainer.persist("models", fixed_model_name="nlu")
 
 
 if __name__ == "__main__":

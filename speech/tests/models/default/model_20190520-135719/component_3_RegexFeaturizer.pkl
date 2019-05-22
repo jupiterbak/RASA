@@ -1,6 +1,0 @@
-[
-    {
-        "name": "location",
-        "pattern": "(?i)(\\bSan\\ Francisco\\b|\\bMontreal\\b|\\bNew\\ York\\b|\\bWashington\\b|\\bBerlin\\b|\\bZurich\\b|\\bHamburg\\b|\\bFrankfurt\\b|\\bMunich\\b|\\bMadrid\\b|\\bCologne\\b|\\bErlangen\\b|\\bNuremberg\\b|\\bFuerth\\b|\\bBerlin\\b|\\bD\\üsseldorf\\b|\\bBarcelona\\b|\\bVienna\\b|\\bWarsaw\\b|\\bParis\\b|\\bRome\\b|\\bLondon\\b|\\bPrague\\b|\\bSidney\\b|\\bDelhi\\b|\\bMumbai\\b|\\bTokyo\\b|\\bRio\\ de\\ Janeiro\\b|\\bBeijing\\b|\\bGuangzhou\\b|\\bShanghai\\b|\\bChongqing\\b|\\bHong\\ Kong\\b|\\bChina\\b|\\bIndia\\b|\\bUS\\b|\\bUSA\\b|\\bGermany\\b|\\bUnited\\ States\\b|\\bUK\\b|\\bEngland\\b|\\bBrazil\\b|\\bFrance\\b|\\bPoland\\b|\\bItaly\\b|\\bSpain\\b|\\bEurope\\b|\\bCanada\\b|\\bUkraine\\b|\\bCameroon\\b)"
-    }
-]
