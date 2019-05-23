@@ -44,3 +44,5 @@
 - how are you doing?
 - how are u
 - How are you?
+- What are you doing?
+- what's up?

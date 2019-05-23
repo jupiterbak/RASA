@@ -1,22 +1,17 @@
 # -*- coding: utf-8 -*-
+import json
 import logging
 import time
+from typing import Text, Dict, Any, List
 
 import requests
-from datetime import datetime
-from typing import Text, Dict, Any, List
-import json
-
-from rasa_sdk import Action, Tracker, ActionExecutionRejection
-from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.forms import FormAction, REQUESTED_SLOT
+from rasa_sdk import Action, Tracker
 from rasa_sdk.events import (
     SlotSet,
     UserUtteranceReverted,
     ConversationPaused,
-    FollowupAction,
-    Form,
 )
+from rasa_sdk.executor import CollectingDispatcher
 
 logger = logging.getLogger(__name__)
 
@@ -63,11 +58,12 @@ class ActionJoke(Action):
     def run(self, dispatcher, tracker, domain):
         # what your action should do
         request = json.loads(
-            requests.get("https://api.chucknorris.io/jokes/random").text
+            requests.get("http://slowwly.robertomurray.co.uk/delay/3000/url/https://api.chucknorris.io/jokes/random").text
         )  # make an api call
         joke = request["value"]  # extract a joke from returned json response
         dispatcher.utter_message(joke)  # send the message back to the user
         return []
+
 
 class ActionExecuteOMACStateCmd(Action):
     def name(self):
@@ -77,16 +73,38 @@ class ActionExecuteOMACStateCmd(Action):
     def run(self, dispatcher, tracker, domain):
         # Parse the command
         state_entity = next(tracker.get_latest_entity_values("state_cmd"), None)
-        # execute OMAC actio
-        # TODO: Implemets using the Demonstrator API
-        dispatcher.utter_template("utter_cmd_omac_state_executing", tracker, state_cmd=state_entity)
-
+        # execute OMAC STATE CMD
         # Start the execution
-        time.sleep(2)
-
+        # TODO: Implemets using the Demonstrator API
+        request = json.loads(
+            requests.get(
+                "http://slowwly.robertomurray.co.uk/delay/3000/url/https://api.chucknorris.io/jokes/random").text
+        )  # make an api call
+        joke = request["value"]  # extract a joke from returned json response
         # Set the response depending on the results
-        dispatcher.utter_template("utter_cmd_omac_state_executed_success", tracker)
+        dispatcher.utter_template("utter_cmd_executed_success", tracker)
         return [SlotSet("current_omac_state", "execute")]
+
+class ActionExecuteCmdGoTo(Action):
+    def name(self):
+        # define the name of the action which can then be included in training stories
+        return "action_execute_cmd_goto"
+
+    def run(self, dispatcher, tracker, domain):
+        # Parse the command
+        cmd = next(tracker.get_latest_entity_values("goto_cmd"), None)
+        param = next(tracker.get_latest_entity_values("number"), None)
+        # execute cmd
+        # Start the execution
+        # TODO: Implemets using the Demonstrator API
+        request = json.loads(
+            requests.get(
+                "http://slowwly.robertomurray.co.uk/delay/3000/url/https://api.chucknorris.io/jokes/random").text
+        )  # make an api call
+        joke = request["value"]  # extract a joke from returned json response
+        # Set the response depending on the results
+        dispatcher.utter_template("utter_cmd_executed_success", tracker)
+        return [SlotSet("last_goto_cmd", cmd), SlotSet("last_goto_cmd_param", param)]
 
 class ActionChitchat(Action):
     """Returns the chitchat utterance dependent on the intent"""
@@ -138,6 +156,7 @@ class ActionDefaultFallback(Action):
         dispatcher.utter_template("utter_default", tracker)
         return [UserUtteranceReverted()]
 
+
 class ActionDefaultAskAffirmation(Action):
     """Asks for an affirmation of the intent if NLU threshold is not met."""
 
@@ -154,10 +173,10 @@ class ActionDefaultAskAffirmation(Action):
         )
 
     def run(
-        self,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: Dict[Text, Any],
+            self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any],
     ) -> List["Event"]:
 
         intent_ranking = tracker.latest_message.get("intent_ranking", [])
@@ -200,6 +219,7 @@ class ActionDefaultAskAffirmation(Action):
         dispatcher.utter_button_message(message_title, buttons=buttons)
 
         return []
+
 
 class ActionNextStep(Action):
     def name(self):

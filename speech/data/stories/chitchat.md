@@ -107,6 +107,13 @@
     - utter_explain_stack
     - utter_explain_nlu
     - utter_explain_core
+    - utter_anything_else
+    
+## greet + ask_whatspossible + help
+* greet
+    - action_greet_user
+* ask_whatspossible    
+    - utter_explain_demonstratorcore
 * deny
     - utter_thumbsup
     - utter_anything_else
@@ -217,6 +224,11 @@
     - utter_explain_stack
     - utter_explain_nlu
     - utter_explain_core
+
+## who is it + explain + deny    
+* ask_whoisit
+    - utter_whoiam
+    - utter_explain_demonstratorcore
 * deny
     - utter_thumbsup
     - utter_anything_else
@@ -226,3 +238,9 @@
     - action_chitchat
 * deny
     - utter_nohelp
+    
+## anything else + chichat
+    - utter_anything_else
+* ask_builder OR ask_howdoing OR ask_whoisit OR ask_whatisdemonstrator OR ask_isbot OR ask_howold OR ask_languagesbot OR ask_wherefrom OR ask_whoami OR handleinsult OR nicetomeeyou OR joke OR ask_whatismyname OR ask_howbuilt
+    - action_chitchat
+ 

@@ -40,6 +40,7 @@ intents:
   - next_step
   - explain
   - omac_cmd_state
+  - cmd_goto
 
 
 entities:
@@ -52,6 +53,7 @@ entities:
   - product
   - module
   - state_cmd
+  - goto_cmd
 
 
 slots:
@@ -94,6 +96,13 @@ slots:
       - abort
       - clear
       - none
+  last_goto_cmd:
+    type: categorical
+    values:
+      - gripper
+      - position
+  last_goto_cmd_param:
+    type: unfeaturized
   unknown_product:
     type: unfeaturized
   language:
@@ -204,7 +213,7 @@ actions:
   - utter_ask_privacy_policy
   - utter_accept_privacy_policy
   - utter_ask_feedback
-  - utter_cmd_omac_state_executing
+  - utter_cmd_executing
   - utter_cmd_executed_success
   - utter_cmd_executed_error
   - utter_whoiam
@@ -215,6 +224,7 @@ actions:
   - action_default_fallback
   - action_default_ask_affirmation
   - action_cmd_omac_state
+  - action_execute_cmd_goto
 
 
 forms:
@@ -463,8 +473,8 @@ templates:
     - text: "Just for completeness."
   utter_explain_business_email:
     - text: "We need your business email to contact you afterwards. Otherwise, we cannot help you."
-  utter_cmd_omac_state_executing:
-    - text: "Executing the cmd {state_cmd}"
+  utter_cmd_executing:
+    - text: "Executing ..."
   utter_cmd_executed_success:
     - text: "command executed suceessfully."
     - text: "command executed."

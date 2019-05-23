@@ -1,5 +1,5 @@
 ## intent:name
-- My name is [Juste](name)  <!--- Square brackets contain the value of entity while the text in parentheses is a a label of the entity --> 
+- My name is [Juste](name)
 - I am [Josh](name)
 - I'm [Lucy](name)
 - People call me [Greg](name)

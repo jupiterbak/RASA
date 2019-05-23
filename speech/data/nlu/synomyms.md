@@ -33,3 +33,8 @@
 - Policy
 - Policies
 - policies
+
+## synonym:hold
+- Hold
+- pause
+- Pause

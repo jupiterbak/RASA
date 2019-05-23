@@ -101,7 +101,7 @@
 - you suck
 - bots are bad
 - i dont like bots
- - do you have a phone number?
+- do you have a phone number?
 - where do you live?
 - how are akela's cats doing?
 - but I just told you that :(
@@ -109,3 +109,6 @@
 - But you're an english site :(
 - can you help me to build a bot
 - is it done?
+- Is it done?
+- you are nice!
+- You are nice!

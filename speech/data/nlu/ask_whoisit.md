@@ -21,3 +21,5 @@
 - are you a bot?
 - who is this?
 - hi! what's your name?
+- Who are you?
+- who is speking?

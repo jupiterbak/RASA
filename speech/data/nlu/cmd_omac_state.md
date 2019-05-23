@@ -116,3 +116,21 @@
 - [unsuspend](state_cmd) the robot
 - [unsuspend](state_cmd) thanks
 - [unsuspend](state_cmd) the state machine
+- please [start](state_cmd) the machine
+- please [stop](state_cmd) the machine
+- please [suspend](state_cmd) the machine
+- [start](state_cmd) the machine please
+- Please [stop](state_cmd) the machine
+- [pause](state_cmd)
+- please [pause](state_cmd)
+- command [pause](state_cmd)
+- can you [pause](state_cmd)
+- can you [pause](state_cmd) please
+- [pause](state_cmd) please
+- go to [pause](state_cmd) state
+- [pause](state_cmd) the machine
+- [pause](state_cmd) everything
+- omac state [pause](state_cmd)
+- [pause](state_cmd) the robot
+- [pause](state_cmd) thanks
+- [pause](state_cmd) the state machine

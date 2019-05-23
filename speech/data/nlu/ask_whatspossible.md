@@ -36,3 +36,6 @@
 - what else can I do here?
 - Can you explain me in one sentence what you are doing?
 - what are the options?
+- can you help me?
+- What can you do?
+- ok. What can i do with you?

@@ -22,9 +22,9 @@
 - i want to use the demonstrator
 - the demonstrator
 - The faps demonstrator
-- how to learn the demonstrator 
-- I want to learn about the demonstrator 
-- i want to learn about the demonstrator 
+- how to learn the demonstrator
+- I want to learn about the demonstrator
+- i want to learn about the demonstrator
 - how to get started with the demonstrator
 - give me some information on the demonstrator
 - tell me how to get started with the demonstrator

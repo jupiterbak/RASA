@@ -5,3 +5,5 @@
 - give me more information please
 - can you tell me more
 - i want more information
+- please explain
+- please describe it

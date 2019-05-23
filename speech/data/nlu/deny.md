@@ -39,3 +39,13 @@
 - i don't want either of those
 - nah thanks
 - neither of these
+- i don't want that
+- didnt meant that
+- dont mean that
+- that's not what i want
+- that's not correct
+- that's wrong
+- it's not good
+- that is wrong
+- its not ok
+- its not correct

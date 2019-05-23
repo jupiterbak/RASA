@@ -108,7 +108,7 @@
 - adele@gmx.com
 - my name is [marc](name)
 - one trillion dollar
-- I'm a [full stack developer](job_function:full stack developer)
+- I'm a [full stack developer](job_function)
 - moabit@yoga.com
 - it's the [moabit yoga studio](company)
 - my name is [oli miller](name)
@@ -298,7 +298,7 @@
 - a great one
 - one that will get me promoted
 - conversational
--  propella@daskapital.de
+- propella@daskapital.de
 - [Bolschewistische Kurkapelle Schwarz-Rot](company)
 - [akela propella](name)
 - schlabberjimmy@glibberglitter.edu

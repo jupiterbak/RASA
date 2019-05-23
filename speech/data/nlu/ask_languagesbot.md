@@ -36,3 +36,5 @@
 - are you multilingual?
 - what foreign languages do you know?
 - what foreign languages are you fluent in?
+- What is your language?
+- Which language do you speak?

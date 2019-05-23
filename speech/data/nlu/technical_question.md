@@ -1,3 +1,6 @@
+## intent:out_of_scope
+- i know
+
 ## intent:technical_question
 - what is duckling
 - where to train intents in the demonstrator?

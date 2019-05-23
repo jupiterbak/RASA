@@ -1,5 +1,5 @@
-## intent:goodbye <!--- The label of the intent --> 
-- Bye 			<!--- Training examples for intent 'bye'--> 
+## intent:goodbye
+- Bye
 - Goodbye
 - See you later
 - Bye bot
