@@ -12,7 +12,7 @@ pipeline:
     # if not set the default timezone of Duckling is going to be used
     # needed to calculate dates from relative expressions like "tomorrow"
     timezone: "Europe/Berlin"
-    
+
 policies:
 - batch_size: 50
   epochs: 200
