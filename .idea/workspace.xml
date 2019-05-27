@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="48a49de8-60bc-4e63-bfdb-1edddab6a538" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/speech/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech/rasa.db" beforeDir="false" afterPath="$PROJECT_DIR$/speech/rasa.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech/tracker.db" beforeDir="false" afterPath="$PROJECT_DIR$/speech/tracker.db" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +39,8 @@
         <entry file="file://$PROJECT_DIR$/speech/data/stories/cmd_goto.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="697">
-                <caret line="41" column="30" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="30" />
+              <first_editor relative-caret-position="935">
+                <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
               </first_editor>
               <second_editor />
             </state>
@@ -49,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/speech/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="204">
+              <caret line="12" column="73" lean-forward="true" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -226,29 +227,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Demonstrator_NLU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demonstrator_NLU" type="462c0819:PsiDirectoryNode" />
+              <item name="RASA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RASA" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Demonstrator_NLU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demonstrator_NLU" type="462c0819:PsiDirectoryNode" />
-              <item name="speech" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Demonstrator_NLU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demonstrator_NLU" type="462c0819:PsiDirectoryNode" />
-              <item name="speech" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="RASA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RASA" type="462c0819:PsiDirectoryNode" />
+              <item name="duckling" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,9 +344,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.train_nlu" />
-      <item itemvalue="Python.train_core" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.train_core" />
+      <item itemvalue="Python.train_nlu" />
     </list>
     <recent_temporary>
       <list>
@@ -383,8 +378,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18282403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -767,6 +761,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/speech/data/nlu/greeting.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/speech/domain.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3842">
@@ -787,8 +788,8 @@
     <entry file="file://$PROJECT_DIR$/speech/data/stories/cmd_goto.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="697">
-            <caret line="41" column="30" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="30" />
+          <first_editor relative-caret-position="935">
+            <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
           </first_editor>
           <second_editor />
         </state>
@@ -814,17 +815,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/speech/data/nlu/greeting.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/speech/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="204">
+          <caret line="12" column="73" lean-forward="true" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
         </state>
       </provider>
     </entry>
