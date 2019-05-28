@@ -48,6 +48,7 @@ intents:
   - fast
   - very_fast
   - very_very_fast
+  - cmd_show_last_value
 
 
 entities:
@@ -62,6 +63,7 @@ entities:
   - state_cmd
   - goto_cmd
   - mode_cmd
+  - variable_name
 
 
 slots:
@@ -79,8 +81,10 @@ slots:
     type: unfeaturized
     initial_value: "stopped"
   current_velocity:
-    type: unfeaturized
-    initial_value: 50
+    type: float
+    initial_value: 50.0
+    min_value: 0.0
+    max_value:  100.0
   current_omac_mode:
     type: unfeaturized
     initial_value: "manual"
@@ -241,7 +245,8 @@ actions:
   - utter_cmd_executed_error
   - utter_whoiam
   - utter_reached_maximum_velocity
-  - utter_reached_minimun_velocity
+  - utter_reached_minimum_velocity
+  - utter_variable_value
   - utter_ask_confirm
   - action_next_step
   - action_chitchat
@@ -258,6 +263,7 @@ actions:
   - action_fast
   - action_very_fast
   - action_very_very_fast
+  - action_show_value
 
 
 forms:
@@ -526,4 +532,10 @@ templates:
     - text: "Maximum velocity reached."
   utter_reached_minimum_velocity:
     - text: "Minimum velocity reached."
+  utter_variable_value:
+    - text: "{variable_name}: {variable_value}"
+    - text: "The value of {variable_name} is {variable_value}"
+    - text: "The last value of {variable_name} is {variable_value}"
+    - text: "{variable_value}"
+    - text: "{variable_name} has the value: {variable_value}"
       

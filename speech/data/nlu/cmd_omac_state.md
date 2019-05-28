@@ -134,3 +134,4 @@
 - [pause](state_cmd) the robot
 - [pause](state_cmd) thanks
 - [pause](state_cmd) the state machine
+- [hold](state_cmd) on

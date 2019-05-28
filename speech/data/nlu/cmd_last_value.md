@@ -1,0 +1,16 @@
+## intent:cmd_show_last_value
+- please show the last value of [current_velocity](variable_name)
+- Show the last value of [current_velocity](variable_name)
+- Last value of [current_velocity](variable_name)
+- What is the last value of [current_velocity](variable_name)
+- What is the current value of [current_velocity](variable_name)
+- Current of [current_velocity](variable_name)
+- Find the last value of [current_velocity](variable_name)
+- Find the current value of [current_velocity](variable_name)
+- What's the value of [current_velocity](variable_name)
+- Variable [current_velocity](variable_name)
+- please present the variable [current_velocity](variable_name)
+- What is the variable [current_velocity](variable_name)
+- last value of [current_velocity](variable_name)
+- What is the value of [current_velocity](variable_name)?
+- last value of [name](variable_name)

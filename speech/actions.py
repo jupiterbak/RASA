@@ -1,17 +1,15 @@
 # -*- coding: utf-8 -*-
 import json
 import logging
-import time
-from typing import Text, Dict, Any, List
+import random
 
 import requests
-from rasa_sdk import Action, Tracker
+from rasa_sdk import Action
 from rasa_sdk.events import (
     SlotSet,
     UserUtteranceReverted,
     ConversationPaused,
 )
-from rasa_sdk.executor import CollectingDispatcher
 
 logger = logging.getLogger(__name__)
 
@@ -58,7 +56,8 @@ class ActionJoke(Action):
     def run(self, dispatcher, tracker, domain):
         # what your action should do
         request = json.loads(
-            requests.get("http://slowwly.robertomurray.co.uk/delay/3000/url/https://api.chucknorris.io/jokes/random").text
+            requests.get(
+                "http://slowwly.robertomurray.co.uk/delay/3000/url/https://api.chucknorris.io/jokes/random").text
         )  # make an api call
         joke = request["value"]  # extract a joke from returned json response
         dispatcher.utter_message(joke)  # send the message back to the user
@@ -128,6 +127,19 @@ class ActionExecuteCmdGoTo(Action):
         dispatcher.utter_template("utter_cmd_executed_success", tracker)
         return [SlotSet("last_goto_cmd", cmd), SlotSet("last_goto_cmd_param", param)]
 
+
+class ActionShowValue(Action):
+    def name(self):
+        return "action_show_value"
+
+    def run(self, dispatcher, tracker, domain):
+        variable_name = next(tracker.get_latest_entity_values("variable_name"), None)
+        variable_value = random.random()
+        dispatcher.utter_template("utter_variable_value", tracker, variable_name=variable_name,
+                                  variable_value=variable_value)
+        return []
+
+
 class ActionSlow(Action):
     def name(self):
         return "action_slow"
@@ -139,6 +151,7 @@ class ActionSlow(Action):
             dispatcher.utter_template("utter_reached_minimum_velocity", tracker)
             next_velocity = 5.0
         return [SlotSet("current_velocity", next_velocity)]
+
 
 class ActionVerySlow(Action):
     def name(self):
@@ -152,6 +165,7 @@ class ActionVerySlow(Action):
             next_velocity = 5.0
         return [SlotSet("current_velocity", next_velocity)]
 
+
 class ActionVeryVerySlow(Action):
     def name(self):
         return "action_very_very_slow"
@@ -163,6 +177,7 @@ class ActionVeryVerySlow(Action):
             dispatcher.utter_template("utter_reached_minimum_velocity", tracker)
             next_velocity = 5.0
         return [SlotSet("current_velocity", next_velocity)]
+
 
 class ActionFast(Action):
     def name(self):
@@ -176,6 +191,7 @@ class ActionFast(Action):
             next_velocity = 100.0
         return [SlotSet("current_velocity", next_velocity)]
 
+
 class ActionVeryFast(Action):
     def name(self):
         return "action_very_fast"
@@ -188,6 +204,7 @@ class ActionVeryFast(Action):
             next_velocity = 100.0
         return [SlotSet("current_velocity", next_velocity)]
 
+
 class ActionVeryVeryFast(Action):
     def name(self):
         return "action_very_very_fast"
@@ -199,6 +216,7 @@ class ActionVeryVeryFast(Action):
             dispatcher.utter_template("utter_reached_maximum_velocity", tracker)
             next_velocity = 100.0
         return [SlotSet("current_velocity", next_velocity)]
+
 
 class ActionChitchat(Action):
     """Returns the chitchat utterance dependent on the intent"""
@@ -268,9 +286,9 @@ class ActionDefaultAskAffirmation(Action):
 
     def run(
             self,
-            dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any],
+            dispatcher,
+            tracker,
+            domain,
     ):
 
         intent_ranking = tracker.latest_message.get("intent_ranking", [])
