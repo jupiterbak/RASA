@@ -14,3 +14,6 @@
 - last value of [current_velocity](variable_name)
 - What is the value of [current_velocity](variable_name)?
 - last value of [name](variable_name)
+- Value of [current_velocity](variable_name)
+- value of[current_mode](variable_name)
+- Value of[test_me](variable_name)

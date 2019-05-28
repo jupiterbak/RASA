@@ -1,6 +1,7 @@
 language: en
 pipeline:
   - name: WhitespaceTokenizer
+  - name: RegexFeaturizer
   - name: CRFEntityExtractor
   - name: EntitySynonymMapper
   - name: CountVectorsFeaturizer
