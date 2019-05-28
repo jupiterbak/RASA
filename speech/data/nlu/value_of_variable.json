@@ -1,0 +1,2408 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [],
+    "common_examples": [
+      {
+        "text": "Find the last value of current_order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "current_order"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of current_state",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "current_state"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of current_order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 39,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "current_order"
+          }
+        ]
+      },
+      {
+        "text": "Last value of voltage",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 21,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "voltage"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable current_velocity",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 37,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "current_velocity"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable WP1",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 31,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "WP1"
+          }
+        ]
+      },
+      {
+        "text": "Last value of power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 19,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "power"
+          }
+        ]
+      },
+      {
+        "text": "Last value of WP2",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "WP2"
+          }
+        ]
+      },
+      {
+        "text": "Find the current value of current_order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 39,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "current_order"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of current_order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 43,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "current_order"
+          }
+        ]
+      },
+      {
+        "text": "Find the last value of condition",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 32,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "condition"
+          }
+        ]
+      },
+      {
+        "text": "Variable WP2",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 12,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "WP2"
+          }
+        ]
+      },
+      {
+        "text": "Find the current value of WP1",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 29,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "WP1"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable current_state",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 34,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "current_state"
+          }
+        ]
+      },
+      {
+        "text": "Variable voltage",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 16,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "voltage"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of current_gripper",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 44,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "current_gripper"
+          }
+        ]
+      },
+      {
+        "text": "Variable WP1",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 12,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "WP1"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 25,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "power"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable current",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 35,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "current"
+          }
+        ]
+      },
+      {
+        "text": "Find the last value of WP1",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 26,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "WP1"
+          }
+        ]
+      },
+      {
+        "text": "Last value of WP3",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "WP3"
+          }
+        ]
+      },
+      {
+        "text": "Find the last value of current_gripper",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 38,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "current_gripper"
+          }
+        ]
+      },
+      {
+        "text": "Variable position_x",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 19,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "position_x"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable WP4",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 24,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "WP4"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of program_pointer",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 44,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "program_pointer"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of current_mode",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 38,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "current_mode"
+          }
+        ]
+      },
+      {
+        "text": "Find the last value of position_z",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "position_z"
+          }
+        ]
+      },
+      {
+        "text": "Find the current value of WP4",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 29,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "WP4"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable WP3",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 24,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "WP3"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 28,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "order"
+          }
+        ]
+      },
+      {
+        "text": "Find the current value of current_mode",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 38,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "current_mode"
+          }
+        ]
+      },
+      {
+        "text": "Last value of order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 19,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "order"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of current_power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 43,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "current_power"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable current_power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 41,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "current_power"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "order"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable WP3",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 31,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "WP3"
+          }
+        ]
+      },
+      {
+        "text": "Value of WP1",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 12,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "WP1"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of current",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 30,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "current"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of position_y",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 39,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "position_y"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of WP1",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "WP1"
+          }
+        ]
+      },
+      {
+        "text": "Find the current value of WP3",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 29,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "WP3"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of current_state",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 42,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "current_state"
+          }
+        ]
+      },
+      {
+        "text": "Value of current_state",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 22,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "current_state"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable current_order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 41,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "current_order"
+          }
+        ]
+      },
+      {
+        "text": "Find the current value of current_position",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 42,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "current_position"
+          }
+        ]
+      },
+      {
+        "text": "Last value of WP4",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "WP4"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable current_mode",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "current_mode"
+          }
+        ]
+      },
+      {
+        "text": "Last value of current_position",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 30,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "current_position"
+          }
+        ]
+      },
+      {
+        "text": "Find the last value of current_state",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "current_state"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable current_state",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 41,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "current_state"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable condition",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 30,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "condition"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of current_order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "current_order"
+          }
+        ]
+      },
+      {
+        "text": "Value of position_y",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 19,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "position_y"
+          }
+        ]
+      },
+      {
+        "text": "Value of program_pointer",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 24,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "program_pointer"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of current_order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 42,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "current_order"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of WP2",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 23,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "WP2"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable current_gripper",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "current_gripper"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of current_velocity",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 42,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "current_velocity"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of WP3",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 29,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "WP3"
+          }
+        ]
+      },
+      {
+        "text": "Variable current_state",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 22,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "current_state"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of WP2",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 32,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "WP2"
+          }
+        ]
+      },
+      {
+        "text": "Variable current_order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 22,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "current_order"
+          }
+        ]
+      },
+      {
+        "text": "Last value of current_mode",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 26,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "current_mode"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of program_pointer",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 38,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "program_pointer"
+          }
+        ]
+      },
+      {
+        "text": "Last value of position_z",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 24,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "position_z"
+          }
+        ]
+      },
+      {
+        "text": "Find the current value of position_x",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "position_x"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of position_x",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "position_x"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of current_order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "current_order"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of current_gripper",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 45,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "current_gripper"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable position_x",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 31,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "position_x"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable program_length",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 42,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "program_length"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable position_z",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 31,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "position_z"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of current_position",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 46,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "current_position"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of current_state",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "current_state"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of WP3",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 23,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "WP3"
+          }
+        ]
+      },
+      {
+        "text": "Last value of current_power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 27,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "current_power"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of WP3",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 32,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "WP3"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of position_z",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 30,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "position_z"
+          }
+        ]
+      },
+      {
+        "text": "Find the current value of current",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "current"
+          }
+        ]
+      },
+      {
+        "text": "Value of current_gripper",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 24,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "current_gripper"
+          }
+        ]
+      },
+      {
+        "text": "Find the last value of WP3",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 26,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "WP3"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of WP1",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 26,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "WP1"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable program_pointer",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 43,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "program_pointer"
+          }
+        ]
+      },
+      {
+        "text": "Find the last value of position_y",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "position_y"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of WP2",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 26,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "WP2"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of voltage",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 27,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "voltage"
+          }
+        ]
+      },
+      {
+        "text": "Find the last value of current_mode",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 35,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "current_mode"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of current_state",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 43,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "current_state"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of WP4",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 32,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "WP4"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of WP4",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 23,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "WP4"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of WP1",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 23,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "WP1"
+          }
+        ]
+      },
+      {
+        "text": "Find the last value of current_power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "current_power"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of current_position",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "current_position"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable current_mode",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 40,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "current_mode"
+          }
+        ]
+      },
+      {
+        "text": "Value of current_velocity",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 25,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "current_velocity"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of position_y",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 30,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "position_y"
+          }
+        ]
+      },
+      {
+        "text": "Value of position_x",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 19,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "position_x"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 31,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "power"
+          }
+        ]
+      },
+      {
+        "text": "Find the last value of current_velocity",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 39,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "current_velocity"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of position_x",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 30,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "position_x"
+          }
+        ]
+      },
+      {
+        "text": "Find the last value of position_x",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "position_x"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 26,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "order"
+          }
+        ]
+      },
+      {
+        "text": "Last value of WP1",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "WP1"
+          }
+        ]
+      },
+      {
+        "text": "Variable current_power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 22,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "current_power"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of program_length",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 37,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "program_length"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of current",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "current"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 35,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "power"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable program_length",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 35,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "program_length"
+          }
+        ]
+      },
+      {
+        "text": "Find the current value of program_pointer",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 41,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "program_pointer"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 31,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "order"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of program_pointer",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 45,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "program_pointer"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of current_velocity",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 46,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "current_velocity"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of voltage",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 30,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "voltage"
+          }
+        ]
+      },
+      {
+        "text": "Value of current_order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 22,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "current_order"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of current_velocity",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 39,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "current_velocity"
+          }
+        ]
+      },
+      {
+        "text": "Last value of current_order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 27,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "current_order"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of current_power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 42,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "current_power"
+          }
+        ]
+      },
+      {
+        "text": "Value of power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 14,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "power"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of program_pointer",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 41,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "program_pointer"
+          }
+        ]
+      },
+      {
+        "text": "Find the current value of position_z",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "position_z"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of position_z",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "position_z"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of WP4",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "WP4"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 34,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "order"
+          }
+        ]
+      },
+      {
+        "text": "Variable current_mode",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 21,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "current_mode"
+          }
+        ]
+      },
+      {
+        "text": "Find the last value of voltage",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 30,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "voltage"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable current_order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 34,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "current_order"
+          }
+        ]
+      },
+      {
+        "text": "Last value of program_pointer",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 29,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "program_pointer"
+          }
+        ]
+      },
+      {
+        "text": "Last value of position_y",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 24,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "position_y"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of WP4",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 29,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "WP4"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of position_y",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "position_y"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of program_length",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 34,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "program_length"
+          }
+        ]
+      },
+      {
+        "text": "Variable program_pointer",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 24,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "program_pointer"
+          }
+        ]
+      },
+      {
+        "text": "Find the last value of WP2",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 26,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "WP2"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of condition",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 38,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "condition"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of current_mode",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 42,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "current_mode"
+          }
+        ]
+      },
+      {
+        "text": "Variable position_z",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 19,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "position_z"
+          }
+        ]
+      },
+      {
+        "text": "Variable current_velocity",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 25,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "current_velocity"
+          }
+        ]
+      },
+      {
+        "text": "Find the current value of order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 31,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "order"
+          }
+        ]
+      },
+      {
+        "text": "Find the last value of power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 28,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "power"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of WP2",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 29,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "WP2"
+          }
+        ]
+      },
+      {
+        "text": "Variable current_position",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 25,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "current_position"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable program_pointer",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "program_pointer"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of current_mode",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 32,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "current_mode"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable WP4",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 31,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "WP4"
+          }
+        ]
+      },
+      {
+        "text": "Value of program_length",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 23,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "program_length"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable current",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 28,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "current"
+          }
+        ]
+      },
+      {
+        "text": "Value of position_z",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 19,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "position_z"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable WP2",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 31,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "WP2"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of voltage",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "voltage"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable WP2",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 24,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "WP2"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of WP3",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "WP3"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 28,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "power"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of current_velocity",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 45,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "current_velocity"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of voltage",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 37,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "voltage"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of WP3",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 26,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "WP3"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of program_pointer",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 35,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "program_pointer"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable current_power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 34,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "current_power"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of current_position",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 42,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "current_position"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of current",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "current"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of current",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 37,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "current"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 34,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "power"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable current_position",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 37,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "current_position"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "power"
+          }
+        ]
+      },
+      {
+        "text": "Value of WP4",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 12,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "WP4"
+          }
+        ]
+      },
+      {
+        "text": "Value of current_mode",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 21,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "current_mode"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of position_y",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "position_y"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable position_z",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 38,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "position_z"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of position_z",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 40,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "position_z"
+          }
+        ]
+      },
+      {
+        "text": "Variable program_length",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 23,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "program_length"
+          }
+        ]
+      },
+      {
+        "text": "Find the current value of program_length",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 40,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "program_length"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable current_position",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 44,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "current_position"
+          }
+        ]
+      },
+      {
+        "text": "Value of voltage",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 16,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "voltage"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of WP4",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 26,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "WP4"
+          }
+        ]
+      },
+      {
+        "text": "Find the current value of current_state",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 39,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "current_state"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of program_length",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 44,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "program_length"
+          }
+        ]
+      },
+      {
+        "text": "Variable condition",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 18,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "condition"
+          }
+        ]
+      },
+      {
+        "text": "Find the last value of order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 28,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "order"
+          }
+        ]
+      },
+      {
+        "text": "What is the variable voltage",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 28,
+            "entity": "variable_name",
+            "start": 21,
+            "value": "voltage"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of current_position",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 39,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "current_position"
+          }
+        ]
+      },
+      {
+        "text": "Last value of condition",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 23,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "condition"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of current_power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "current_power"
+          }
+        ]
+      },
+      {
+        "text": "Last value of current_gripper",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 29,
+            "entity": "variable_name",
+            "start": 14,
+            "value": "current_gripper"
+          }
+        ]
+      },
+      {
+        "text": "Value of current_power",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 22,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "current_power"
+          }
+        ]
+      },
+      {
+        "text": "Variable order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 14,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "order"
+          }
+        ]
+      },
+      {
+        "text": "Show the last value of current_mode",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 35,
+            "entity": "variable_name",
+            "start": 23,
+            "value": "current_mode"
+          }
+        ]
+      },
+      {
+        "text": "Value of WP3",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 12,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "WP3"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of current_gripper",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 41,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "current_gripper"
+          }
+        ]
+      },
+      {
+        "text": "Variable current_gripper",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 24,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "current_gripper"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 35,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "order"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of position_y",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 40,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "position_y"
+          }
+        ]
+      },
+      {
+        "text": "please show the last value of position_x",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 40,
+            "entity": "variable_name",
+            "start": 30,
+            "value": "position_x"
+          }
+        ]
+      },
+      {
+        "text": "What's the value of order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 25,
+            "entity": "variable_name",
+            "start": 20,
+            "value": "order"
+          }
+        ]
+      },
+      {
+        "text": "Variable position_y",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 19,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "position_y"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of WP1",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 29,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "WP1"
+          }
+        ]
+      },
+      {
+        "text": "Find the current value of current_velocity",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 42,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "current_velocity"
+          }
+        ]
+      },
+      {
+        "text": "Value of order",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 14,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "order"
+          }
+        ]
+      },
+      {
+        "text": "What is the current value of position_z",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 39,
+            "entity": "variable_name",
+            "start": 29,
+            "value": "position_z"
+          }
+        ]
+      },
+      {
+        "text": "What is the last value of position_z",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "variable_name",
+            "start": 26,
+            "value": "position_z"
+          }
+        ]
+      },
+      {
+        "text": "please present the variable position_y",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 38,
+            "entity": "variable_name",
+            "start": 28,
+            "value": "position_y"
+          }
+        ]
+      },
+      {
+        "text": "Value of WP2",
+        "intent": "cmd_show_last_value",
+        "entities": [
+          {
+            "end": 12,
+            "entity": "variable_name",
+            "start": 9,
+            "value": "WP2"
+          }
+        ]
+      }
+    ]
+  }
+}

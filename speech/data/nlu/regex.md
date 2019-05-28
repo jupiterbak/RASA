@@ -1,2 +1,2 @@
 ## regex:variable_name
-- ^[a-zA-Z_][a-zA-Z_0-9]*$
+- ^[a-zA-Z_]*_[a-zA-Z_0-9]*$

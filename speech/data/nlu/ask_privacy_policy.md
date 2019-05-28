@@ -19,4 +19,3 @@
 - show me the policy
 - Tell me more about the policy
 - What is the policy?
-- Resume the p0licy, please

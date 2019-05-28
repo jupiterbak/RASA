@@ -35,9 +35,6 @@
 * affirm
      - utter_react_positive
      - utter_ask_whatspossible
-* deny
-    - utter_react_negative
-    - utter_goodbye
 
 ## ask_privacy_policy and confirm
 * ask_privacy_policy
