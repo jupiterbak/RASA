@@ -41,6 +41,13 @@ intents:
   - explain
   - omac_cmd_state
   - cmd_goto
+  - omac_cmd_mode
+  - slow
+  - very_slow
+  - very_very_slow
+  - fast
+  - very_fast
+  - very_very_fast
 
 
 entities:
@@ -54,6 +61,7 @@ entities:
   - module
   - state_cmd
   - goto_cmd
+  - mode_cmd
 
 
 slots:
@@ -70,6 +78,12 @@ slots:
   current_omac_state:
     type: unfeaturized
     initial_value: "stopped"
+  current_velocity:
+    type: unfeaturized
+    initial_value: 50
+  current_omac_mode:
+    type: unfeaturized
+    initial_value: "manual"
   feedback_value:
     type: categorical
     values:
@@ -101,6 +115,15 @@ slots:
     values:
       - gripper
       - position
+  cmd_omac_mode:
+    type: categorical
+    values:
+      - automatic
+      - manual
+      - maintenance
+      - cloud
+      - user1
+      - user2
   last_goto_cmd_param:
     type: unfeaturized
   unknown_product:
@@ -141,7 +164,7 @@ actions:
   - utter_inform_privacypolicy
   - utter_moreinformation
   - utter_docu
-  - utter_confirmationemail
+  - utter_ask_confirmationemail
   - utter_contact_email
   - utter_no_speak
   - utter_out_of_scope
@@ -217,6 +240,9 @@ actions:
   - utter_cmd_executed_success
   - utter_cmd_executed_error
   - utter_whoiam
+  - utter_reached_maximum_velocity
+  - utter_reached_minimun_velocity
+  - utter_ask_confirm
   - action_next_step
   - action_chitchat
   - action_pause
@@ -225,6 +251,13 @@ actions:
   - action_default_ask_affirmation
   - action_cmd_omac_state
   - action_execute_cmd_goto
+  - action_execute_cmd_omac_mode
+  - action_slow
+  - action_very_slow
+  - action_very_very_slow
+  - action_fast
+  - action_very_fast
+  - action_very_very_fast
 
 
 forms:
@@ -263,7 +296,7 @@ templates:
     - text: "Do you want to know more about the FAPS demonstrator? Please contact Matthias Brossog."
   utter_ask_use_case:
     - text: "What kind of usecase  do you want to address with our solution?"
-  utter_confirmationemail:
+  utter_ask_confirmationemail:
     - text: "We sent a confirmation email to {email}."
   utter_docu:
     - text: "If you want some more awesome demonstrations, please contact Jupiter Bakakeu"
@@ -483,4 +516,14 @@ templates:
     - text: "Error"
     - text: "Something happened during the execution."
     - text: "I wasn't able to execute the command"
-  
+  utter_ask_confirm:
+    - text: "Please confirm."
+    - text: "Confirm?"
+    - text: "Should i execute the command?"
+    - text: "Ok?"
+    - text: "Please confirm your request."
+  utter_reached_maximum_velocity:
+    - text: "Maximum velocity reached."
+  utter_reached_minimum_velocity:
+    - text: "Minimum velocity reached."
+      

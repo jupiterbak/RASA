@@ -85,6 +85,28 @@ class ActionExecuteOMACStateCmd(Action):
         dispatcher.utter_template("utter_cmd_executed_success", tracker)
         return [SlotSet("current_omac_state", "execute")]
 
+
+class ActionExecuteOMACModeCmd(Action):
+    def name(self):
+        # define the name of the action which can then be included in training stories
+        return "action_execute_cmd_omac_mode"
+
+    def run(self, dispatcher, tracker, domain):
+        # Parse the command
+        state_entity = next(tracker.get_latest_entity_values("state_cmd"), None)
+        # execute OMAC STATE CMD
+        # Start the execution
+        # TODO: Implemets using the Demonstrator API
+        request = json.loads(
+            requests.get(
+                "http://slowwly.robertomurray.co.uk/delay/3000/url/https://api.chucknorris.io/jokes/random").text
+        )  # make an api call
+        joke = request["value"]  # extract a joke from returned json response
+        # Set the response depending on the results
+        dispatcher.utter_template("utter_cmd_executed_success", tracker)
+        return [SlotSet("current_omac_mode", "execute")]
+
+
 class ActionExecuteCmdGoTo(Action):
     def name(self):
         # define the name of the action which can then be included in training stories
@@ -105,6 +127,78 @@ class ActionExecuteCmdGoTo(Action):
         # Set the response depending on the results
         dispatcher.utter_template("utter_cmd_executed_success", tracker)
         return [SlotSet("last_goto_cmd", cmd), SlotSet("last_goto_cmd_param", param)]
+
+class ActionSlow(Action):
+    def name(self):
+        return "action_slow"
+
+    def run(self, dispatcher, tracker, domain):
+        current_velocity = float(tracker.get_slot("current_velocity"))
+        next_velocity = 0.9 * current_velocity
+        if next_velocity <= 5:
+            dispatcher.utter_template("utter_reached_minimum_velocity", tracker)
+            next_velocity = 5.0
+        return [SlotSet("current_velocity", next_velocity)]
+
+class ActionVerySlow(Action):
+    def name(self):
+        return "action_very_slow"
+
+    def run(self, dispatcher, tracker, domain):
+        current_velocity = float(tracker.get_slot("current_velocity"))
+        next_velocity = 0.6 * current_velocity
+        if next_velocity <= 5:
+            dispatcher.utter_template("utter_reached_minimum_velocity", tracker)
+            next_velocity = 5.0
+        return [SlotSet("current_velocity", next_velocity)]
+
+class ActionVeryVerySlow(Action):
+    def name(self):
+        return "action_very_very_slow"
+
+    def run(self, dispatcher, tracker, domain):
+        current_velocity = float(tracker.get_slot("current_velocity"))
+        next_velocity = 0.3 * current_velocity
+        if next_velocity <= 5:
+            dispatcher.utter_template("utter_reached_minimum_velocity", tracker)
+            next_velocity = 5.0
+        return [SlotSet("current_velocity", next_velocity)]
+
+class ActionFast(Action):
+    def name(self):
+        return "action_fast"
+
+    def run(self, dispatcher, tracker, domain):
+        current_velocity = float(tracker.get_slot("current_velocity"))
+        next_velocity = 1.2 * current_velocity
+        if next_velocity >= 100:
+            dispatcher.utter_template("utter_reached_maximum_velocity", tracker)
+            next_velocity = 100.0
+        return [SlotSet("current_velocity", next_velocity)]
+
+class ActionVeryFast(Action):
+    def name(self):
+        return "action_very_fast"
+
+    def run(self, dispatcher, tracker, domain):
+        current_velocity = float(tracker.get_slot("current_velocity"))
+        next_velocity = 1.5 * current_velocity
+        if next_velocity >= 100:
+            dispatcher.utter_template("utter_reached_maximum_velocity", tracker)
+            next_velocity = 100.0
+        return [SlotSet("current_velocity", next_velocity)]
+
+class ActionVeryVeryFast(Action):
+    def name(self):
+        return "action_very_very_fast"
+
+    def run(self, dispatcher, tracker, domain):
+        current_velocity = float(tracker.get_slot("current_velocity"))
+        next_velocity = 2.0 * current_velocity
+        if next_velocity >= 100:
+            dispatcher.utter_template("utter_reached_maximum_velocity", tracker)
+            next_velocity = 100.0
+        return [SlotSet("current_velocity", next_velocity)]
 
 class ActionChitchat(Action):
     """Returns the chitchat utterance dependent on the intent"""
@@ -149,7 +243,7 @@ class ActionPause(Action):
 
 
 class ActionDefaultFallback(Action):
-    def name(self) -> Text:
+    def name(self):
         return "action_default_fallback"
 
     def run(self, dispatcher, tracker, domain):
@@ -160,10 +254,10 @@ class ActionDefaultFallback(Action):
 class ActionDefaultAskAffirmation(Action):
     """Asks for an affirmation of the intent if NLU threshold is not met."""
 
-    def name(self) -> Text:
+    def name(self):
         return "action_default_ask_affirmation"
 
-    def __init__(self) -> None:
+    def __init__(self):
         import pandas as pd
 
         self.intent_mappings = pd.read_csv("data/" "intent_description_mapping.csv")
@@ -177,7 +271,7 @@ class ActionDefaultAskAffirmation(Action):
             dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any],
-    ) -> List["Event"]:
+    ):
 
         intent_ranking = tracker.latest_message.get("intent_ranking", [])
         if len(intent_ranking) > 1:

@@ -38,3 +38,11 @@
 - Hold
 - pause
 - Pause
+- Hold on
+- Backup
+
+## synonym:start
+- Start
+- continue
+- Resume
+- resume

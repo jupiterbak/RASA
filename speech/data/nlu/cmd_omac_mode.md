@@ -1,0 +1,49 @@
+## intent:omac_cmd_mode
+- change mode to [automatic](mode_cmd)
+- go to [automatic](mode_cmd) mode
+- set the mode to [automatic](mode_cmd)
+- omac mode [automatic](mode_cmd) please
+- please [automatic](mode_cmd) mode
+- please change to [automatic](mode_cmd)
+- change to [automatic](mode_cmd)
+- set mode to [automatic](mode_cmd)
+- set [automatic](mode_cmd) mode
+- [automatic](mode_cmd) mode please
+- command change to [automatic](mode_cmd) mode
+- command [automatic](mode_cmd) mode
+- change mode to [manual](mode_cmd)
+- go to [manual](mode_cmd) mode
+- set the mode to [manual](mode_cmd)
+- omac mode [manual](mode_cmd) please
+- please [manual](mode_cmd) mode
+- please change to [manual](mode_cmd)
+- change to [manual](mode_cmd)
+- set mode to [manual](mode_cmd)
+- set [manual](mode_cmd) mode
+- [manual](mode_cmd) mode please
+- command change to [manual](mode_cmd) mode
+- command [manual](mode_cmd) mode
+- change mode to [cloud](mode_cmd)
+- go to [cloud](mode_cmd) mode
+- set the mode to [cloud](mode_cmd)
+- omac mode [cloud](mode_cmd) please
+- please [cloud](mode_cmd) mode
+- please change to [cloud](mode_cmd)
+- change to [cloud](mode_cmd)
+- set mode to [cloud](mode_cmd)
+- set [cloud](mode_cmd) mode
+- [cloud](mode_cmd) mode please
+- command change to [cloud](mode_cmd) mode
+- command [cloud](mode_cmd) mode
+- change mode to [maintenance](mode_cmd)
+- go to [maintenance](mode_cmd) mode
+- set the mode to [maintenance](mode_cmd)
+- omac mode [maintenance](mode_cmd) please
+- please [maintenance](mode_cmd) mode
+- please change to [maintenance](mode_cmd)
+- change to [maintenance](mode_cmd)
+- set mode to [maintenance](mode_cmd)
+- set [maintenance](mode_cmd) mode
+- [maintenance](mode_cmd) mode please
+- command change to [maintenance](mode_cmd) mode
+- command [maintenance](mode_cmd) mode
