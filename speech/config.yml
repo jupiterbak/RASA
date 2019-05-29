@@ -9,7 +9,7 @@ pipeline:
   - name: EmbeddingIntentClassifier
   - name: DucklingHTTPExtractor
     url: http://192.168.99.100:8000
-    dimensions: ["time", "number"]
+    dimensions: ["time", "number", "distance"]
     # if not set the default timezone of Duckling is going to be used
     # needed to calculate dates from relative expressions like "tomorrow"
     timezone: "Europe/Berlin"

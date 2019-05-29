@@ -238,6 +238,18 @@ class ActionCloseGripper(Action):
         return []
 
 
+class ActionMoveRobot(Action):
+    def name(self):
+        return "action_move_robot"
+
+    def run(self, dispatcher, tracker, domain):
+        direction = next(tracker.get_latest_entity_values("cmd_robot_direction"), None)
+        distance = next(tracker.get_latest_entity_values("distance"), None)
+
+        dispatcher.utter_template("utter_cmd_executed_success", tracker)
+        return [SlotSet("cmd_robot_direction", direction)]
+
+
 class ActionTakeGripper(Action):
     def name(self):
         return "action_take_gripper"

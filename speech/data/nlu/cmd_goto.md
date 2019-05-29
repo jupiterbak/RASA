@@ -27,3 +27,5 @@
 - go to [gripper](goto_cmd) [two](number:2)
 - go to [gripper](goto_cmd) [2](number)
 - Go to [gripper](goto_cmd) [two](number)
+- go to [position](goto_cmd) [3](number)
+- go to [gripper](goto_cmd) [one](number:1)
