@@ -218,6 +218,69 @@ class ActionVeryVeryFast(Action):
         return [SlotSet("current_velocity", next_velocity)]
 
 
+class ActionOpenGripper(Action):
+    def name(self):
+        return "action_open_gripper"
+
+    def run(self, dispatcher, tracker, domain):
+
+        dispatcher.utter_template("utter_cmd_executed_success", tracker)
+        return []
+
+
+class ActionCloseGripper(Action):
+    def name(self):
+        return "action_close_gripper"
+
+    def run(self, dispatcher, tracker, domain):
+
+        dispatcher.utter_template("utter_cmd_executed_success", tracker)
+        return []
+
+
+class ActionTakeGripper(Action):
+    def name(self):
+        return "action_take_gripper"
+
+    def run(self, dispatcher, tracker, domain):
+        gripper_nummber = next(tracker.get_latest_entity_values("number"), None)
+        gripper_hooked = bool(tracker.get_slot("gripper_hooked"))
+
+        # execute cmd
+        # Start the execution
+        # TODO: Implemets using the Demonstrator API
+        request = json.loads(
+            requests.get(
+                "http://slowwly.robertomurray.co.uk/delay/3000/url/https://api.chucknorris.io/jokes/random").text
+        )  # make an api call
+        joke = request["value"]  # extract a joke from returned json response
+        # Set the response depending on the results
+
+        dispatcher.utter_template("utter_cmd_executed_success", tracker)
+        return [SlotSet("gripper_hooked", True)]
+
+
+class ActionReleaseGripper(Action):
+    def name(self):
+        return "action_release_gripper"
+
+    def run(self, dispatcher, tracker, domain):
+        gripper_hooked = bool(tracker.get_slot("gripper_hooked"))
+
+        # execute cmd
+        # Start the execution
+        # TODO: Implemets using the Demonstrator API
+        request = json.loads(
+            requests.get(
+                "http://slowwly.robertomurray.co.uk/delay/3000/url/https://api.chucknorris.io/jokes/random").text
+        )  # make an api call
+        joke = request["value"]  # extract a joke from returned json response
+        # Set the response depending on the results
+
+        dispatcher.utter_template("utter_cmd_executed_success", tracker)
+        return [SlotSet("gripper_hooked", False)]
+
+
 class ActionChitchat(Action):
     """Returns the chitchat utterance dependent on the intent"""
 

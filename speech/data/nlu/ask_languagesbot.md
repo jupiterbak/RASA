@@ -38,3 +38,11 @@
 - what foreign languages are you fluent in?
 - What is your language?
 - Which language do you speak?
+
+## intent:cmd_show_last_value
+- show value of [current_vel](variable_name)
+- value of [current_variable](variable_name)
+- value of [current_mode](variable_name)
+- show the value of [current_velocity](variable_name)
+- show the value of [current_vel](variable_name)
+- show value of [current_velocity](variable_name)

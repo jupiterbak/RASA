@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a49de8-60bc-4e63-bfdb-1edddab6a538" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/speech/data/nlu/cmd_gripper.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speech/data/nlu/value_of_variable.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speech/data/stories/gripper_stories.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech/data/nlu/ask_privacy_policy.md" beforeDir="false" afterPath="$PROJECT_DIR$/speech/data/nlu/ask_privacy_policy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech/data/nlu/regex.md" beforeDir="false" afterPath="$PROJECT_DIR$/speech/data/nlu/regex.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech/data/stories/chitchat.md" beforeDir="false" afterPath="$PROJECT_DIR$/speech/data/stories/chitchat.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech/data/stories/privacy_policy.md" beforeDir="false" afterPath="$PROJECT_DIR$/speech/data/stories/privacy_policy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech/models/20190528-124111.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/speech/actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech/data/nlu/ask_languagesbot.md" beforeDir="false" afterPath="$PROJECT_DIR$/speech/data/nlu/ask_languagesbot.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech/data/nlu/cmd_gripper.md" beforeDir="false" afterPath="$PROJECT_DIR$/speech/data/nlu/cmd_gripper.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech/data/nlu/cmd_last_value.md" beforeDir="false" afterPath="$PROJECT_DIR$/speech/data/nlu/cmd_last_value.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/speech/domain.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech/models/20190528-133749.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech/models/20190528-143623.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speech/models/20190528-162940.tar.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/speech/rasa.db" beforeDir="false" afterPath="$PROJECT_DIR$/speech/rasa.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speech/tracker.db" beforeDir="false" afterPath="$PROJECT_DIR$/speech/tracker.db" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,42 +22,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/speech/domain.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="409" column="21" selection-start-line="409" selection-start-column="2" selection-end-line="409" selection-end-column="21" />
+            <state relative-caret-position="629">
+              <caret line="274" column="16" selection-start-line="274" selection-start-column="16" selection-end-line="274" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/speech/data/nlu/name.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="68">
-                <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="29" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/speech/config.yml">
+        <entry file="file://$PROJECT_DIR$/speech/actions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="25" />
+            <state relative-caret-position="435">
+              <caret line="239" selection-start-line="239" selection-end-line="239" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/speech/data/nlu/regex.md">
+        <entry file="file://$PROJECT_DIR$/speech/data/nlu/cmd_gripper.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="17">
-                <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+              <first_editor>
+                <caret column="26" selection-start-column="10" selection-end-column="14" />
               </first_editor>
               <second_editor />
             </state>
@@ -64,21 +56,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/speech/data/nlu/how_to_get_started.md">
+        <entry file="file://$PROJECT_DIR$/speech/data/stories/gripper_stories.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/speech/data/nlu/cmd_last_value.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="17">
-                <caret line="1" column="64" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="64" />
+              <first_editor relative-caret-position="884">
+                <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
               </first_editor>
               <second_editor />
             </state>
@@ -86,44 +68,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/speech/data/nlu/value_of_variable.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="322" column="22" selection-start-line="322" selection-start-column="22" selection-end-line="322" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/speech/data/stories/privacy_policy.md">
+        <entry file="file://$PROJECT_DIR$/speech/data/stories/cmd_speed_tories.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="612">
-                <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/speech/data/stories/chitchat.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="249">
-                <caret line="202" column="7" selection-start-line="202" selection-start-column="7" selection-end-line="202" selection-end-column="7" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/speech/data/nlu/ask_privacy_policy.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="340">
-                <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+              <first_editor>
+                <caret selection-end-line="24" selection-end-column="25" />
               </first_editor>
               <second_editor />
             </state>
@@ -141,9 +90,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>speking</find>
-      <find>Tobi</find>
-      <find>stop</find>
       <find>utter_cmd_omac_state_executed_success</find>
       <find>hold</find>
       <find>goto_cmd_param</find>
@@ -171,6 +117,9 @@
       <find>utter_what_help</find>
       <find>brie</find>
       <find>utter_explain_stack</find>
+      <find>resume</find>
+      <find>grip</find>
+      <find>cmd_open_gripper</find>
     </findStrings>
     <replaceStrings>
       <replace>utter_resume_privacy_policy</replace>
@@ -219,7 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/speech/data/core/intent_description_mapping.csv" />
         <option value="$PROJECT_DIR$/speech/data/tmp/chitchat.md" />
         <option value="$PROJECT_DIR$/speech/data/nlu_data/out_of_scope.md" />
         <option value="$PROJECT_DIR$/speech/data/nlu_data/nlu_info.md" />
@@ -256,8 +204,6 @@
         <option value="$PROJECT_DIR$/speech/data/stories/cmd_speed_tories.md" />
         <option value="$PROJECT_DIR$/speech/data/nlu/synomyms.md" />
         <option value="$PROJECT_DIR$/speech/data/stories/show_value_stories.md" />
-        <option value="$PROJECT_DIR$/speech/domain.yml" />
-        <option value="$PROJECT_DIR$/speech/actions.py" />
         <option value="$PROJECT_DIR$/speech/data/nlu/cmd_goto.md" />
         <option value="$PROJECT_DIR$/speech/data/nlu/cmd_omac_mode.md" />
         <option value="$PROJECT_DIR$/speech/data/nlu/cmd_omac_state.md" />
@@ -267,9 +213,12 @@
         <option value="$PROJECT_DIR$/speech/data/nlu/regex.md" />
         <option value="$PROJECT_DIR$/speech/data/nlu/value_of_variable.json" />
         <option value="$PROJECT_DIR$/speech/data/stories/privacy_policy.md" />
-        <option value="$PROJECT_DIR$/speech/data/nlu/cmd_gripper.md" />
         <option value="$PROJECT_DIR$/speech/data/stories/chitchat.md" />
         <option value="$PROJECT_DIR$/speech/data/nlu/ask_privacy_policy.md" />
+        <option value="$PROJECT_DIR$/speech/data/nlu/cmd_gripper.md" />
+        <option value="$PROJECT_DIR$/speech/actions.py" />
+        <option value="$PROJECT_DIR$/speech/data/stories/gripper_stories.md" />
+        <option value="$PROJECT_DIR$/speech/domain.yml" />
       </list>
     </option>
   </component>
@@ -489,17 +438,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/speech/rasa_core.log" />
-    <entry file="file://$PROJECT_DIR$/speech/data/stories/canthelp.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/speech/_main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -712,16 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/speech/data/stories/cmd_goto.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="935">
-            <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/speech/data/stories/cmd_omac_mode_stories.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -770,16 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/speech/data/stories/cmd_speed_tories.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="408">
-            <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="25" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/speech/data/nlu/deny.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -810,31 +728,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/speech/actions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="135" column="76" selection-start-line="135" selection-start-column="76" selection-end-line="135" selection-end-column="76" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/speech/data/nlu/cmd_goto.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="476">
             <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/speech/data/nlu/name.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="29" />
           </first_editor>
           <second_editor />
         </state>
@@ -892,48 +790,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/speech/data/nlu/cmd_gripper.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="26" selection-start-column="10" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/speech/data/nlu/cmd_last_value.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="17">
-            <caret line="1" column="64" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="64" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/speech/data/stories/privacy_policy.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="612">
             <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/speech/domain.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="409" column="21" selection-start-line="409" selection-start-column="2" selection-end-line="409" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/speech/data/stories/chitchat.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="249">
-            <caret line="202" column="7" selection-start-line="202" selection-start-column="7" selection-end-line="202" selection-end-column="7" />
           </first_editor>
           <second_editor />
         </state>
@@ -946,6 +807,101 @@
             <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speech/data/nlu/cmd_take_gripper.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speech/data/nlu/cmd_last_value.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="64" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speech/data/stories/cmd_speed_tories.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-line="24" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speech/data/nlu/name.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="68">
+            <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speech/data/stories/chitchat.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speech/data/stories/cmd_goto.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speech/data/stories/gripper_stories.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="884">
+            <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speech/actions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="239" selection-start-line="239" selection-end-line="239" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speech/data/nlu/cmd_gripper.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="26" selection-start-column="10" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speech/domain.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="274" column="16" selection-start-line="274" selection-start-column="16" selection-end-line="274" selection-end-column="16" />
         </state>
       </provider>
     </entry>

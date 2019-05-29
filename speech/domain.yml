@@ -49,6 +49,10 @@ intents:
   - very_fast
   - very_very_fast
   - cmd_show_last_value
+  - cmd_open_gripper
+  - cmd_close_gripper
+  - cmd_take_gripper
+  - cmd_release_gripper
 
 
 entities:
@@ -88,6 +92,9 @@ slots:
   current_omac_mode:
     type: unfeaturized
     initial_value: "manual"
+  gripper_hooked:
+    type: bool
+    initial_value: False
   feedback_value:
     type: categorical
     values:
@@ -264,6 +271,10 @@ actions:
   - action_very_fast
   - action_very_very_fast
   - action_show_value
+  - action_open_gripper
+  - action_close_gripper
+  - action_take_gripper
+  - action_release_gripper
 
 
 forms:
