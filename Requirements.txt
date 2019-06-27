@@ -1,0 +1,5 @@
+PyAudio
+asyncio
+Flask
+pyttsx3
+rasa-x

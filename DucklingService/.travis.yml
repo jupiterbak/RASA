@@ -70,13 +70,13 @@ install:
       cp -a $HOME/.cabal/lib $HOME/.cabal/share $HOME/.cabal/bin installplan.txt $HOME/.cabsnap/;
    fi
 
-# Here starts the actual work to be performed for the package under test;
+# Here starts the actual work to be performed for the package under demo;
 # any command which exits with a non-zero exit code causes the build to fail.
 script:
  - if [ -f configure.ac ]; then autoreconf -i; fi
  - cabal configure --enable-tests -v2  # -v2 provides useful information for debugging
  - cabal build -j1 # this builds all libraries and executables (including tests/benchmarks)
- - travis_wait cabal test -j1 --show-details=always
+ - travis_wait cabal demo -j1 --show-details=always
  - cabal check
  - cabal sdist   # tests that a source-distribution can be generated
 
