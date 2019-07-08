@@ -25,6 +25,15 @@ wheels/
 *.egg
 MANIFEST
 
+# Deep speech models
+*.pb
+*.pbmm
+*.tflite
+*.binary
+STTService/porcupine/Model/*
+STTService/porcupine/Model/deepspeech-0.5.1-models/
+*\trie
+
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
@@ -112,3 +121,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+

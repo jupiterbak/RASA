@@ -1,14 +1,11 @@
 import collections
 import os
-import platform
 import struct
 import sys
 import time
 import wave
 from datetime import datetime
 from threading import Thread
-import speech_recognition as sr
-
 import numpy as np
 import pyaudio
 import soundfile
@@ -42,7 +39,7 @@ class RingBuffer(object):
         return tmp
 
 
-class FAPSSTT(Thread):
+class FAPSListener(Thread):
     """
     Demo class for wake word detection (aka Porcupine) library. It creates an input audio stream from a microphone,
     monitors it, and upon detecting the specified wake word(s) prints the detection time and index of wake word on
@@ -95,7 +92,7 @@ class FAPSSTT(Thread):
         :param recording_timeout: limits the maximum length of a recording.
         """
 
-        super(FAPSSTT, self).__init__()
+        super(FAPSListener, self).__init__()
 
         self._library_path = library_path
         self._model_file_path = model_file_path
@@ -164,7 +161,7 @@ class FAPSSTT(Thread):
              self._keyword_file_paths]
         print('Listening... Press Ctrl+C to exit')
         print('listening for:')
-        for keyword_name, sensitivity in zip(keyword_names, sensitivities):
+        for keyword_name, sensitivity in zip(keyword_names, self._sensitivities):
             print('- %s (sensitivity: %f)' % (keyword_name, sensitivity))
 
         porcupine = None
@@ -275,75 +272,3 @@ class FAPSSTT(Thread):
 
         pa.terminate()
 
-
-def _default_library_path():
-    system = platform.system()
-    machine = platform.machine()
-
-    if system == 'Darwin':
-        return os.path.join(os.path.dirname(__file__), './lib/mac/%s/libpv_porcupine.dylib' % machine)
-    elif system == 'Linux':
-        if machine == 'x86_64' or machine == 'i386':
-            return os.path.join(os.path.dirname(__file__), './lib/linux/%s/libpv_porcupine.so' % machine)
-        else:
-            raise Exception('cannot autodetect the binary type. Please enter the path to the shared object using '
-                            '--library_path command line argument.')
-    elif system == 'Windows':
-        if platform.architecture()[0] == '32bit':
-            return os.path.join(os.path.dirname(__file__), '.\\lib\\windows\\i686\\libpv_porcupine.dll')
-        else:
-            return os.path.join(os.path.dirname(__file__), '.\\lib\\windows\\amd64\\libpv_porcupine.dll')
-    raise NotImplementedError('Porcupine is not supported on %s/%s yet!' % (system, machine))
-
-
-def audioRecorderCallback(fname):
-    print("converting audio to text")
-    # self.result_queue.put(fname)
-
-    r = sr.Recognizer()
-    with sr.AudioFile(fname) as source:
-        audio = r.record(source)  # read the entire audio file
-    # recognize speech using Google Speech Recognition
-    try:
-        # for testing purposes, we're just using the default API key
-        # to use another API key, use `r.recognize_google(audio, key="GOOGLE_SPEECH_RECOGNITION_API_KEY")`
-        # instead of `r.recognize_google(audio)`
-        print(r.recognize_google(audio))
-    except sr.UnknownValueError:
-        print("Google Speech Recognition could not understand audio")
-    except sr.RequestError as e:
-        print("Could not request results from Google Speech Recognition service; {0}".format(e))
-
-
-def detectedCallback():
-    print('recording audio...', end='', flush=True)
-
-
-if __name__ == '__main__':
-    model_file_path = "./lib/common/porcupine_params.pv"
-    output_path = "./output/output_audio.wav"
-    keyword_file_paths = ["./ressources/keyword_files/windows/Alex_windows.ppn",
-                          "./ressources/keyword_files/windows/Matthew_windows.ppn",
-                          "./ressources/keyword_files/windows/Jupiter_windows.ppn",
-                          "./ressources/keyword_files/windows/Florian_windows.ppn",
-                          "./ressources/keyword_files/windows/Lincoln_windows.ppn",
-                          "./ressources/keyword_files/windows/Tobias_windows.ppn"]
-    sensitivities = [0.5] * len(keyword_file_paths)
-    input_audio_device_index = 1
-    show_audio_devices_info = True
-
-    # if show_audio_devices_info:
-    #     PorcupineDemo.show_audio_devices_info()
-
-    if not keyword_file_paths:
-        raise ValueError('keyword file paths are missing')
-
-    FAPSSTT(
-        library_path=_default_library_path(),
-        model_file_path=model_file_path,
-        keyword_file_paths=keyword_file_paths,
-        sensitivities=sensitivities,
-        output_path=output_path,
-        input_device_index=input_audio_device_index,
-        detected_callback=detectedCallback,
-        audio_recorder_callback=audioRecorderCallback).run()

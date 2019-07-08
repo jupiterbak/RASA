@@ -2,20 +2,19 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function
 
-import argparse
-import time
-import signal
-
-import numpy as np
+import multiprocessing
+import os
 import shlex
+import signal
 import subprocess
 import sys
+import threading
+import time
 import wave
-import os
-import multiprocessing
-
-from deepspeech import Model, printVersions
 from timeit import default_timer as timer
+
+import numpy as np
+from deepspeech import Model
 
 try:
     from shhlex import quote
@@ -45,22 +44,13 @@ N_FEATURES = 26
 N_CONTEXT = 9
 
 TOP_DIR = os.path.dirname(os.path.abspath(__file__))
-ALPHABET_FILE = os.path.join(TOP_DIR, "resources/alphabet.txt")
-TRIE_FILE = os.path.join(TOP_DIR, "resources/trie")
-LM_FILE = os.path.join(TOP_DIR, "resources/lm.binary")
-MODEL_FILE = os.path.join(TOP_DIR, "resources/####")
+ALPHABET_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/alphabet.txt")
+TRIE_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/trie")
+LM_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/lm.binary")
+MODEL_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/output_graph.pb")
 
 
-class VersionAction(argparse.Action):
-    def __init__(self, *args, **kwargs):
-        super(VersionAction, self).__init__(nargs=0, *args, **kwargs)
-
-    def __call__(self, *args, **kwargs):
-        printVersions()
-        exit(0)
-
-
-class FAPSSST(multiprocessing.Process):
+class FAPSDeepSpeechConverter(multiprocessing.Process):
     def __init__(self, audio_queue, interrupt_callback = lambda: False):
         multiprocessing.Process.__init__(self)
         self.audio_queue = audio_queue
@@ -100,6 +90,9 @@ class FAPSSST(multiprocessing.Process):
 
         # Loop waiting for the next audio to process
         while True:
+            if self.interrupt_callback():
+                print("detect voice return")
+                return
             next_audio = self.audio_queue.get()
             if next_audio is None:
                 time.sleep(0.03)
@@ -128,6 +121,8 @@ class FAPSSST(multiprocessing.Process):
         return
 
 
+interrupted = False
+
 def myinterrupt_callback():
     global interrupted
     return interrupted
@@ -138,12 +133,22 @@ def signal_handler(signal, frame):
     interrupted = True
 
 
+def sendIt(queue):
+  queue.put("D:\PYTHON_Workspace\RASA\STTService\porcupine\output\output_audio.wav")
+  threading.Timer(10.0, sendIt, [audioInputQueue]).start()
+  print("Timer Event")
+
+
 if __name__ == '__main__':
     # capture SIGINT signal, e.g., Ctrl+C
     signal.signal(signal.SIGINT, signal_handler)
 
     # Establish communication queues
     audioInputQueue = multiprocessing.JoinableQueue()
-    sstProcess = FAPSSST(audioInputQueue, myinterrupt_callback)
+    sstProcess = FAPSDeepSpeechConverter(audioInputQueue, myinterrupt_callback)
     sstProcess.start()
+
+    # Timer
+    sendIt(audioInputQueue)
+    print("Exit\n")
 
