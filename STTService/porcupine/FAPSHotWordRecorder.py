@@ -14,18 +14,18 @@ def _default_library_path():
     machine = platform.machine()
 
     if system == 'Darwin':
-        return os.path.join(os.path.dirname(__file__), './lib/mac/%s/libpv_porcupine.dylib' % machine)
+        return os.path.join(os.path.dirname(__file__), './library/mac/%s/libpv_porcupine.dylib' % machine)
     elif system == 'Linux':
         if machine == 'x86_64' or machine == 'i386':
-            return os.path.join(os.path.dirname(__file__), './lib/linux/%s/libpv_porcupine.so' % machine)
+            return os.path.join(os.path.dirname(__file__), './library/linux/%s/libpv_porcupine.so' % machine)
         else:
             raise Exception('cannot autodetect the binary type. Please enter the path to the shared object using '
                             '--library_path command line argument.')
     elif system == 'Windows':
         if platform.architecture()[0] == '32bit':
-            return os.path.join(os.path.dirname(__file__), '.\\lib\\windows\\i686\\libpv_porcupine.dll')
+            return os.path.join(os.path.dirname(__file__), '.\\library\\windows\\i686\\libpv_porcupine.dll')
         else:
-            return os.path.join(os.path.dirname(__file__), '.\\lib\\windows\\amd64\\libpv_porcupine.dll')
+            return os.path.join(os.path.dirname(__file__), '.\\library\\windows\\amd64\\libpv_porcupine.dll')
     raise NotImplementedError('Porcupine is not supported on %s/%s yet!' % (system, machine))
 
 
@@ -61,7 +61,7 @@ class FAPSHotWordRecorder(multiprocessing.Process):
         print('recording audio... ', end='', flush=True)
 
     def run(self):
-        model_file_path = "./lib/common/porcupine_params.pv"
+        model_file_path = "./library/common/porcupine_params.pv"
         output_path = "./output/output_audio.wav"
         keyword_file_paths = ["./ressources/keyword_files/windows/Alex_windows.ppn",
                               "./ressources/keyword_files/windows/Matthew_windows.ppn",

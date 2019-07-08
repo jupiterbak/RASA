@@ -29,7 +29,7 @@ class PorcupineTestCase(unittest.TestCase):
 
         porcupine = Porcupine(
             library_path=self._library_path(),
-            model_file_path=self._abs_path('../../lib/common/porcupine_params.pv'),
+            model_file_path=self._abs_path('../../library/common/porcupine_params.pv'),
             keyword_file_path=keyword_file_path,
             sensitivity=0.5)
 
@@ -62,7 +62,7 @@ class PorcupineTestCase(unittest.TestCase):
 
         porcupine = Porcupine(
             library_path=self._library_path(),
-            model_file_path=self._abs_path('../../lib/common/porcupine_params.pv'),
+            model_file_path=self._abs_path('../../library/common/porcupine_params.pv'),
             keyword_file_paths=keyword_file_paths,
             sensitivities=[0.5] * len(keyword_file_paths))
 
@@ -109,15 +109,15 @@ class PorcupineTestCase(unittest.TestCase):
         machine = platform.machine()
 
         if system == 'Darwin':
-            return os.path.join(os.path.dirname(__file__), '../../lib/mac/%s/libpv_porcupine.dylib' % machine)
+            return os.path.join(os.path.dirname(__file__), '../../library/mac/%s/libpv_porcupine.dylib' % machine)
         elif system == 'Linux':
             if machine == 'x86_64':
-                return os.path.join(os.path.dirname(__file__), '../../lib/linux/%s/libpv_porcupine.so' % machine)
+                return os.path.join(os.path.dirname(__file__), '../../library/linux/%s/libpv_porcupine.so' % machine)
             elif machine.startswith('arm'):
                 # NOTE: This does not need to be fast. Use the armv6 binary.
-                return os.path.join(os.path.dirname(__file__), '../../lib/raspberry-pi/arm11/libpv_porcupine.so')
+                return os.path.join(os.path.dirname(__file__), '../../library/raspberry-pi/arm11/libpv_porcupine.so')
         elif system == 'Windows':
-            return os.path.join(os.path.dirname(__file__), '..\\..\\lib\\windows\\amd64\\libpv_porcupine.dll')
+            return os.path.join(os.path.dirname(__file__), '..\\..\\library\\windows\\amd64\\libpv_porcupine.dll')
 
         raise NotImplementedError('Porcupine is not supported on %s/%s yet!' % (system, machine))
 
