@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a49de8-60bc-4e63-bfdb-1edddab6a538" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/FAPSHotWordRecorder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/MainService.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/Model/deepspeech-0.5.1-models/._deepspeech-0.5.1-models" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/._alphabet.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/._lm.binary" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/._output_graph.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/._output_graph.pbmm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/._output_graph.tflite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/._trie" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/alphabet.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/lm.binary" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/output_graph.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/output_graph.pbmm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/output_graph.tflite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/trie" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/faps_stt.py" beforeDir="false" afterPath="$PROJECT_DIR$/STTService/porcupine/FAPSListener.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/output/output_audio.wav" beforeDir="false" afterPath="$PROJECT_DIR$/STTService/porcupine/output/output_audio.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/STT/FAPSSST.py" beforeDir="false" afterPath="$PROJECT_DIR$/STTService/porcupine/FAPSDeepSpeechConverter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+            <state relative-caret-position="226">
+              <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -108,7 +89,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>automatic</find>
       <find>action_cmd_omac_mode</find>
       <find>utter_confirm</find>
       <find>Slow</find>
@@ -138,6 +118,7 @@
       <find>_default_library_path</find>
       <find>_AUDIO_DEVICE_INFO_KEYS</find>
       <find>VersionAction</find>
+      <find>lib</find>
     </findStrings>
     <replaceStrings>
       <replace>suspend</replace>
@@ -275,7 +256,22 @@
               <item name="RASA" type="462c0819:PsiDirectoryNode" />
               <item name="STTService" type="462c0819:PsiDirectoryNode" />
               <item name="porcupine" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RASA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RASA" type="462c0819:PsiDirectoryNode" />
+              <item name="STTService" type="462c0819:PsiDirectoryNode" />
+              <item name="porcupine" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RASA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RASA" type="462c0819:PsiDirectoryNode" />
+              <item name="STTService" type="462c0819:PsiDirectoryNode" />
+              <item name="porcupine" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+              <item name="deepspeech-0.5.1-models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -470,15 +466,15 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49894625" weight="0.32854405" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7212856" visible="true" weight="0.29501915" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49841937" weight="0.32854405" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7212856" weight="0.29501915" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49736565" weight="0.17911877" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32950193" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32950193" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49789253" weight="0.32088122" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.27871445" side_tool="true" visible="true" weight="0.29501915" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015806" side_tool="true" visible="true" weight="0.29501915" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" sideWeight="0.49947312" weight="0.32854405" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -899,8 +895,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        <state relative-caret-position="226">
+          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
         </state>
       </provider>
     </entry>
