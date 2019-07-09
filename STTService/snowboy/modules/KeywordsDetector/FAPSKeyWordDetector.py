@@ -1,4 +1,4 @@
-import STTService.snowboy.modules.KeywordsDetector.FAPSdecoder as snowboydecoder
+import SpeechService.snowboy.modules.KeywordsDetector.FAPSdecoder as snowboydecoder
 import signal
 import speech_recognition as sr
 import os

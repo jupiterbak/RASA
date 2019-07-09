@@ -2,9 +2,11 @@ import multiprocessing
 import signal
 from pyfiglet import Figlet
 
-from STTService.porcupine.FAPSDeepSpeechConverter import FAPSDeepSpeechConverter
-from STTService.porcupine.FAPSHotWordRecorder import FAPSHotWordRecorder
-from STTService.porcupine.FAPSTTS import FAPSTTS
+from SpeechService.porcupine.FAPSDeepSpeechConverter import FAPSDeepSpeechConverter
+from SpeechService.porcupine.FAPSHotWordRecorder import FAPSHotWordRecorder
+from SpeechService.porcupine.FAPSTTS import FAPSTTS
+
+USE_GOOGLE = True
 
 interrupted = False
 
@@ -37,7 +39,7 @@ if __name__ == '__main__':
     sstProcess.start()
 
     # Deep Speech
-    sstProcess = FAPSDeepSpeechConverter(audioInputQueue, textOutputQueue, myinterrupt_callback)
+    sstProcess = FAPSDeepSpeechConverter(audioInputQueue, textOutputQueue, myinterrupt_callback, use_google=USE_GOOGLE)
     sstProcess.start()
 
     # Hotword Decoder

@@ -3,9 +3,7 @@ import multiprocessing
 import os
 import platform
 
-import speech_recognition as sr
-
-from STTService.porcupine.FAPSListener import FAPSListener
+from SpeechService.porcupine.FAPSListener import FAPSListener
 
 logger = logging.getLogger("FAPSHotWordRecorder")
 logger.setLevel(logging.DEBUG)
@@ -43,28 +41,11 @@ class FAPSHotWordRecorder(multiprocessing.Process):
 
     def audioRecorderCallback(self, fname):
         logger.info("converting audio to text")
-        # self.result_queue.put(fname)
-
-        r = sr.Recognizer()
-        with sr.AudioFile(fname) as source:
-            audio = r.record(source)  # read the entire audio file
-        # recognize speech using Google Speech Recognition
-        try:
-            # for testing purposes, we're just using the default API key
-            # to use another API key, use `r.recognize_google(audio, key="GOOGLE_SPEECH_RECOGNITION_API_KEY")`
-            # instead of `r.recognize_google(audio)`
-            txt = r.recognize_google(audio)
-            logger.debug("Google translation: {}".format(txt))
-            self.result_queue.put(fname)
-        except sr.UnknownValueError:
-            logger.error("Google Speech Recognition could not understand audio")
-        except sr.RequestError as e:
-            logger.error("Could not request results from Google Speech Recognition service; {0}".format(e))
-
+        self.result_queue.put(fname)
         # os.remove(fname)
 
     def detectedCallback(self):
-        logger.info('recording audio... ', end='', flush=True)
+        logger.info('recording audio... ')
 
     def run(self):
         model_file_path = "./library/common/porcupine_params.pv"

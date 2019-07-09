@@ -1,7 +1,7 @@
 import signal
 import multiprocessing
-from STTService.snowboy.modules.KeywordsDetector.FAPSKeyWordDetector import FAPSKeyWordDetector
-from STTService.snowboy.modules import FAPSSST
+from SpeechService.snowboy.modules.KeywordsDetector.FAPSKeyWordDetector import FAPSKeyWordDetector
+from SpeechService.snowboy.modules import FAPSSST
 
 interrupted = False
 

@@ -11,7 +11,7 @@ import pyaudio
 import soundfile
 import logging
 
-from STTService.porcupine.binding.python.porcupine import Porcupine
+from SpeechService.porcupine.binding.python.porcupine import Porcupine
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../binding/python'))
 

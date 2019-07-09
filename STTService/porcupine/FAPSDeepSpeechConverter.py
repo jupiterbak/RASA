@@ -13,6 +13,7 @@ import threading
 import time
 import wave
 from timeit import default_timer as timer
+import speech_recognition as sr
 
 import numpy as np
 from deepspeech import Model
@@ -22,8 +23,8 @@ try:
 except ImportError:
     from pipes import quote
 
-# These constants control the beam search decoder
 
+# These constants control the beam search decoder
 # Beam width used in the CTC decoder when building candidate transcriptions
 BEAM_WIDTH = 500
 
@@ -44,7 +45,7 @@ N_FEATURES = 26
 N_CONTEXT = 9
 
 TOP_DIR = os.path.dirname(os.path.abspath(__file__))
-ALPHABET_FILE = os.path.join(TOP_DIR, "Modeldeepspeech-0.5.1-models/alphabet.txt")
+ALPHABET_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/alphabet.txt")
 TRIE_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/trie")
 LM_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/lm.binary")
 MODEL_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/output_graph.pb")
@@ -54,11 +55,12 @@ logger.setLevel(logging.DEBUG)
 logging.basicConfig(format='[%(asctime)s][%(name)s]%(levelname)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
 class FAPSDeepSpeechConverter(multiprocessing.Process):
-    def __init__(self, audio_queue, text_queue, interrupt_callback=lambda: False):
+    def __init__(self, audio_queue, text_queue, interrupt_callback=lambda: False, use_google= False):
         multiprocessing.Process.__init__(self)
         self.audio_queue = audio_queue
         self.text_queue = text_queue
         self.interrupt_callback = interrupt_callback
+        self.use_google = use_google
         pass
 
     def convert_samplerate(self, audio_path):
@@ -101,30 +103,49 @@ class FAPSDeepSpeechConverter(multiprocessing.Process):
             if next_audio is None:
                 time.sleep(0.03)
                 continue
-            # Open the file and Execute Deepspeech
-            fin = wave.open(next_audio, 'rb')
-            fs = fin.getframerate()
-            if fs != 16000:
-                logger.warning(
-                    'Original sample rate ({}) is different than 16kHz. Resampling might produce erratic '
-                    'speech recognition.'.format(
-                        fs), file=sys.stderr)
-                fs, audio = self.convert_samplerate(next_audio)
+            # Open the file and Execute Deepspeech or Google (online)
+            if self.use_google is True:
+                r = sr.Recognizer()
+                with sr.AudioFile(next_audio) as source:
+                    audio = r.record(source)  # read the entire audio file
+                # recognize speech using Google Speech Recognition
+                try:
+                    # for testing purposes, we're just using the default API key
+                    # to use another API key, use `r.recognize_google(audio, key="GOOGLE_SPEECH_RECOGNITION_API_KEY")`
+                    # instead of `r.recognize_google(audio)`
+                    txt = r.recognize_google(audio)
+                    # txt = r.recognize_sphinx(audio)
+                    logger.debug("Google translation --> {}".format(txt))
+                    self.text_queue.put(txt)
+                except sr.UnknownValueError:
+                    logger.error("Google Speech Recognition could not understand audio")
+                except sr.RequestError as e:
+                    logger.error("Could not request results from Google Speech Recognition service; {0}".format(e))
             else:
-                audio = np.frombuffer(fin.readframes(fin.getnframes()), np.int16)
+                fin = wave.open(next_audio, 'rb')
+                fs = fin.getframerate()
+                if fs != 16000:
+                    logger.warning(
+                        'Original sample rate ({}) is different than 16kHz. Resampling might produce erratic '
+                        'speech recognition.'.format(
+                            fs), file=sys.stderr)
+                    fs, audio = self.convert_samplerate(next_audio)
+                else:
+                    audio = np.frombuffer(fin.readframes(fin.getnframes()), np.int16)
+                try:
+                    audio_length = fin.getnframes() * (1 / 16000)
+                    fin.close()
+                    logger.info('Running inference.')
+                    inference_start = timer()
+                    txt = ds.stt(audio, fs)
+                    logger.info('DeepSpeech decoded text --> {}'.format(txt))
+                    inference_end = timer() - inference_start
+                    logger.debug('Inference took %0.3fs for %0.3fs audio file.' % (inference_end, audio_length))
+                    self.text_queue.put(txt)
+                except sr.UnknownValueError:
+                    logger.error("Deep Speech Recognition could not understand audio")
 
-            audio_length = fin.getnframes() * (1 / 16000)
-            fin.close()
-
-            logger.info('Running inference.')
-            inference_start = timer()
-            txt = ds.stt(audio, fs)
-            logger.info('Decoded text --> {}'.format(txt))
-            inference_end = timer() - inference_start
-            logger.debug('Inference took %0.3fs for %0.3fs audio file.' % (inference_end, audio_length))
-            self.text_queue.put(txt)
-
-        return
+        pass
 
 
 interrupted = False
@@ -153,7 +174,7 @@ if __name__ == '__main__':
     # Establish communication queues
     audioInputQueue = multiprocessing.JoinableQueue()
     textOutputQueue = multiprocessing.JoinableQueue()
-    sstProcess = FAPSDeepSpeechConverter(audioInputQueue, textOutputQueue, myinterrupt_callback)
+    sstProcess = FAPSDeepSpeechConverter(audioInputQueue, textOutputQueue, myinterrupt_callback, use_google=True)
     sstProcess.start()
 
     # Timer
