@@ -59,7 +59,7 @@ class FAPSListener(Thread):
             sleep_time=0.03,
             audio_recorder_callback=None,
             silent_count_threshold=15,
-            recording_timeout=100
+            recording_timeout=200
     ):
 
         """

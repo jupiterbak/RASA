@@ -12,6 +12,7 @@ import threading
 import time
 import wave
 from timeit import default_timer as timer
+from datetime import datetime
 
 import numpy as np
 from deepspeech import Model
@@ -44,16 +45,17 @@ N_FEATURES = 26
 N_CONTEXT = 9
 
 TOP_DIR = os.path.dirname(os.path.abspath(__file__))
-ALPHABET_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/alphabet.txt")
-TRIE_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/trie")
-LM_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/lm.binary")
-MODEL_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/deepspeech-0.5.1-models/output_graph.pb")
+ALPHABET_FILE = os.path.join(TOP_DIR, "Modeldeepspeech-0.5.1-models/alphabet.txt")
+TRIE_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/trie")
+LM_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/lm.binary")
+MODEL_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/output_graph.pb")
 
 
 class FAPSDeepSpeechConverter(multiprocessing.Process):
-    def __init__(self, audio_queue, interrupt_callback = lambda: False):
+    def __init__(self, audio_queue, text_queue, interrupt_callback = lambda: False):
         multiprocessing.Process.__init__(self)
         self.audio_queue = audio_queue
+        self.text_queue = text_queue
         self.interrupt_callback = interrupt_callback
         pass
 
@@ -114,9 +116,11 @@ class FAPSDeepSpeechConverter(multiprocessing.Process):
 
             print('Running inference.', file=sys.stderr)
             inference_start = timer()
-            print(ds.stt(audio, fs))
+            txt = ds.stt(audio, fs)
+            print('[{}] DeepSpeech --> {}'.format(str(datetime.now()), txt))
             inference_end = timer() - inference_start
             print('Inference took %0.3fs for %0.3fs audio file.' % (inference_end, audio_length), file=sys.stderr)
+            self.text_queue.put(txt)
 
         return
 
@@ -134,8 +138,8 @@ def signal_handler(signal, frame):
 
 
 def sendIt(queue):
-  queue.put("D:\PYTHON_Workspace\RASA\STTService\porcupine\output\output_audio.wav")
-  threading.Timer(10.0, sendIt, [audioInputQueue]).start()
+  queue.put("./output/output_audio.wav")
+  threading.Timer(10.0, sendIt, [queue]).start()
   print("Timer Event")
 
 
@@ -145,7 +149,8 @@ if __name__ == '__main__':
 
     # Establish communication queues
     audioInputQueue = multiprocessing.JoinableQueue()
-    sstProcess = FAPSDeepSpeechConverter(audioInputQueue, myinterrupt_callback)
+    textOutputQueue = multiprocessing.JoinableQueue()
+    sstProcess = FAPSDeepSpeechConverter(audioInputQueue, textOutputQueue, myinterrupt_callback)
     sstProcess.start()
 
     # Timer

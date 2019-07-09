@@ -1,5 +1,12 @@
 PyAudio
 asyncio
 Flask
+Flask-RESTful
 pyttsx3
 rasa-x
+pyaudio
+enum34
+pysoundfile
+SpeechRecognition
+deepspeech
+numpy

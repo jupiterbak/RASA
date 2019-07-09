@@ -3,6 +3,7 @@ import signal
 
 from STTService.porcupine.FAPSDeepSpeechConverter import FAPSDeepSpeechConverter
 from STTService.porcupine.FAPSHotWordRecorder import FAPSHotWordRecorder
+from STTService.porcupine.FAPSTTS import FAPSTTS
 
 interrupted = False
 
@@ -22,10 +23,18 @@ if __name__ == '__main__':
     # Establish communication queues
     audioOutputQueue = multiprocessing.JoinableQueue()
     audioInputQueue = audioOutputQueue
+    textOutputQueue = multiprocessing.JoinableQueue()
+    textInputQueue = textOutputQueue
 
+    # TTS
+    sstProcess = FAPSTTS(textInputQueue, myinterrupt_callback)
+    sstProcess.start()
+
+    # Deep Speech
+    sstProcess = FAPSDeepSpeechConverter(audioInputQueue, textOutputQueue, myinterrupt_callback)
+    sstProcess.start()
+
+    # Hotword Decoder
     hotwordRecorder = FAPSHotWordRecorder(audioOutputQueue, myinterrupt_callback)
     hotwordRecorder.start()
 
-    # Establish communication queues
-    sstProcess = FAPSDeepSpeechConverter(audioInputQueue, myinterrupt_callback)
-    sstProcess.start()
