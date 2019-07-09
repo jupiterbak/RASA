@@ -30,7 +30,7 @@ MANIFEST
 *.pbmm
 *.tflite
 *.binary
-STTService/porcupine/Model/deepspeech-0.5.1-models/
+SpeechService/porcupine/Model/deepspeech-0.5.1-models/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
