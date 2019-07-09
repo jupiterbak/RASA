@@ -1,3 +1,4 @@
+import logging
 import signal
 import threading
 from datetime import datetime
@@ -5,6 +6,10 @@ import multiprocessing
 import time
 
 import pyttsx3
+
+logger = logging.getLogger("FAPSTTS")
+logger.setLevel(logging.DEBUG)
+logging.basicConfig(format='[%(asctime)s][%(name)s]%(levelname)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
 
 class FAPSTTS(multiprocessing.Process):
@@ -18,7 +23,7 @@ class FAPSTTS(multiprocessing.Process):
         engine.startLoop(False)
         while True:
             if self.interrupt_callback():
-                print("detect voice return")
+                logger.debug("detect program interruption... returning")
                 return
 
             next_text = self.text_queue.get()
@@ -26,15 +31,15 @@ class FAPSTTS(multiprocessing.Process):
                 time.sleep(0.03)
                 continue
 
-
             engine.say(next_text, 'text')
-            print('[{}] TTS --> {}'.format(str(datetime.now()), next_text))
+            logger.info('FAPS TTS --> "{}"'.format(next_text))
             engine.iterate()
 
         return
 
 
 interrupted = False
+
 
 def myinterrupt_callback():
     global interrupted
@@ -47,8 +52,8 @@ def signal_handler(signal, frame):
 
 
 def sendIt(queue):
-  queue.put("I need a new text")
-  threading.Timer(5.0, sendIt, [queue]).start()
+    queue.put("I need a new text")
+    threading.Timer(5.0, sendIt, [queue]).start()
 
 
 if __name__ == '__main__':

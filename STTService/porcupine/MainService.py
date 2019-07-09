@@ -1,5 +1,6 @@
 import multiprocessing
 import signal
+from pyfiglet import Figlet
 
 from STTService.porcupine.FAPSDeepSpeechConverter import FAPSDeepSpeechConverter
 from STTService.porcupine.FAPSHotWordRecorder import FAPSHotWordRecorder
@@ -25,6 +26,11 @@ if __name__ == '__main__':
     audioInputQueue = audioOutputQueue
     textOutputQueue = multiprocessing.JoinableQueue()
     textInputQueue = textOutputQueue
+
+    f = Figlet(font='standard')
+    print("###################################################\n")
+    print(f.renderText('FAPS NLU'))
+    print("###################################################\n")
 
     # TTS
     sstProcess = FAPSTTS(textInputQueue, myinterrupt_callback)

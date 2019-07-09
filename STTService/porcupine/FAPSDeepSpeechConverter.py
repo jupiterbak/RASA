@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function
 
+import logging
 import multiprocessing
 import os
 import shlex
@@ -12,7 +13,6 @@ import threading
 import time
 import wave
 from timeit import default_timer as timer
-from datetime import datetime
 
 import numpy as np
 from deepspeech import Model
@@ -33,7 +33,6 @@ LM_ALPHA = 0.75
 # The beta hyperparameter of the CTC decoder. Word insertion bonus.
 LM_BETA = 1.85
 
-
 # These constants are tied to the shape of the graph used (changing them changes
 # the geometry of the first layer), so make sure you use the same constants that
 # were used during training
@@ -50,9 +49,12 @@ TRIE_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/trie")
 LM_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/lm.binary")
 MODEL_FILE = os.path.join(TOP_DIR, "Model/deepspeech-0.5.1-models/output_graph.pb")
 
+logger = logging.getLogger("FAPSDeepSpeechConverter")
+logger.setLevel(logging.DEBUG)
+logging.basicConfig(format='[%(asctime)s][%(name)s]%(levelname)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
 class FAPSDeepSpeechConverter(multiprocessing.Process):
-    def __init__(self, audio_queue, text_queue, interrupt_callback = lambda: False):
+    def __init__(self, audio_queue, text_queue, interrupt_callback=lambda: False):
         multiprocessing.Process.__init__(self)
         self.audio_queue = audio_queue
         self.text_queue = text_queue
@@ -77,23 +79,23 @@ class FAPSDeepSpeechConverter(multiprocessing.Process):
 
     def run(self):
         # Load the model
-        print('Loading model from file {}'.format(MODEL_FILE), file=sys.stderr)
+        logger.info('Loading model from file {}'.format(MODEL_FILE))
         model_load_start = timer()
         ds = Model(MODEL_FILE, N_FEATURES, N_CONTEXT, ALPHABET_FILE, BEAM_WIDTH)
         model_load_end = timer() - model_load_start
-        print('Loaded model in {:.3}s.'.format(model_load_end), file=sys.stderr)
+        logger.info('Loaded model in {:.3}s.'.format(model_load_end))
 
         # Load LM and Trie
-        print('Loading language model from files {} {}'.format(LM_FILE, TRIE_FILE), file=sys.stderr)
+        logger.info('Loading language model from files {} {}'.format(LM_FILE, TRIE_FILE))
         lm_load_start = timer()
         ds.enableDecoderWithLM(ALPHABET_FILE, LM_FILE, TRIE_FILE, LM_ALPHA, LM_BETA)
         lm_load_end = timer() - lm_load_start
-        print('Loaded language model in {:.3}s.'.format(lm_load_end), file=sys.stderr)
+        logger.info('Loaded language model in {:.3}s.'.format(lm_load_end))
 
         # Loop waiting for the next audio to process
         while True:
             if self.interrupt_callback():
-                print("detect voice return")
+                logger.debug("detect program interruption... returning")
                 return
             next_audio = self.audio_queue.get()
             if next_audio is None:
@@ -103,8 +105,8 @@ class FAPSDeepSpeechConverter(multiprocessing.Process):
             fin = wave.open(next_audio, 'rb')
             fs = fin.getframerate()
             if fs != 16000:
-                print(
-                    'Warning: original sample rate ({}) is different than 16kHz. Resampling might produce erratic '
+                logger.warning(
+                    'Original sample rate ({}) is different than 16kHz. Resampling might produce erratic '
                     'speech recognition.'.format(
                         fs), file=sys.stderr)
                 fs, audio = self.convert_samplerate(next_audio)
@@ -114,18 +116,19 @@ class FAPSDeepSpeechConverter(multiprocessing.Process):
             audio_length = fin.getnframes() * (1 / 16000)
             fin.close()
 
-            print('Running inference.', file=sys.stderr)
+            logger.info('Running inference.')
             inference_start = timer()
             txt = ds.stt(audio, fs)
-            print('[{}] DeepSpeech --> {}'.format(str(datetime.now()), txt))
+            logger.info('Decoded text --> {}'.format(txt))
             inference_end = timer() - inference_start
-            print('Inference took %0.3fs for %0.3fs audio file.' % (inference_end, audio_length), file=sys.stderr)
+            logger.debug('Inference took %0.3fs for %0.3fs audio file.' % (inference_end, audio_length))
             self.text_queue.put(txt)
 
         return
 
 
 interrupted = False
+
 
 def myinterrupt_callback():
     global interrupted
@@ -138,9 +141,9 @@ def signal_handler(signal, frame):
 
 
 def sendIt(queue):
-  queue.put("./output/output_audio.wav")
-  threading.Timer(10.0, sendIt, [queue]).start()
-  print("Timer Event")
+    queue.put("./output/output_audio.wav")
+    threading.Timer(10.0, sendIt, [queue]).start()
+    logger.info("Timer Event")
 
 
 if __name__ == '__main__':
@@ -155,5 +158,4 @@ if __name__ == '__main__':
 
     # Timer
     sendIt(audioInputQueue)
-    print("Exit\n")
-
+    logger.info("Exit\n")

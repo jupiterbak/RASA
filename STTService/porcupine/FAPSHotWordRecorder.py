@@ -1,10 +1,15 @@
-import platform
-import signal
-import speech_recognition as sr
-import os
+import logging
 import multiprocessing
+import os
+import platform
+
+import speech_recognition as sr
 
 from STTService.porcupine.FAPSListener import FAPSListener
+
+logger = logging.getLogger("FAPSHotWordRecorder")
+logger.setLevel(logging.DEBUG)
+logging.basicConfig(format='[%(asctime)s][%(name)s]%(levelname)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
 interrupted = False
 
@@ -34,9 +39,10 @@ class FAPSHotWordRecorder(multiprocessing.Process):
         multiprocessing.Process.__init__(self)
         self.result_queue = audio_queue
         self.interrupt_callback = interrupt_callback
+        pass
 
     def audioRecorderCallback(self, fname):
-        print("converting audio to text")
+        logger.info("converting audio to text")
         # self.result_queue.put(fname)
 
         r = sr.Recognizer()
@@ -48,17 +54,17 @@ class FAPSHotWordRecorder(multiprocessing.Process):
             # to use another API key, use `r.recognize_google(audio, key="GOOGLE_SPEECH_RECOGNITION_API_KEY")`
             # instead of `r.recognize_google(audio)`
             txt = r.recognize_google(audio)
-            print(txt)
-            self.result_queue.put(txt)
+            logger.debug("Google translation: {}".format(txt))
+            self.result_queue.put(fname)
         except sr.UnknownValueError:
-            print("Google Speech Recognition could not understand audio")
+            logger.error("Google Speech Recognition could not understand audio")
         except sr.RequestError as e:
-            print("Could not request results from Google Speech Recognition service; {0}".format(e))
+            logger.error("Could not request results from Google Speech Recognition service; {0}".format(e))
 
         # os.remove(fname)
 
     def detectedCallback(self):
-        print('recording audio... ', end='', flush=True)
+        logger.info('recording audio... ', end='', flush=True)
 
     def run(self):
         model_file_path = "./library/common/porcupine_params.pv"

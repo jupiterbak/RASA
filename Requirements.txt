@@ -10,3 +10,4 @@ pysoundfile
 SpeechRecognition
 deepspeech
 numpy
+pyfiglet

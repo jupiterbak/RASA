@@ -9,6 +9,7 @@ from threading import Thread
 import numpy as np
 import pyaudio
 import soundfile
+import logging
 
 from STTService.porcupine.binding.python.porcupine import Porcupine
 
@@ -20,6 +21,10 @@ DETECT_DONG = os.path.join(TOP_DIR, "sounds/dong.wav")
 DETECT_ON = os.path.join(TOP_DIR, "sounds/on.wav")
 DETECT_OFF = os.path.join(TOP_DIR, "sounds/off.wav")
 THRESHOLD = 500
+
+logger = logging.getLogger("FAPSListener")
+logger.setLevel(logging.DEBUG)
+logging.basicConfig(format='[%(asctime)s][%(name)s]%(levelname)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
 
 class RingBuffer(object):
@@ -162,7 +167,8 @@ class FAPSListener(Thread):
         print('Listening... Press Ctrl+C to exit')
         print('listening for:')
         for keyword_name, sensitivity in zip(keyword_names, self._sensitivities):
-            print('- %s (sensitivity: %f)' % (keyword_name, sensitivity))
+            print('  - {}\t (sensitivity: {})'.format(keyword_name, sensitivity))
+        print('\n')
 
         porcupine = None
         pa = None
@@ -190,7 +196,7 @@ class FAPSListener(Thread):
             recording_count = 0
             while True:
                 if self._interrupt_check():
-                    print("detect voice return")
+                    logger.debug("detect program interruption... returning")
                     return
                 pcm = audio_stream.read(porcupine.frame_length)
                 pcm = struct.unpack_from("h" * porcupine.frame_length, pcm)
@@ -206,9 +212,9 @@ class FAPSListener(Thread):
                         recording_count = 0
                         self.play_audio_file(DETECT_ON)
                         if num_keywords == 1 and result:
-                            print('[%s] detected keyword' % str(datetime.now()))
+                            logger.info('detected keyword')
                         elif num_keywords > 1 and result >= 0:
-                            print('[%s] detected %s' % (str(datetime.now()), keyword_names[result]))
+                            logger.info('detected keyword {}'.format(keyword_names[result]))
                         callback = self._detected_callback[result]
                         if callback is not None:
                             callback()
@@ -238,7 +244,7 @@ class FAPSListener(Thread):
                         self._recorded_frames.append(pcm)
 
         except KeyboardInterrupt:
-            print('stopping ...')
+            logger.debug('stopping ...')
         finally:
             if porcupine is not None:
                 porcupine.delete()
@@ -265,10 +271,12 @@ class FAPSListener(Thread):
         """ Provides information regarding different audio devices available. """
 
         pa = pyaudio.PyAudio()
-
+        print("===================================================")
+        print("# Avialble Audio Devices")
+        print("===================================================")
         for i in range(pa.get_device_count()):
             info = pa.get_device_info_by_index(i)
             print(', '.join("'%s': '%s'" % (k, str(info[k])) for k in cls._AUDIO_DEVICE_INFO_KEYS))
-
+        print("===================================================\n")
         pa.terminate()
 

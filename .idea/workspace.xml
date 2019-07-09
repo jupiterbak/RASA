@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a49de8-60bc-4e63-bfdb-1edddab6a538" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/STTService/porcupine/FAPSTTS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/RASA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RASA.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/STTService/porcupine/FAPSDeepSpeechConverter.py" beforeDir="false" afterPath="$PROJECT_DIR$/STTService/porcupine/FAPSDeepSpeechConverter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/STTService/porcupine/FAPSHotWordRecorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/STTService/porcupine/FAPSHotWordRecorder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/STTService/porcupine/FAPSListener.py" beforeDir="false" afterPath="$PROJECT_DIR$/STTService/porcupine/FAPSListener.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/STTService/porcupine/FAPSTTS.py" beforeDir="false" afterPath="$PROJECT_DIR$/STTService/porcupine/FAPSTTS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/STTService/porcupine/MainService.py" beforeDir="false" afterPath="$PROJECT_DIR$/STTService/porcupine/MainService.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/STTService/porcupine/output/output_audio.wav" beforeDir="false" afterPath="$PROJECT_DIR$/STTService/porcupine/output/output_audio.wav" afterDir="false" />
     </list>
@@ -18,34 +19,40 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="RASA" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TTSService/tts_server.py">
+        <entry file="file://$PROJECT_DIR$/STTService/porcupine/MainService.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="26" column="32" selection-start-line="23" selection-start-column="16" selection-end-line="26" selection-end-column="32" />
+            <state relative-caret-position="306">
+              <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="66" />
               <folding>
-                <element signature="e#23#46#0" expanded="true" />
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/STTService/porcupine/FAPSTTS.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/STTService/porcupine/FAPSHotWordRecorder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-421">
-              <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/STTService/porcupine/FAPSDeepSpeechConverter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="119" selection-start-line="119" selection-end-line="119" />
+            <state relative-caret-position="340">
+              <caret line="98" column="22" lean-forward="true" selection-start-line="96" selection-start-column="11" selection-end-line="98" selection-end-column="22" />
               <folding>
                 <element signature="e#46#110#0" expanded="true" />
               </folding>
@@ -54,13 +61,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/STTService/porcupine/MainService.py">
+        <entry file="file://$PROJECT_DIR$/STTService/porcupine/FAPSListener.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="216">
+              <caret line="169" column="21" selection-start-line="169" selection-start-column="21" selection-end-line="169" selection-end-column="21" />
               <folding>
-                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/STTService/porcupine/FAPSHotWordRecorder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-457">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -76,8 +104,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>action_cmd_omac_mode</find>
-      <find>utter_confirm</find>
       <find>Slow</find>
       <find>dispatcher.utter_message(&quot;Maximum velocity reached.&quot;)</find>
       <find>slow</find>
@@ -106,9 +132,10 @@
       <find>_AUDIO_DEVICE_INFO_KEYS</find>
       <find>VersionAction</find>
       <find>lib</find>
+      <find>self.logger</find>
+      <find># self.logger</find>
     </findStrings>
     <replaceStrings>
-      <replace>suspend</replace>
       <replace>hold</replace>
       <replace>abort</replace>
       <replace>clear</replace>
@@ -138,6 +165,7 @@
       <replace>variable_name</replace>
       <replace>backward</replace>
       <replace>forward</replace>
+      <replace>logger</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\PYTHON_Workspace\RASA\speech\.github</dir>
@@ -197,14 +225,14 @@
         <option value="$PROJECT_DIR$/STTService/porcupine/faps_listener.py" />
         <option value="$PROJECT_DIR$/STTService/porcupine/FAPSKeyWordDetector.py" />
         <option value="$PROJECT_DIR$/STTService/porcupine/service_main.py" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/FAPSHotWordRecorder.py" />
         <option value="$PROJECT_DIR$/STTService/porcupine/FAPSSST.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/FAPSListener.py" />
-        <option value="$PROJECT_DIR$/Requirements.txt" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/FAPSTTS.py" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/MainService.py" />
         <option value="$PROJECT_DIR$/STTService/porcupine/FAPSDeepSpeechConverter.py" />
+        <option value="$PROJECT_DIR$/STTService/porcupine/FAPSHotWordRecorder.py" />
+        <option value="$PROJECT_DIR$/Requirements.txt" />
+        <option value="$PROJECT_DIR$/STTService/porcupine/MainService.py" />
+        <option value="$PROJECT_DIR$/STTService/porcupine/FAPSListener.py" />
+        <option value="$PROJECT_DIR$/STTService/porcupine/FAPSTTS.py" />
       </list>
     </option>
   </component>
@@ -220,41 +248,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Demonstrator_NLU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demonstrator_NLU" type="462c0819:PsiDirectoryNode" />
+              <item name="RASA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RASA" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Demonstrator_NLU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demonstrator_NLU" type="462c0819:PsiDirectoryNode" />
+              <item name="RASA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RASA" type="462c0819:PsiDirectoryNode" />
               <item name="STTService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Demonstrator_NLU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demonstrator_NLU" type="462c0819:PsiDirectoryNode" />
-              <item name="STTService" type="462c0819:PsiDirectoryNode" />
-              <item name="porcupine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Demonstrator_NLU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demonstrator_NLU" type="462c0819:PsiDirectoryNode" />
+              <item name="RASA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RASA" type="462c0819:PsiDirectoryNode" />
               <item name="STTService" type="462c0819:PsiDirectoryNode" />
               <item name="porcupine" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Demonstrator_NLU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demonstrator_NLU" type="462c0819:PsiDirectoryNode" />
-              <item name="TTSService" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,19 +279,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jubakakeu\Documents\Python_Workspace\Demonstrator_NLU\STTService\porcupine\Model" />
-      <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\Model" />
-      <recent name="D:\PYTHON_Workspace\RASA\STTService" />
-      <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine" />
-      <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\lib" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\Model" />
       <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\ressources" />
       <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine" />
       <recent name="D:\PYTHON_Workspace\RASA\STTService\snowboy" />
       <recent name="D:\PYTHON_Workspace\RASA\STT" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jubakakeu\Documents\Python_Workspace\Demonstrator_NLU\STTService\porcupine\Model" />
+      <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\Model" />
+      <recent name="D:\PYTHON_Workspace\RASA\STTService" />
+      <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine" />
+      <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -290,7 +306,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.FAPSDeepSpeechConverter">
+  <component name="RunManager" selected="Python.MainService">
     <configuration name="FAPSDeepSpeechConverter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RASA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -392,15 +408,15 @@
     <list>
       <item itemvalue="Python.MainService" />
       <item itemvalue="Python.FAPSDeepSpeechConverter" />
-      <item itemvalue="Python tests.Unittests in test_porcupine.py" />
       <item itemvalue="Python.tts_server" />
       <item itemvalue="Python.FAPSTTS" />
+      <item itemvalue="Python tests.Unittests in test_porcupine.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.FAPSDeepSpeechConverter" />
         <item itemvalue="Python.MainService" />
         <item itemvalue="Python.FAPSTTS" />
+        <item itemvalue="Python.FAPSDeepSpeechConverter" />
         <item itemvalue="Python.tts_server" />
         <item itemvalue="Python tests.Unittests in test_porcupine.py" />
       </list>
@@ -459,21 +475,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18282403" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984326" visible="true" weight="0.18282403" />
+      <window_info id="Structure" order="1" sideWeight="0.5015674" side_tool="true" visible="true" weight="0.18282403" />
+      <window_info id="Favorites" order="2" sideWeight="0.50074077" side_tool="true" weight="0.18282403" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49841937" weight="0.32854405" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7207587" weight="0.5660377" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49683878" visible="true" weight="0.20199779" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.72023183" visible="true" weight="0.3888889" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49683878" weight="0.20199779" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32950193" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32950193" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49789253" weight="0.32088122" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50316125" side_tool="true" visible="true" weight="0.20199779" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49736565" weight="0.32088122" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.27976817" side_tool="true" visible="true" weight="0.3888889" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" sideWeight="0.49947312" weight="0.32854405" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -518,11 +535,6 @@
           <line>39</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/STTService/porcupine/FAPSDeepSpeechConverter.py</url>
-          <line>119</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -563,7 +575,16 @@
     <entry file="file://$PROJECT_DIR$/STTService/porcupine/binding/README.md" />
     <entry file="file://$PROJECT_DIR$/STTService/porcupine/binding/python/README.md" />
     <entry file="file://$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/FAPSdecoder.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/snowboy/test/demo.py" />
+    <entry file="file://$PROJECT_DIR$/STTService/snowboy/test/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/STTService/porcupine/binding/python/porcupine.py" />
     <entry file="file://$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/FAPSKeyWordDetector.py" />
     <entry file="file://$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/FAPSdetect.py" />
@@ -577,15 +598,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/STTService/porcupine/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="85">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -602,46 +616,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/FAPSTTS.py">
+    <entry file="file://$PROJECT_DIR$/STTService/porcupine/FAPSHotWordRecorder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="-457">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/FAPSHotWordRecorder.py">
+    <entry file="file://$PROJECT_DIR$/Requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-421">
-          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+        <state relative-caret-position="204">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/STTService/porcupine/FAPSListener.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/MainService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="216">
+          <caret line="169" column="21" selection-start-line="169" selection-start-column="21" selection-end-line="169" selection-end-column="21" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/STTService/porcupine/FAPSDeepSpeechConverter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        <state relative-caret-position="340">
+          <caret line="98" column="22" lean-forward="true" selection-start-line="96" selection-start-column="11" selection-end-line="98" selection-end-column="22" />
           <folding>
             <element signature="e#46#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/STTService/porcupine/MainService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/STTService/porcupine/FAPSTTS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
