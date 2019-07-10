@@ -17,14 +17,21 @@ class FAPSTTS(multiprocessing.Process):
         multiprocessing.Process.__init__(self)
         self.text_queue = text_queue
         self.interrupt_callback = interrupt_callback
+        self.isBusy = False
 
     def run(self):
         engine = pyttsx3.init()
-        engine.startLoop(False)
+        engine.setProperty('volume', 1.0)
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[0].id)
         while True:
             if self.interrupt_callback():
                 logger.debug("detect program interruption... returning")
                 return
+
+            if self.isBusy is True:
+                time.sleep(0.03)
+                continue
 
             next_text = self.text_queue.get()
             if next_text is None:
@@ -33,37 +40,5 @@ class FAPSTTS(multiprocessing.Process):
 
             engine.say(next_text, 'text')
             logger.info('FAPS TTS --> "{}"'.format(next_text))
-            engine.iterate()
-
+            engine.runAndWait()
         return
-
-
-interrupted = False
-
-
-def myinterrupt_callback():
-    global interrupted
-    return interrupted
-
-
-def signal_handler(signal, frame):
-    global interrupted
-    interrupted = True
-
-
-def sendIt(queue):
-    queue.put("I need a new text")
-    threading.Timer(5.0, sendIt, [queue]).start()
-
-
-if __name__ == '__main__':
-    # capture SIGINT signal, e.g., Ctrl+C
-    signal.signal(signal.SIGINT, signal_handler)
-
-    # Establish communication queues
-    txtInputQueue = multiprocessing.JoinableQueue()
-    sstProcess = FAPSTTS(txtInputQueue, myinterrupt_callback)
-    sstProcess.start()
-
-    # Timer
-    sendIt(txtInputQueue)

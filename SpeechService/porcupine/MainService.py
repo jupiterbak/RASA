@@ -3,6 +3,7 @@ import signal
 from pyfiglet import Figlet
 
 from SpeechService.porcupine.FAPSDeepSpeechConverter import FAPSDeepSpeechConverter
+from SpeechService.porcupine.FAPSDialogEngineProxy import FAPSDialogEngineProxy
 from SpeechService.porcupine.FAPSHotWordRecorder import FAPSHotWordRecorder
 from SpeechService.porcupine.FAPSTTS import FAPSTTS
 
@@ -24,10 +25,9 @@ if __name__ == '__main__':
     # capture SIGINT signal, e.g., Ctrl+C
     signal.signal(signal.SIGINT, signal_handler)
     # Establish communication queues
-    audioOutputQueue = multiprocessing.JoinableQueue()
-    audioInputQueue = audioOutputQueue
-    textOutputQueue = multiprocessing.JoinableQueue()
-    textInputQueue = textOutputQueue
+    audioQueue = multiprocessing.JoinableQueue()
+    userUtteredQueue = multiprocessing.JoinableQueue()
+    botUtteredQueue = multiprocessing.JoinableQueue()
 
     f = Figlet(font='standard')
     print("###################################################\n")
@@ -35,14 +35,18 @@ if __name__ == '__main__':
     print("###################################################\n")
 
     # TTS
-    sstProcess = FAPSTTS(textInputQueue, myinterrupt_callback)
-    sstProcess.start()
+    TTSProcess = FAPSTTS(botUtteredQueue, myinterrupt_callback)
+    TTSProcess.start()
 
-    # Deep Speech
-    sstProcess = FAPSDeepSpeechConverter(audioInputQueue, textOutputQueue, myinterrupt_callback, use_google=USE_GOOGLE)
-    sstProcess.start()
+    # Dialog Engine Proxy
+    DialogProcess = FAPSDialogEngineProxy(userUtteredQueue, botUtteredQueue, myinterrupt_callback)
+    DialogProcess.start()
+
+    # Deep Speech STT
+    STTProcess = FAPSDeepSpeechConverter(audioQueue, userUtteredQueue, myinterrupt_callback, use_google=USE_GOOGLE)
+    STTProcess.start()
 
     # Hotword Decoder
-    hotwordRecorder = FAPSHotWordRecorder(audioOutputQueue, myinterrupt_callback)
+    hotwordRecorder = FAPSHotWordRecorder(audioQueue, myinterrupt_callback)
     hotwordRecorder.start()
 

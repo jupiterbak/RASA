@@ -2,192 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a49de8-60bc-4e63-bfdb-1edddab6a538" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RASA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RASA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpeechService/porcupine/FAPSDialogEngineProxy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/FAPSDeepSpeechConverter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/FAPSHotWordRecorder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/FAPSListener.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/FAPSTTS.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/MainService.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/Model/._deepspeech-0.5.1-models" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/Model/alphabet.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/Model/trie" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/java/ai/picovoice/porcupine/PorcupineTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/java/ai/picovoice/porcupine/WavReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/americano.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/avocado.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/blueberry.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/bumblebee.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/caterpillar.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/christina.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/dragonfly.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/flamingo.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/francesca.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/grapefruit.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/grasshopper.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/iguana.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/multiple_keywords.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/params.pv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/picovoice.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/pineapple.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/porcupine.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/porcupine.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/raspberry.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/terminator.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/androidTest/resources/vancouver.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/main/java/ai/picovoice/porcupine/LogUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/main/java/ai/picovoice/porcupine/Porcupine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/main/java/ai/picovoice/porcupine/PorcupineException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/main/jniLibs/arm64-v8a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/main/jniLibs/armeabi-v7a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/main/jniLibs/x86" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/main/jniLibs/x86_64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/porcupine/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/android/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/js/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/js/porcupine.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/python/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/python/porcupine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/binding/python/test_porcupine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/include/picovoice.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/include/pv_porcupine.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/library/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/library/common/porcupine_compressed_params.pv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/library/common/porcupine_params.pv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/library/linux/x86_64/libpv_porcupine.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/library/windows/amd64/libpv_porcupine.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/library/windows/amd64/libpv_porcupine.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/output/output_audio.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/alexa_linux.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/alexa_linux_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/americano_linux.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/americano_linux_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/blueberry_linux.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/blueberry_linux_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/bumblebee_linux.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/bumblebee_linux_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/computer_linux.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/computer_linux_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/grapefruit_linux.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/grapefruit_linux_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/grasshopper_linux.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/grasshopper_linux_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/hey pico_linux.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/hey pico_linux_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/jarvis_linux.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/jarvis_linux_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/picovoice_linux.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/picovoice_linux_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/porcupine_linux.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/porcupine_linux_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/smart mirror_linux.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/smart mirror_linux_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/snowboy_linux.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/snowboy_linux_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/terminator_linux.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/terminator_linux_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/view glass_linux.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/linux/view glass_linux_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/Alex_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/Bonjour_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/Florian_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/Jupiter_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/Lincoln_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/Matthew_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/Tobias_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/alexa_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/alexa_windows_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/americano_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/americano_windows_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/blueberry_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/blueberry_windows_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/bumblebee_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/bumblebee_windows_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/grapefruit_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/grapefruit_windows_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/grasshopper_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/grasshopper_windows_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/hey pico_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/hey pico_windows_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/picovoice_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/picovoice_windows_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/porcupine_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/porcupine_windows_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/terminator_windows.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/windows/terminator_windows_compressed.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/optimizer_data/porcupine.data.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/optimizer_data/porcupine.data.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/optimizer_data/porcupine.data.2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/optimizer_data/porcupine.data.3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/optimizer_data/porcupine.data.4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/optimizer_data/porcupine.data.5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/optimizer_data/porcupine.data.6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/optimizer_data/porcupine.data.7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/optimizer_data/porcupine.data.8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/ressources/optimizer_data/porcupine.data.9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/sounds/ding.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/sounds/dong.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/sounds/off.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/sounds/off.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/sounds/on.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/sounds/on.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/tools/optimizer/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/tools/optimizer/linux/x86_64/pv_porcupine_optimizer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/porcupine/tools/optimizer/windows/amd64/pv_porcupine_optimizer.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/FAPSKeyWordDetector.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/FAPSdecoder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/FAPSdetect.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/output.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/resources/OK_Demo.pmdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/resources/OK_Tobi.pmdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/resources/Tobi.pmdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/resources/alexa.umdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/resources/alexa_02092017.umdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/resources/common.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/resources/jarvis.pmdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/resources/snowboy.umdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/snowboy-detect-swig.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/sounds/ding.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/sounds/dong.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/sounds/off.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/sounds/off.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/sounds/on.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/sounds/on.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/version" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/STT/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/STT/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/STT/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/STT/ressources/alphabet.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/STT/ressources/trie" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/modules/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/test/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/snowboy/test/demo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/STTService/tts_socketio.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DialogEngineService/credentials.yml" beforeDir="false" afterPath="$PROJECT_DIR$/DialogEngineService/credentials.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/FAPSTTS.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/porcupine/FAPSTTS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/MainService.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/porcupine/MainService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/output/output_audio.wav" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/porcupine/output/output_audio.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechService/tts_socketio.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -200,11 +21,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DialogEngineService/credentials.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="85">
+              <caret line="5" column="32" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/MainService.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/FAPSTTS.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/FAPSDialogEngineProxy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="100" column="22" selection-start-line="99" selection-start-column="4" selection-end-line="100" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -298,12 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/speech/data/nlu/canthelp.md" />
-        <option value="$PROJECT_DIR$/speech/data/stories/cmd_omac_state.md" />
-        <option value="$PROJECT_DIR$/speech/data/stories/cmd_goto.md" />
-        <option value="$PROJECT_DIR$/speech/data/stories/cmd_omac_mode_stories.md" />
-        <option value="$PROJECT_DIR$/speech/data/nlu/speed.md" />
-        <option value="$PROJECT_DIR$/speech/data/nlu/synomyms.md" />
         <option value="$PROJECT_DIR$/speech/data/stories/show_value_stories.md" />
         <option value="$PROJECT_DIR$/speech/data/nlu/cmd_omac_mode.md" />
         <option value="$PROJECT_DIR$/speech/data/nlu/cmd_omac_state.md" />
@@ -349,6 +200,12 @@
         <option value="$PROJECT_DIR$/STTService/porcupine/FAPSDeepSpeechConverter.py" />
         <option value="$PROJECT_DIR$/STTService/porcupine/MainService.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/DialogEngineService/credentials.yml" />
+        <option value="$PROJECT_DIR$/SpeechService/porcupine/tts_socketio.py" />
+        <option value="$PROJECT_DIR$/SpeechService/porcupine/FAPSDialogEngine.py" />
+        <option value="$PROJECT_DIR$/SpeechService/porcupine/FAPSDialogEngineProxy.py" />
+        <option value="$PROJECT_DIR$/SpeechService/porcupine/MainService.py" />
+        <option value="$PROJECT_DIR$/SpeechService/porcupine/FAPSTTS.py" />
       </list>
     </option>
   </component>
@@ -395,19 +252,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PYTHON_Workspace\RASA\SpeechService\porcupine" />
+      <recent name="C:\Users\jubakakeu\Documents\Python_Workspace\Demonstrator_NLU\STTService" />
+      <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\Model" />
+      <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\ressources" />
+      <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jubakakeu\Documents\Python_Workspace\Demonstrator_NLU\STTService\porcupine\Model" />
       <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\Model" />
       <recent name="D:\PYTHON_Workspace\RASA\STTService" />
       <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine" />
       <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\lib" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jubakakeu\Documents\Python_Workspace\Demonstrator_NLU\STTService" />
-      <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\Model" />
-      <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\ressources" />
-      <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine" />
-      <recent name="D:\PYTHON_Workspace\RASA\STTService\snowboy" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -422,16 +279,107 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="DucklingService/Dockerfile" type="docker-deploy" factoryName="dockerfile">
+  <component name="RunManager" selected="Python.MainService">
+    <configuration name="FAPSDeepSpeechConverter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RASA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SpeechService/porcupine" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SpeechService/porcupine/FAPSDeepSpeechConverter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FAPSDialogEngine" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RASA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SpeechService/porcupine" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\PYTHON_Workspace\RASA\SpeechService\porcupine\FAPSDialogEngineProxy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MainService" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RASA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SpeechService/porcupine" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SpeechService/porcupine/MainService.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tts_socketio" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RASA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SpeechService/porcupine" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SpeechService/porcupine/tts_socketio.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DialogEngineService/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
-          <option name="sourceFilePath" value="DucklingService/Dockerfile" />
+          <option name="buildCliOptions" value="" />
+          <option name="buildOnly" value="true" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="DialogEngineService/Dockerfile" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_porcupine.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in D:/PYTHON_Workspace/RASA/STTService/porcupine/binding/python/test_porcupine.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="RASA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -446,12 +394,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.DucklingService/Dockerfile" />
-      <item itemvalue="Python tests.Unittests in test_porcupine.py" />
+      <item itemvalue="Docker.DialogEngineService/Dockerfile" />
+      <item itemvalue="Python.MainService" />
+      <item itemvalue="Python.FAPSDeepSpeechConverter" />
+      <item itemvalue="Python tests.Unittests in D:/PYTHON_Workspace/RASA/STTService/porcupine/binding/python/test_porcupine.py" />
+      <item itemvalue="Python.tts_socketio" />
+      <item itemvalue="Python.FAPSDialogEngine" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test_porcupine.py" />
+        <item itemvalue="Python.MainService" />
+        <item itemvalue="Python.FAPSDialogEngine" />
+        <item itemvalue="Python.tts_socketio" />
+        <item itemvalue="Python.FAPSDeepSpeechConverter" />
+        <item itemvalue="Python tests.Unittests in D:/PYTHON_Workspace/RASA/STTService/porcupine/binding/python/test_porcupine.py" />
       </list>
     </recent_temporary>
   </component>
@@ -498,33 +454,33 @@
       <configuration name="Unittests in test_porcupine.py" configurationId="tests" />
     </history-entry>
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
     <todo-panel id="all">
       <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4945504" visible="true" weight="0.18282403" />
-      <window_info id="Structure" order="1" sideWeight="0.5054496" side_tool="true" visible="true" weight="0.18282403" />
-      <window_info id="Favorites" order="2" sideWeight="0.50074077" side_tool="true" weight="0.18282403" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6923077" visible="true" weight="0.18282403" />
+      <window_info id="Structure" order="1" sideWeight="0.30769232" side_tool="true" visible="true" weight="0.18282403" />
+      <window_info id="Favorites" order="2" sideWeight="0.30541873" side_tool="true" weight="0.18282403" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49841937" weight="0.32854405" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.71812433" weight="0.20562771" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49578503" weight="0.42397335" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.71496314" visible="true" weight="0.28246754" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49420443" weight="0.42316017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32950193" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49894625" weight="0.32900432" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32950193" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49736565" weight="0.32088122" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.28187567" side_tool="true" visible="true" weight="0.20562771" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.2850369" side_tool="true" visible="true" weight="0.28246754" />
       <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" sideWeight="0.49947312" weight="0.32854405" />
+      <window_info anchor="bottom" id="Docker" order="11" sideWeight="0.49841937" weight="0.32792208" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -571,10 +527,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DialogEngineService/data/nlu/enter_data.md" />
-    <entry file="file://$PROJECT_DIR$/DialogEngineService/data/stories/cmd_omac_state.md" />
-    <entry file="file://$PROJECT_DIR$/DialogEngineService/data/stories/cmd_omac_mode_stories.md" />
-    <entry file="file://$PROJECT_DIR$/DialogEngineService/data/stories/cmd_goto.md" />
     <entry file="file://$PROJECT_DIR$/DialogEngineService/data/stories/cmd_speed_tories.md" />
     <entry file="file://$PROJECT_DIR$/DialogEngineService/data/stories/cmd_move_robot.md" />
     <entry file="file://$PROJECT_DIR$/DialogEngineService/actions.py" />
@@ -585,11 +537,9 @@
     <entry file="file://$PROJECT_DIR$/DialogEngineService/domain.yml" />
     <entry file="file://$PROJECT_DIR$/DialogEngineService/graph.html" />
     <entry file="file://$PROJECT_DIR$/DucklingService/README.md" />
-    <entry file="file://$PROJECT_DIR$/DialogEngineService/Dockerfile" />
     <entry file="file://$PROJECT_DIR$/DialogEngineService/_main.py" />
     <entry file="file://C:/ProgramData/Anaconda3/envs/RASA/Lib/site-packages/flask/app.py" />
     <entry file="file://$PROJECT_DIR$/DialogEngineService/config.yml" />
-    <entry file="file://$PROJECT_DIR$/DialogEngineService/credentials.yml" />
     <entry file="file://C:/ProgramData/Anaconda3/envs/RASA/Lib/site-packages/pyttsx3/engine.py" />
     <entry file="file://$PROJECT_DIR$/STTService/STTEngine/README.md" />
     <entry file="file://$PROJECT_DIR$/STTService/KeywordsDetector/FAPSKeyWordDetector.py" />
@@ -597,7 +547,6 @@
     <entry file="file://$PROJECT_DIR$/STTService/KeywordsDetector/FAPSdecoder.py" />
     <entry file="file://$PROJECT_DIR$/STTService/KeywordsDetector/FAPSdetect.py" />
     <entry file="file://$PROJECT_DIR$/STTService/demo/demo.py" />
-    <entry file="file://$PROJECT_DIR$/DucklingService/Dockerfile" />
     <entry file="file://$PROJECT_DIR$/STTService/__init__.py" />
     <entry file="file://$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/README.md" />
     <entry file="file://$PROJECT_DIR$/STTService/porcupine/__init__.py" />
@@ -630,7 +579,57 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DucklingService/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DialogEngineService/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/tts_socketio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" selection-start-line="38" selection-end-line="38" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DialogEngineService/credentials.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/FAPSDialogEngineProxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="100" column="22" selection-start-line="99" selection-start-column="4" selection-end-line="100" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/MainService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/FAPSTTS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
