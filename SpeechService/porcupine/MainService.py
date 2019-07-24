@@ -30,9 +30,9 @@ if __name__ == '__main__':
     botUtteredQueue = multiprocessing.JoinableQueue()
 
     f = Figlet(font='standard')
-    print("###################################################\n")
+    print("######################################################################################################\n")
     print(f.renderText('FAPS NLU'))
-    print("###################################################\n")
+    print("######################################################################################################\n")
 
     # TTS
     TTSProcess = FAPSTTS(botUtteredQueue, myinterrupt_callback)

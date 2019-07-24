@@ -271,12 +271,12 @@ class FAPSListener(Thread):
         """ Provides information regarding different audio devices available. """
 
         pa = pyaudio.PyAudio()
-        print("===================================================")
+        print("======================================================================================================")
         print("# Avialble Audio Devices")
-        print("===================================================")
+        print("======================================================================================================")
         for i in range(pa.get_device_count()):
             info = pa.get_device_info_by_index(i)
             print(', '.join("'%s': '%s'" % (k, str(info[k])) for k in cls._AUDIO_DEVICE_INFO_KEYS))
-        print("===================================================\n")
+        print("======================================================================================================\n")
         pa.terminate()
 

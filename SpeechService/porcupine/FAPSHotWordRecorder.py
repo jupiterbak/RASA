@@ -50,12 +50,17 @@ class FAPSHotWordRecorder(multiprocessing.Process):
     def run(self):
         model_file_path = "./library/common/porcupine_params.pv"
         output_path = "./output/output_audio.wav"
-        keyword_file_paths = ["./ressources/keyword_files/windows/Alex_windows.ppn",
-                              "./ressources/keyword_files/windows/Matthew_windows.ppn",
-                              "./ressources/keyword_files/windows/Jupiter_windows.ppn",
+        keyword_file_paths = ["./ressources/keyword_files/windows/Jupiter_windows.ppn",
                               "./ressources/keyword_files/windows/Florian_windows.ppn",
-                              "./ressources/keyword_files/windows/Lincoln_windows.ppn",
-                              "./ressources/keyword_files/windows/Tobias_windows.ppn"]
+                              "./ressources/keyword_files/windows/Tobias_windows.ppn",
+                              "./ressources/keyword_files/windows/demonstrator_windows.ppn"]
+        # keyword_file_paths = ["./ressources/keyword_files/windows/Alex_windows.ppn",
+        #                       "./ressources/keyword_files/windows/Matthew_windows.ppn",
+        #                       "./ressources/keyword_files/windows/Jupiter_windows.ppn",
+        #                       "./ressources/keyword_files/windows/Florian_windows.ppn",
+        #                       "./ressources/keyword_files/windows/Lincoln_windows.ppn",
+        #                       "./ressources/keyword_files/windows/Tobias_windows.ppn",
+        #                       "./ressources/keyword_files/windows/demonstrator_windows.ppn"]
         sensitivities = [0.5] * len(keyword_file_paths)
         input_audio_device_index = 1
         show_audio_devices_info = True
@@ -75,5 +80,6 @@ class FAPSHotWordRecorder(multiprocessing.Process):
             input_device_index=input_audio_device_index,
             detected_callback=self.detectedCallback,
             audio_recorder_callback=self.audioRecorderCallback,
-            interrupt_check=self.interrupt_callback).run()
+            interrupt_check=self.interrupt_callback,
+            recording_timeout=500).run()
         return
