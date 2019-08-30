@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a49de8-60bc-4e63-bfdb-1edddab6a538" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/start_dialog_engine.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/FAPSHotWordRecorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/porcupine/FAPSHotWordRecorder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/FAPSListener.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/porcupine/FAPSListener.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/MainService.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/porcupine/MainService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/output/output_audio.wav" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/porcupine/output/output_audio.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DialogEngineService/rasa.db" beforeDir="false" afterPath="$PROJECT_DIR$/DialogEngineService/rasa.db" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,34 +13,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="RASA" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/MainService.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/FAPSHotWordRecorder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -130,79 +98,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/speech/data/nlu/value_of_variable.json" />
-        <option value="$PROJECT_DIR$/speech/data/stories/privacy_policy.md" />
-        <option value="$PROJECT_DIR$/speech/data/stories/chitchat.md" />
-        <option value="$PROJECT_DIR$/speech/data/nlu/ask_privacy_policy.md" />
-        <option value="$PROJECT_DIR$/speech/data/nlu/cmd_gripper.md" />
-        <option value="$PROJECT_DIR$/speech/data/stories/gripper_stories.md" />
-        <option value="$PROJECT_DIR$/speech/config.yml" />
-        <option value="$PROJECT_DIR$/speech/domain.yml" />
-        <option value="$PROJECT_DIR$/speech/data/nlu/out_of_scope.md" />
-        <option value="$PROJECT_DIR$/speech/data/stories/cmd_speed_tories.md" />
-        <option value="$PROJECT_DIR$/speech/data/stories/cmd_move_robot.md" />
-        <option value="$PROJECT_DIR$/speech/actions.py" />
-        <option value="$PROJECT_DIR$/speech/data/nlu/deny.md" />
-        <option value="$PROJECT_DIR$/speech/data/nlu/cmd_goto.md" />
-        <option value="$PROJECT_DIR$/speech/data/nlu/cmd_move_robot.md" />
-        <option value="$PROJECT_DIR$/duckling/README.md" />
-        <option value="$PROJECT_DIR$/speech/Dockerfile" />
-        <option value="$PROJECT_DIR$/tts/tts_socketio.py" />
-        <option value="$PROJECT_DIR$/speech/credentials.yml" />
-        <option value="$PROJECT_DIR$/tts/tts_server.py" />
-        <option value="$PROJECT_DIR$/STT/KeywordsDetector/requirements.txt" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/STTService/snowboy/test/demo.py" />
-        <option value="$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/FAPSdecoder.py" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/porcupine_demo.py" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/requirements.txt" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/faps_stt.py" />
-        <option value="$PROJECT_DIR$/STTService/service_main.py" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/faps_listener.py" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/FAPSKeyWordDetector.py" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/service_main.py" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/FAPSSST.py" />
-        <option value="$PROJECT_DIR$/Requirements.txt" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/FAPSListener.py" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/FAPSTTS.py" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/FAPSHotWordRecorder.py" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/FAPSDeepSpeechConverter.py" />
-        <option value="$PROJECT_DIR$/STTService/porcupine/MainService.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/DialogEngineService/credentials.yml" />
-        <option value="$PROJECT_DIR$/SpeechService/porcupine/tts_socketio.py" />
-        <option value="$PROJECT_DIR$/SpeechService/porcupine/FAPSDialogEngine.py" />
-        <option value="$PROJECT_DIR$/SpeechService/porcupine/FAPSDialogEngineProxy.py" />
-        <option value="$PROJECT_DIR$/SpeechService/porcupine/FAPSTTS.py" />
-        <option value="$PROJECT_DIR$/DialogEngineService/Start_Dialog_Engine.cmd" />
-        <option value="$PROJECT_DIR$/DialogEngineService/Start_Dialog_Engine.bat" />
-        <option value="$PROJECT_DIR$/DialogEngineService/start_dialog_engine.bat" />
-        <option value="$PROJECT_DIR$/start_dialog_engine.bat" />
-        <option value="$PROJECT_DIR$/SpeechService/porcupine/MainService.py" />
-        <option value="$PROJECT_DIR$/SpeechService/porcupine/FAPSListener.py" />
-        <option value="$PROJECT_DIR$/SpeechService/porcupine/FAPSHotWordRecorder.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1920" />
-    <option name="height" value="519" />
-  </component>
+  <component name="ProjectId" id="1PjT1BucmBd4MXiZhzEWVoI0faL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/SP347/50_temp/Hyperplane_Phase" />
@@ -236,7 +133,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.MainService">
+  <component name="RunManager" selected="Docker.DialogEngineService/Dockerfile">
     <configuration name="FAPSDeepSpeechConverter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RASA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -383,6 +280,16 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -434,49 +341,18 @@
       <are-packages-shown value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.68421054" visible="true" weight="0.18282403" />
-      <window_info id="Structure" order="1" sideWeight="0.31578946" side_tool="true" visible="true" weight="0.18282403" />
-      <window_info id="Favorites" order="2" sideWeight="0.31078905" side_tool="true" weight="0.18282403" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49841937" weight="0.32854405" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7123288" visible="true" weight="0.6861472" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49420443" weight="0.42316017" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49894625" weight="0.32900432" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32950193" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49683878" weight="0.32034633" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.28767124" side_tool="true" visible="true" weight="0.3448276" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Docker" order="11" sideWeight="0.857745" weight="0.32792208" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18282403" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" order="0" weight="0.32900432" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32900432" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.4004329" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.38528138" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32950193" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32950193" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32950193" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
@@ -497,150 +373,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DialogEngineService/data/nlu/deny.md" />
-    <entry file="file://$PROJECT_DIR$/DialogEngineService/domain.yml" />
-    <entry file="file://$PROJECT_DIR$/DialogEngineService/graph.html" />
-    <entry file="file://$PROJECT_DIR$/DucklingService/README.md" />
-    <entry file="file://$PROJECT_DIR$/DialogEngineService/_main.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/envs/RASA/Lib/site-packages/flask/app.py" />
-    <entry file="file://$PROJECT_DIR$/DialogEngineService/config.yml" />
-    <entry file="file://C:/ProgramData/Anaconda3/envs/RASA/Lib/site-packages/pyttsx3/engine.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/STTEngine/README.md" />
-    <entry file="file://$PROJECT_DIR$/STTService/KeywordsDetector/FAPSKeyWordDetector.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/KeywordsDetector/requirements.txt" />
-    <entry file="file://$PROJECT_DIR$/STTService/KeywordsDetector/FAPSdecoder.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/KeywordsDetector/FAPSdetect.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/demo/demo.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/ressources/keyword_files/README.md" />
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/include/picovoice.h" />
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/tools/optimizer/README.md" />
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/binding/js/README.md" />
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/binding/README.md" />
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/binding/python/README.md" />
-    <entry file="file://$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/FAPSdecoder.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/snowboy/test/demo.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/binding/python/porcupine.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/FAPSKeyWordDetector.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/snowboy/modules/KeywordsDetector/FAPSdetect.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/Model/alphabet.txt" />
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/requirements.txt" />
-    <entry file="file://$PROJECT_DIR$/TTSService/tts_server.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/tts_socketio.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/MainService.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/FAPSTTS.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/FAPSDeepSpeechConverter.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/FAPSListener.py" />
-    <entry file="file://$PROJECT_DIR$/STTService/porcupine/FAPSHotWordRecorder.py" />
-    <entry file="file://$PROJECT_DIR$/Requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DialogEngineService/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/tts_socketio.py" />
-    <entry file="file://$PROJECT_DIR$/start_dialog_engine.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DucklingService/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DialogEngineService/credentials.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/FAPSDeepSpeechConverter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2078" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/FAPSDialogEngineProxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="100" column="22" selection-start-line="99" selection-start-column="4" selection-end-line="100" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/FAPSTTS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/FAPSListener.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="271" lean-forward="true" selection-start-line="270" selection-start-column="37" selection-end-line="271" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/tools/optimizer/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="391">
-            <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/FAPSHotWordRecorder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpeechService/porcupine/MainService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
