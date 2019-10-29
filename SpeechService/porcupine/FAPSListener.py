@@ -187,8 +187,8 @@ class FAPSListener(Thread):
                 channels=1,
                 format=pyaudio.paInt16,
                 input=True,
-                frames_per_buffer=porcupine.frame_length,
-                input_device_index=self._input_device_index
+                frames_per_buffer=porcupine.frame_length
+                # input_device_index=self._input_device_index
             )
 
             self._running = True

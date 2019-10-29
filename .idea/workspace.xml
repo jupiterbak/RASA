@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a49de8-60bc-4e63-bfdb-1edddab6a538" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/SpeechService/porcupine/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RASA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RASA.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DialogEngineService/rasa.db" beforeDir="false" afterPath="$PROJECT_DIR$/DialogEngineService/rasa.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/FAPSHotWordRecorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/porcupine/FAPSHotWordRecorder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/FAPSListener.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/porcupine/FAPSListener.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/output/output_audio.wav" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/porcupine/output/output_audio.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/Alex_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/Alex_windows.ppn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/Florian_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/Florian_windows.ppn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/Jupiter_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/Jupiter_windows.ppn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/Tobias_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/Tobias_windows.ppn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/demonstrator_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/demonstrator_windows.ppn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start_dialog_engine.bat" beforeDir="false" afterPath="$PROJECT_DIR$/start_dialog_engine.bat" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,80 +31,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Slow</find>
-      <find>dispatcher.utter_message(&quot;Maximum velocity reached.&quot;)</find>
-      <find>slow</find>
-      <find>utter_reached_maximum_velocity</find>
-      <find>two</find>
-      <find>test_</find>
-      <find>gree</find>
-      <find>variables_names</find>
-      <find>utter_goodbye</find>
-      <find>utter_whoiam</find>
-      <find>utter_reached_minimun_velocity</find>
-      <find>utter_possibilities</find>
-      <find>utter_anything_else</find>
-      <find>utter_what_help</find>
-      <find>brie</find>
-      <find>utter_explain_stack</find>
-      <find>resume</find>
-      <find>grip</find>
-      <find>cmd_open_gripper</find>
-      <find>up</find>
-      <find>front</find>
-      <find>left</find>
-      <find>back</find>
-      <find>snow</find>
-      <find>_default_library_path</find>
-      <find>_AUDIO_DEVICE_INFO_KEYS</find>
-      <find>VersionAction</find>
-      <find>lib</find>
-      <find># self.logger</find>
-      <find>self.logger</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>hold</replace>
-      <replace>abort</replace>
-      <replace>clear</replace>
-      <replace>reset</replace>
-      <replace>unhold</replace>
-      <replace>state_cmd</replace>
-      <replace>- utter_cmd_omac_state - action_cmd_omac_state</replace>
-      <replace>utter_cmd_omac_state</replace>
-      <replace>utter_cmd_omac_state_executing</replace>
-      <replace>unsuspend</replace>
-      <replace>demonstrator NLU</replace>
-      <replace>pause</replace>
-      <replace>number</replace>
-      <replace>cmd_goto</replace>
-      <replace>utter_cmd_executing</replace>
-      <replace>position</replace>
-      <replace>manual</replace>
-      <replace>cloud</replace>
-      <replace>maintenance</replace>
-      <replace>mode</replace>
-      <replace>action_execute_cmd_omac_mode</replace>
-      <replace>Fast</replace>
-      <replace>fast</replace>
-      <replace>utter_ask_confirm</replace>
-      <replace>cmd_show_last_value</replace>
-      <replace>dispatcher.utter_template(&quot;utter_reached_maximum_velocity&quot;, tracker)</replace>
-      <replace>variable_name</replace>
-      <replace>backward</replace>
-      <replace>forward</replace>
-      <replace>logger</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>D:\PYTHON_Workspace\RASA\speech\.github</dir>
-      <dir>D:\PYTHON_Workspace\RASA\speech</dir>
-      <dir>C:\Users\jubakakeu\Documents\Python_Workspace\Demonstrator_NLU\speech</dir>
-      <dir>D:\PYTHON_Workspace\RASA\speech\data</dir>
-      <dir>D:\PYTHON_Workspace\RASA\speech\data\stories</dir>
-      <dir>D:\PYTHON_Workspace\RASA\speech\data\nlu</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -106,19 +42,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PYTHON_Workspace\RASA\SpeechService\porcupine\ressources\keyword_files\windows" />
+      <recent name="D:\PYTHON_Workspace\RASA" />
+      <recent name="D:\PYTHON_Workspace\RASA\SpeechService\porcupine" />
+      <recent name="C:\Users\jubakakeu\Documents\Python_Workspace\Demonstrator_NLU\STTService" />
+      <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\Model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jubakakeu\Documents\Python_Workspace\Demonstrator_NLU\STTService\porcupine\Model" />
       <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\Model" />
       <recent name="D:\PYTHON_Workspace\RASA\STTService" />
       <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine" />
       <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\lib" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\PYTHON_Workspace\RASA" />
-      <recent name="D:\PYTHON_Workspace\RASA\SpeechService\porcupine" />
-      <recent name="C:\Users\jubakakeu\Documents\Python_Workspace\Demonstrator_NLU\STTService" />
-      <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\Model" />
-      <recent name="D:\PYTHON_Workspace\RASA\STTService\porcupine\ressources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -133,7 +69,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.DialogEngineService/Dockerfile">
+  <component name="RunManager" selected="Python.MainService">
     <configuration name="FAPSDeepSpeechConverter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RASA" />
       <option name="INTERPRETER_OPTIONS" value="" />

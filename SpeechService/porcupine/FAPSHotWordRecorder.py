@@ -81,5 +81,5 @@ class FAPSHotWordRecorder(multiprocessing.Process):
             detected_callback=self.detectedCallback,
             audio_recorder_callback=self.audioRecorderCallback,
             interrupt_check=self.interrupt_callback,
-            recording_timeout=500).run()
+            recording_timeout=1000).run()
         return
