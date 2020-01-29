@@ -1,6 +1,0 @@
-numpy
-pyaudio
-enum34
-pysoundfile
-SpeechRecognition
-deepspeech

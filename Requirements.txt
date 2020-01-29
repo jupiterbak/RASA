@@ -1,13 +1,27 @@
-PyAudio
-asyncio
-Flask
-Flask-RESTful
-pyttsx3
-rasa-x
-pyaudio
-enum34
-pysoundfile
+## Setup py requirements
+## RASA
+rasa
+pandas
+numpy
+
+## Deepspeech
 SpeechRecognition
 deepspeech
-numpy
+
+
+## Porcupine for STT
+PyAudio
+asyncio
+pysoundfile
+enum34
+
+## TTS
+pyttsx3==2.5
+
+
+## Connection to RASA
+Flask
+Flask-RESTful
 pyfiglet
+
+
