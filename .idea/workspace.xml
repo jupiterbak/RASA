@@ -2,197 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a49de8-60bc-4e63-bfdb-1edddab6a538" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SpeechService/test_FAPSDialogEngineProxy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechService/test_FAPSTTS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RASA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RASA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DialogEngineService/data/tmp/chichat_alternative.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DialogEngineService/story_graph.dot" beforeDir="false" afterPath="$PROJECT_DIR$/DialogEngineService/story_graph.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/Model/._deepspeech-0.5.1-models" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/Model/alphabet.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/Model/deepspeech-0.5.1-models/alphabet.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/Model/deepspeech-0.5.1-models/trie" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/Model/trie" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/FAPSDeepSpeechConverter.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/FAPSDeepSpeechConverter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/FAPSDialogEngineProxy.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/FAPSDialogEngineProxy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/FAPSHotWordRecorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/FAPSHotWordRecorder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/FAPSListener.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/FAPSListener.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/FAPSTTS.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/FAPSTTS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/MainService.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/MainService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ReadMe.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/generate_keywords.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/java/ai/picovoice/porcupine/PorcupineTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/java/ai/picovoice/porcupine/WavReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/americano.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/avocado.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/blueberry.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/bumblebee.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/caterpillar.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/christina.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/dragonfly.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/flamingo.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/francesca.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/grapefruit.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/grasshopper.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/iguana.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/multiple_keywords.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/params.pv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/picovoice.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/pineapple.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/porcupine.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/porcupine.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/raspberry.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/terminator.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/androidTest/resources/vancouver.ppn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/main/java/ai/picovoice/porcupine/LogUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/main/java/ai/picovoice/porcupine/Porcupine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/main/java/ai/picovoice/porcupine/PorcupineException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/main/jniLibs/arm64-v8a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/main/jniLibs/armeabi-v7a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/main/jniLibs/x86" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/main/jniLibs/x86_64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/porcupine/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/android/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/js/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/js/porcupine.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/python/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/python/porcupine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/binding/python/test_porcupine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/include/picovoice.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/include/pv_porcupine.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/library/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/library/common/porcupine_compressed_params.pv" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/porcupine_model/porcupine_compressed_params.pv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/library/common/porcupine_params.pv" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/porcupine_model/porcupine_params.pv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/library/linux/x86_64/libpv_porcupine.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/library/windows/amd64/libpv_porcupine.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/library/windows/amd64/libpv_porcupine.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/output/output_audio.wav" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/output/output_audio.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/alexa_linux.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/alexa_linux.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/alexa_linux_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/alexa_linux_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/americano_linux.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/americano_linux.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/americano_linux_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/americano_linux_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/blueberry_linux.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/blueberry_linux.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/blueberry_linux_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/blueberry_linux_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/bumblebee_linux.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/bumblebee_linux.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/bumblebee_linux_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/bumblebee_linux_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/computer_linux.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/computer_linux.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/computer_linux_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/computer_linux_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/grapefruit_linux.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/grapefruit_linux.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/grapefruit_linux_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/grapefruit_linux_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/grasshopper_linux.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/grasshopper_linux.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/grasshopper_linux_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/grasshopper_linux_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/hey pico_linux.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/hey pico_linux.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/hey pico_linux_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/hey pico_linux_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/jarvis_linux.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/jarvis_linux.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/jarvis_linux_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/jarvis_linux_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/picovoice_linux.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/picovoice_linux.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/picovoice_linux_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/picovoice_linux_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/porcupine_linux.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/porcupine_linux.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/porcupine_linux_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/porcupine_linux_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/smart mirror_linux.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/smart mirror_linux.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/smart mirror_linux_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/smart mirror_linux_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/snowboy_linux.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/snowboy_linux.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/snowboy_linux_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/snowboy_linux_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/terminator_linux.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/terminator_linux.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/terminator_linux_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/terminator_linux_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/view glass_linux.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/view glass_linux.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/linux/view glass_linux_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/linux/view glass_linux_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/Alex_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/Alex_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/Bonjour_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/Bonjour_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/Florian_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/Florian_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/Jupiter_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/Jupiter_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/Lincoln_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/Lincoln_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/Matthew_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/Matthew_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/Tobias_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/Tobias_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/alexa_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/alexa_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/alexa_windows_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/alexa_windows_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/americano_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/americano_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/americano_windows_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/americano_windows_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/blueberry_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/blueberry_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/blueberry_windows_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/blueberry_windows_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/bumblebee_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/bumblebee_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/bumblebee_windows_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/bumblebee_windows_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/demonstrator_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/demonstrator_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/grapefruit_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/grapefruit_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/grapefruit_windows_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/grapefruit_windows_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/grasshopper_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/grasshopper_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/grasshopper_windows_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/grasshopper_windows_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/hey pico_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/hey pico_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/hey pico_windows_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/hey pico_windows_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/picovoice_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/picovoice_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/picovoice_windows_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/picovoice_windows_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/porcupine_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/porcupine_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/porcupine_windows_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/porcupine_windows_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/terminator_windows.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/terminator_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/keyword_files/windows/terminator_windows_compressed.ppn" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/keyword_files/windows/terminator_windows_compressed.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/optimizer_data/porcupine.data.0" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/optimizer_data/porcupine.data.0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/optimizer_data/porcupine.data.1" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/optimizer_data/porcupine.data.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/optimizer_data/porcupine.data.2" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/optimizer_data/porcupine.data.2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/optimizer_data/porcupine.data.3" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/optimizer_data/porcupine.data.3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/optimizer_data/porcupine.data.4" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/optimizer_data/porcupine.data.4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/optimizer_data/porcupine.data.5" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/optimizer_data/porcupine.data.5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/optimizer_data/porcupine.data.6" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/optimizer_data/porcupine.data.6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/optimizer_data/porcupine.data.7" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/optimizer_data/porcupine.data.7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/optimizer_data/porcupine.data.8" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/optimizer_data/porcupine.data.8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/ressources/optimizer_data/porcupine.data.9" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/ressources/optimizer_data/porcupine.data.9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/sounds/ding.wav" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/sounds/ding.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/sounds/dong.wav" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/sounds/dong.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/sounds/off.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/sounds/off.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/sounds/off.wav" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/sounds/off.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/sounds/on.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/sounds/on.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/sounds/on.wav" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/sounds/on.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/tools/optimizer/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/tools/optimizer/linux/x86_64/pv_porcupine_optimizer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/porcupine/tools/optimizer/windows/amd64/pv_porcupine_optimizer.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/test_DeepSpeechDecoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/FAPSKeyWordDetector.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/FAPSdecoder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/FAPSdetect.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/test_FAPSHotWordRecorder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/output.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/resources/OK_Demo.pmdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/resources/OK_Tobi.pmdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/resources/Tobi.pmdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/resources/alexa.umdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/resources/alexa_02092017.umdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/resources/common.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/resources/jarvis.pmdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/resources/snowboy.umdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/snowboy-detect-swig.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/sounds/ding.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/sounds/dong.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/sounds/off.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/sounds/off.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/sounds/on.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/sounds/on.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/KeywordsDetector/version" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/STT/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/STT/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/STT/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/modules/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/test/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechService/snowboy/test/demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechService/FAPSDialogEngineProxy.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechService/FAPSDialogEngineProxy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/SpeechService/test_FAPSTTS.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#46#110#0" expanded="true" />
               </folding>
@@ -217,11 +30,53 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpeechService/test_FAPSDialogEngineProxy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpeechService/FAPSDialogEngineProxy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="122" column="12" selection-start-line="122" selection-start-column="12" selection-end-line="122" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="323">
+                <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -304,6 +159,9 @@
         <option value="$PROJECT_DIR$/SpeechService/FAPSDeepSpeechConverter.py" />
         <option value="$PROJECT_DIR$/SpeechService/test_DeepSpeechDecoder.py" />
         <option value="$PROJECT_DIR$/SpeechService/FAPSHotWordRecorder.py" />
+        <option value="$PROJECT_DIR$/SpeechService/FAPSDialogEngineProxy.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/ReadMed.md" />
       </list>
     </option>
   </component>
@@ -367,7 +225,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_DeepSpeechDecoder">
+  <component name="RunManager" selected="Python.test_FAPSDialogEngineProxy">
     <configuration name="MainService" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RASA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -513,11 +371,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_FAPSDialogEngineProxy" />
         <item itemvalue="Python.test_DeepSpeechDecoder" />
         <item itemvalue="Python.test_FAPSHotWordRecorder" />
         <item itemvalue="Python.MainService" />
         <item itemvalue="Python.test_FAPSTTS" />
-        <item itemvalue="Python.test_FAPSDialogEngineProxy" />
       </list>
     </recent_temporary>
   </component>
@@ -584,13 +442,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33740288" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4384018" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34961155" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -669,21 +528,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/start_dialog_engine.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpeechService/lib/porcupine/ReadMe.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DialogEngineService/tmp/story_graph.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -911,13 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpeechService/FAPSDialogEngineProxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/RASA/Lib/site-packages/pyttsx/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -934,16 +771,6 @@
           <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpeechService/test_FAPSDialogEngineProxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1026,7 +853,7 @@
     <entry file="file://$PROJECT_DIR$/SpeechService/test_FAPSTTS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#46#110#0" expanded="true" />
           </folding>
@@ -1037,6 +864,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpeechService/test_FAPSDialogEngineProxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpeechService/FAPSDialogEngineProxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="122" column="12" selection-start-line="122" selection-start-column="12" selection-end-line="122" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="323">
+            <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

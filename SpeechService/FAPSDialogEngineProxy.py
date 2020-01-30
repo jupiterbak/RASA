@@ -69,5 +69,5 @@ class FAPSDialogEngineProxy(multiprocessing.Process):
                 continue
             send_user_uttered_message(next_text)
 
-        return
+        pass
 
