@@ -1,7 +1,9 @@
 intents:
   - enter_data: {use_entities: false}
+  - handleinsult: {triggers: utter_handleinsult}
+  - greet: {triggers: utter_greet}
+  - goodbye: {triggers: utter_goodbye}
   - affirm
-  - greet
   - deny
   - joke
   - name
@@ -18,12 +20,10 @@ intents:
   - ask_howbuilt
   - ask_privacy_policy
   - ask_if_opensource
-  - handleinsult
   - nicetomeeyou
   - out_of_scope
   - thanks
   - ask_whoisit
-  - goodbye
   - canthelp
   - feedback
   - how_to_get_started
@@ -54,6 +54,8 @@ intents:
   - cmd_take_gripper
   - cmd_release_gripper
   - cmd_move_robot
+  - energy_price
+  - energy_used
 
 
 entities:
@@ -267,6 +269,8 @@ actions:
   - utter_reached_minimum_velocity
   - utter_variable_value
   - utter_ask_confirm
+  - utter_energy_used_value
+  - utter_energy_price_value
   - action_next_step
   - action_chitchat
   - action_pause
@@ -288,6 +292,8 @@ actions:
   - action_take_gripper
   - action_release_gripper
   - action_move_robot
+  - action_energy_price
+  - action_energy_used
 
 
 forms:
@@ -539,7 +545,7 @@ templates:
   utter_cmd_executing:
     - text: "Executing ..."
   utter_cmd_executed_success:
-    - text: "command executed suceessfully."
+    - text: "command executed successfully."
     - text: "command executed."
     - text: "Done."
   utter_cmd_executed_error:
@@ -562,4 +568,21 @@ templates:
     - text: "The last value of {variable_name} is {variable_value}"
     - text: "{variable_value}"
     - text: "{variable_name} has the value: {variable_value}"
-      
+  utter_variable_not_found:
+    - text: "{variable_name} was not found."
+    - text: "{variable_name} doesn't exist. Try with another variable."
+    - text: "Unfortunately, we could not find {variable_name}."
+    - text: "Sorry, variable was found."
+    - text: "Please try with another variable. we couldn't find {variable_name}"
+  utter_energy_price_value:
+    - text: "{variable_value}  $/kWh"
+    - text: "the current energy price market is {variable_value} $/kWh"
+    - text: "energy price: {variable_value} $/kWh"
+  utter_energy_used_value:
+    - text: "{variable_value} kW"
+    - text: "Current power consumption: {variable_value} kW"
+    - text: "Power: {variable_value} kW"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

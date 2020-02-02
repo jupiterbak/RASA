@@ -2,8 +2,10 @@
 import json
 import logging
 import random
+import threading
 
 import requests
+from FAPSDemonstratorAPI import APIService
 from rasa_sdk import Action
 from rasa_sdk.events import (
     SlotSet,
@@ -11,7 +13,9 @@ from rasa_sdk.events import (
     ConversationPaused,
 )
 
+logging.basicConfig(format='%(asctime)-15s [%(levelname)] [%(name)-12s] %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG | logging.INFO | logging.WARNING | logging.ERROR | logging.CRITICAL)
 
 
 class ActionGreetUser(Action):
@@ -133,10 +137,59 @@ class ActionShowValue(Action):
         return "action_show_value"
 
     def run(self, dispatcher, tracker, domain):
+        # get the variable value and format it
         variable_name = next(tracker.get_latest_entity_values("variable_name"), None)
-        variable_value = random.random()
-        dispatcher.utter_template("utter_variable_value", tracker, variable_name=variable_name,
-                                  variable_value=variable_value)
+        if variable_name is None:
+            dispatcher.utter_template("utter_variable_not_found", tracker, variable_name=variable_name)
+            return []
+        else:
+            variable_name = variable_name.replace("#", "")
+
+        # acquire the lock
+        threadLock.acquire()
+        m_data = service.robot_data.copy()
+        c_data = service.conveyor_data.copy()
+        threadLock.release()
+
+        if variable_name in m_data:
+            variable_value = m_data[variable_name]
+            dispatcher.utter_template("utter_variable_value", tracker, variable_name=variable_name,
+                                      variable_value=variable_value)
+        elif variable_name in c_data:
+            variable_value = c_data[variable_name]
+            dispatcher.utter_template("utter_variable_value", tracker, variable_name=variable_name,
+                                      variable_value=variable_value)
+        else:
+            dispatcher.utter_template("utter_variable_not_found", tracker, variable_name=variable_name)
+        return []
+
+
+class ActionEnergyPrice(Action):
+    def name(self):
+        return "action_energy_used"
+
+    def run(self, dispatcher, tracker, domain):
+        # acquire the lock
+        threadLock.acquire()
+        m_data = service.robot_data.copy()
+        threadLock.release()
+
+        value = m_data['Portal_Wirkleistung_L1'] + m_data['Portal_Wirkleistung_L2'] + m_data['Portal_Wirkleistung_L1']
+        dispatcher.utter_template("utter_energy_used_value", tracker, variable_value=value)
+        return []
+
+
+class ActionEnergyConsumed(Action):
+    def name(self):
+        return "action_energy_price"
+
+    def run(self, dispatcher, tracker, domain):
+        # acquire the lock
+        threadLock.acquire()
+        m_data = service.current_energy_price
+        threadLock.release()
+
+        dispatcher.utter_template("utter_energy_price_value", tracker, variable_value=m_data)
         return []
 
 
@@ -421,3 +474,8 @@ class ActionNextStep(Action):
             dispatcher.utter_template("utter_no_more_steps", tracker)
 
         return []
+
+
+threadLock = threading.Lock()
+service = APIService(True, "cloud.faps.uni-erlangen.de", 5672, 'esys', 'esys', threadLock)
+service.start()
