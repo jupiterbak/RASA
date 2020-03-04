@@ -575,7 +575,7 @@ templates:
     - text: "Sorry, variable was found."
     - text: "Please try with another variable. we couldn't find {variable_name}"
   utter_energy_price_value:
-    - text: "{variable_value}  $/kWh"
+    - text: "{variable_value} $/kWh"
     - text: "the current energy price market is {variable_value} $/kWh"
     - text: "energy price: {variable_value} $/kWh"
   utter_energy_used_value:
