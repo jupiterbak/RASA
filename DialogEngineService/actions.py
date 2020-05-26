@@ -4,14 +4,15 @@ import logging
 import random
 import threading
 
-import requests
-from FAPSDemonstratorAPI import APIService
 from rasa_sdk import Action
 from rasa_sdk.events import (
     SlotSet,
     UserUtteranceReverted,
     ConversationPaused,
 )
+
+import requests
+from FAPSDemonstratorAPI import APIService
 
 logging.basicConfig(format='%(asctime)-15s [%(levelname)] [%(name)-12s] %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 logger = logging.getLogger(__name__)

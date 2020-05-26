@@ -1,2 +1,3 @@
-action_endpoint:
-  url: "http://localhost:5055/webhook"
+# This file is intended to redirect all the actions to an action endpoint
+#action_endpoint:
+#  url: "http://localhost:5055/webhook"
